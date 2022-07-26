@@ -112,13 +112,14 @@ input, select, textarea {
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
 		color: #37c0fb;
 		text-decoration: none;
-		border-bottom: dotted 1px;
+		border-bottom: transparent;
 	}
 
-		a:hover {
-			color: #37c0fb;
-			border-bottom-color: transparent;
-		}
+	a:hover {
+		color: #37c0fb;
+		border-bottom-color: transparent;
+		text-decoration: none;
+	}
 
 	strong, b {
 		font-weight: 600;
@@ -2027,6 +2028,7 @@ input, select, textarea {
 		input[type="email"]:focus,
 		textarea:focus {
 			border-color: #37c0fb;
+			text-decoration:none;
 		}
 
 	input[type="text"],
@@ -2548,6 +2550,7 @@ input, select, textarea {
 				font-size: 1.5em;
 				letter-spacing: -0.025em;
 				border: 0;
+				text-decoration:none;
 			}
 
 	#nav {
@@ -2593,6 +2596,7 @@ input, select, textarea {
 
 				#nav > ul > li:hover a {
 					color: #fff;
+					text-decoration:none;
 				}
 
 				#nav > ul > li.current {
@@ -2618,10 +2622,12 @@ input, select, textarea {
 
 					#nav > ul > li.current a {
 						color: #fff;
+						text-decoration:none;
 					}
 
 				#nav > ul > li.active a {
 					color: #fff;
+					text-decoration:none;
 				}
 
 				#nav > ul > li.active.current:before {
@@ -2662,6 +2668,7 @@ input, select, textarea {
 
 			.dropotron > li.active > a, .dropotron > li:hover > a {
 				color: #fff;
+				text-decoration:none;
 			}
 
 		.dropotron.level-0 {
@@ -2706,10 +2713,12 @@ input, select, textarea {
 
 				#banner header h2 a {
 					border-bottom-color: rgba(255, 255, 255, 0.5);
+					text-decoration:none;
 				}
 
 					#banner header h2 a:hover {
 						border-bottom-color: transparent;
+						text-decoration:none;
 					}
 
 			#banner header .button {
@@ -2780,11 +2789,13 @@ input, select, textarea {
 		#footer a {
 			color: inherit;
 			border-bottom-color: rgba(71, 71, 71, 0.25);
+			text-decoration:none;
 		}
 
 			#footer a:hover {
 				color: #37c0fb;
 				border-bottom-color: transparent;
+				text-decoration:none;
 			}
 
 		#footer .container {
@@ -2798,10 +2809,12 @@ input, select, textarea {
 
 			#footer .icons a {
 				color: #999;
+				text-decoration:none;
 			}
 
 				#footer .icons a:hover {
 					color: #474747;
+					text-decoration:none;
 				}
 
 		#footer .copyright {

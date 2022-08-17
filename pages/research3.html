@@ -57,9 +57,9 @@
 												<h2>High-redshift galaxies & Mock observations</h2>
 											</header>
 
-											High-redshift galaxies will obviously be a hot topic of astrophysical research in the next ten years, with the development of key observational instruments.
+											High-redshift galaxies will obviously be a hot topic of astrophysical research in the next decade, with the development of key observational instruments (e.g. <a href="https://webb.nasa.gov/index.html">JWST</a>, <a href="https://roman.gsfc.nasa.gov/">Roman</a>). These open up new opportunities in understanding the formation and evolution of first generation of galaxies in the Universe, as well as new channels to study and constrain fundamental physics.
 
-											<div class="row" style="padding-top: 5%">
+											<div class="row" style="padding-top: 10%">
 												<div class="column" style="width: 65%; padding:1%">
 													<span class='image featured'><img src="../images/TNG_protocluster.png" alt="" style="position:relative;width:100%"> </span>
 												</div>
@@ -69,13 +69,53 @@
 												</div>
 											</div>
 
-											Using the data from the IllustrisTNG simulation and the SKIRT dust radiative transfer code, I generate an array of mock observables for simulated galaxies at high redshift. The data product includes: Far-UV to far-IR SEDs, photometry in JWST NIRCam and MIRI bands, high-resolution optical sepetrum (with emission line measurements, spectral indices). The same technique has been applied to the THESAN re-ionization simulation and will be applied for galaxy merger identification for JWST observations in near future
+											Using the data from the IllustrisTNG simulation and the SKIRT dust radiative transfer code, I have developed a <a href="https://bitbucket.org/ShenXuejian/dust-modeling/src/master/">pipeline</a> to generate an array of mock observables for simulated galaxies at high redshift. The data product includes: Far-UV to far-IR SEDs, photometry in JWST NIRCam and MIRI bands, high-resolution optical sepetrum (with emission line measurements, spectral indices). Above are a few mock JWST NIRCam images of the proto-clusters in the IllustrisTNG simulation. The same technique has been applied to the THESAN re-ionization simulation and will be applied for galaxy merger identification for JWST observations in near future.
 
-											<p></p>
+											<h2>Relavant projects:</h2>
 
-											<h3>Relavant projects:</h3>
+											<ol>
+												<li>
+													<h5>High-redshift JWST predictions from IllustrisTNG</h5>
+													<p> This is a series of papers on high-redshift galaxies, based on the IllustrisTNG simulation, the dust radiative transfer calculation using SKIRT and a dust model calibrated with compiled UV luminosity function data at z=4-10. In <a href="https://ui.adsabs.harvard.edu/abs/2020MNRAS.492.5167V/abstract">Paper I</a>, we presented this framework for mock JWST predictions from simulations, and made predictions on the UV luminosity functions, the JWST NIRCam apparent band luminosity functions. In <a href="https://ui.adsabs.harvard.edu/abs/2020MNRAS.495.4747S/abstract">Paper II</a>, we made predictions on the emission line luminosity functions (H&alpha;, O[III]), spectral indices (D4000) and dust attenuation curves of high-redshift galaxies. In <a href="https://ui.adsabs.harvard.edu/abs/2022MNRAS.510.5560S/abstract">Paper III</a>, we extended the prediction to FIR wavelengths, with a more realistic treatment of dust grain size distribution and non-local thermal effects. We presented the NIR and FIR galaxy luminosity functions, as well as the JWST MIRI band luminosity functions.</p>
 
-											<p> coming soon</p>
+													<div class="row" style="padding-top: 5%">
+													<div class="column" style="width: 50%; padding:0%">
+													<span class='image featured'><img src="../images/TNG_images/filters.png" alt=""> </span>
+														</div>
+													<div class="column" style="width: 50%; padding:0%">
+													<span class='image featured'><img src="../images/TNG_images/sed_example.png" alt=""> </span>
+													</div>
+													
+													</div>
+												</li>
+
+												<li>
+													<h5>Epoch-of-Reionization galaxies in alternative dark matter models in the THESAN simulations</h5>
+													<p> Early Universe is also an interesting test ground for dark matter physics. Many models for dark matter imply modifications to the small-scale power spectrum of cosmic density fluctuations, which will inevitably affect the assembly of early galaxies. Recently, we have experimented the warm dark matter and the SIDM model with dark acoustic oscillations in a small-volume simulation within the THESAN simulation framework. Notably, the simulations include the recipe for sourcing ionizing photons, on-the-fly radiative transfer calculations and a hydrogen chemical-solver for reionization, which allow us to study the interplay between non-equilibrium reionization process and alternative dark matter physics. 
+													</p>
+												</li>
+
+												<li>
+													<h5>Morphological idenfication of merging galaxies powered by CNN</h5>
+													<p> Another application of the dust radiative transfer post-processing pipeline we built is producing high-quality, realistic mock images for high redshift galaxies. Below are examplar images we generated in <a href="https://ui.adsabs.harvard.edu/abs/2020MNRAS.492.5167V/abstract">Paper I</a> of the series mentioned in the first bullet point. On the left is a z=1 galaxy in the JWST NIRCam F070W, F090W, F115W bands, and on the right is a z=2 galaxy in F115W, F150W, F200W bands. We are currently generating similar mock images for merging galaxies selected at z<1, with modeling of background noise and PSF convolution. The images will be used to train a multi-channel convolution neural network (CNN) for merger identification with real JWST images.</p>
+
+													<div class="row" style="padding-top: 5%">
+													<div class="column" style="width: 50%; padding:0%">
+													<span class='image featured'><img src="../images/TNG_images/faceon50_94859_d.png" alt=""> </span>
+														</div>
+													<div class="column" style="width: 50%; padding:0%">
+													<span class='image featured'><img src="../images/TNG_images/faceon33_31832_d3.png" alt=""> </span>
+													</div>
+
+													<div class="row" style="padding-top: 0%">
+													<div class="column" style="width: 50%; padding:0%">
+													<span class='image featured'><img src="../images/TNG_images/edgeon50_94859_d.png" alt=""> </span>
+														</div>
+													<div class="column" style="width: 50%; padding:0%">
+													<span class='image featured'><img src="../images/TNG_images/edgeon33_31832_d3.png" alt=""> </span>
+													</div>
+												</li>
+											</ol>
 										</article>
 
 								</div>

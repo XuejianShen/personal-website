@@ -16,24 +16,16 @@
 
 			<!-- Header -->
 				<div id="header">
-					
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
 								<li><a href="../index.html">Home</a></li>
 								<li><a href="about_me.html">About me</a></li>
-								<li class='current'>
-									<a href="research_main.html">Research</a>
+								<li class="current">
+									<a>Research</a>
 									<ul>
-										<li align='left'>
-											<a href="#">Alternative Dark Matter</a>
-											<ul>
-												<li align='left'><a href="research1.html">Self-Interacting Dark Matter</a></li>
-												<li align='left'><a href="research2.html">Axions/Ultra-light Dark Matter</a></li>
-											</ul>
-										</li>
-										<li align='left'><a href="research3.html">High-redshift Galaxies</a></li>
-										<li align='left'><a href="research4.html">SMBHs and early Quasars</a></li>
+										<li align='left'><a href="research1.html">Alternative Dark Matter</a></li>
+										<li align='left'><a href="research3.html">High-Redshift Galaxies & AGNs</a></li>
 									</ul>
 								</li>
 								<li><a href="publications.html">Publications</a></li>
@@ -44,39 +36,55 @@
 				</div>
 
 			<!-- Main -->
-				<section class="wrapper style1">
+				<section class="wrapper style1" style="padding-top: 2%;">
 					<div class="container">
-						<div class="row gtr-200">
-							<div class="col-8 col-12-narrower">
+						<h2 align="middle"> How do Galaxies and SMBHs form and evolve in the First Billion year of the Universe?</h2>
+						<p align='middle'> JWST has revealed an uncharted territory of the Universe and posed new challenges to theoretical models for galaxy formation & origin of SMBHs.</p>
+						<img src="../images/JWST-first-field.png" alt="" style="width:33%">
+						<img src="../images/JWST-interacting-galaxy.png" alt="" style="width:33%">
+						<img src="../images/JWST-interacting-galaxy-2.jpeg" alt="" style="width:33%">
+						<p> Copyright @NASA</p>
+						<div class="row gtr-200" style="padding-top: 2%;">
+							<div class="col-6 col-12-narrower">
 								<div id="content">
 
 									<!-- Content -->
 
 										<article>
 											<header>
-												<h2>High-redshift galaxies & Mock observations</h2>
+												<h2>High-redshift galaxies in light of JWST</h2>
 											</header>
 
-											High-redshift galaxies will obviously be a hot topic of astrophysical research in the next decade, with the development of key observational instruments (e.g. <a href="https://webb.nasa.gov/index.html">JWST</a>, <a href="https://roman.gsfc.nasa.gov/">Roman</a>). These open up new opportunities in understanding the formation and evolution of first generation of galaxies in the Universe, as well as new channels to study and constrain fundamental physics.
+											<p>High-redshift galaxies will obviously be a hot topic of astrophysical research in the next decade, with the development of key observational instruments (e.g. <a href="https://webb.nasa.gov/index.html">JWST</a>, <a href="https://roman.gsfc.nasa.gov/">Roman</a>). These open up new opportunities in understanding the formation and evolution of first generation of galaxies in the Universe, as well as new channels to study and constrain fundamental physics.</p>
 
-											<div class="row" style="padding-top: 10%">
-												<div class="column" style="width: 65%; padding:1%">
-													<span class='image featured'><img src="../images/TNG_protocluster.png" alt="" style="position:relative;width:100%"> </span>
-												</div>
-												<div class="column" style="width: 33%; padding:1%">
-													<span class='image featured'><img src="../images/TNG_protocluster_50.png" alt=""> </span>
-													<span class='image featured' style="position:relative; bottom:5%;width:100%">  <img src="../images/TNG_protocluster_25.png" alt=""> </span>
-												</div>
-											</div>
-
-											Using the data from the IllustrisTNG simulation and the SKIRT dust radiative transfer code, I have developed a <a href="https://bitbucket.org/ShenXuejian/dust-modeling/src/master/">pipeline</a> to generate an array of mock observables for simulated galaxies at high redshift. The data product includes: Far-UV to far-IR SEDs, photometry in JWST NIRCam and MIRI bands, high-resolution optical sepetrum (with emission line measurements, spectral indices). Above are a few mock JWST NIRCam images of the proto-clusters in the IllustrisTNG simulation. The same technique has been applied to the THESAN re-ionization simulation and will be applied for galaxy merger identification for JWST observations in near future.
-
-											<h2>Relavant projects:</h2>
+											<h2>Relavant Projects</h2>
 
 											<ol>
 												<li>
+													<h5>UV variability explains the large abundance of bright galaxies at cosmic dwan</h5>
+													<p>During its Early-Science and Cycle-1 observations, the JWST uncovered an unexpectedly high number of UV-bright galaxies at the cosmic dawn. This discovery challenges many established theoretical models of galaxy formation. In <a href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.525.3254S/abstract">this work</a>, we suggested that the overlooked variability in galaxy UV luminosity, due to e.g. episodic star formation, may resolve this tension. Our proposition is compatible with the current galaxy formation framwork and is grounded in plausible physical phenomena. Since its introduction, this theory has garnered significant interest in the scientific community, with numerous groups exploring its validity. Working in tandem with the FIRE simulation group, we have become the first to verify the effectiveness of this concept in <a href="https://ui.adsabs.harvard.edu/abs/2023arXiv230715305S/abstract">the work</a> led by Dr. Guochao Sun. This is also the first simulation that reproduce the abundance of UV bright galaxies found by JWST.
+													</p>
+
+													<div class="row" style="padding-top: 5%">
+													<div class="column" style="width: 100%; padding:0%">
+													<span class='image featured'><img src="../images/parameter_space.jpeg" alt=""> </span>
+														</div>
+													</div>
+												</li>
+
+												<li>
 													<h5>High-redshift JWST predictions from IllustrisTNG</h5>
 													<p> This is a series of papers on high-redshift galaxies, based on the IllustrisTNG simulation, the dust radiative transfer calculation using SKIRT and a dust model calibrated with compiled UV luminosity function data at z=4-10. In <a href="https://ui.adsabs.harvard.edu/abs/2020MNRAS.492.5167V/abstract">Paper I</a>, we presented this framework for mock JWST predictions from simulations, and made predictions on the UV luminosity functions, the JWST NIRCam apparent band luminosity functions. In <a href="https://ui.adsabs.harvard.edu/abs/2020MNRAS.495.4747S/abstract">Paper II</a>, we made predictions on the emission line luminosity functions (H&alpha;, O[III]), spectral indices (D4000) and dust attenuation curves of high-redshift galaxies. In <a href="https://ui.adsabs.harvard.edu/abs/2022MNRAS.510.5560S/abstract">Paper III</a>, we extended the prediction to FIR wavelengths, with a more realistic treatment of dust grain size distribution and non-local thermal effects. We presented the NIR and FIR galaxy luminosity functions, as well as the JWST MIRI band luminosity functions.</p>
+
+													<div class="row" style="padding-top: 10%">
+													<div class="column" style="width: 65%; padding:1%">
+													<span class='image featured'><img src="../images/TNG_protocluster.png" alt="" style="position:relative;width:100%"> </span>
+													</div>
+													<div class="column" style="width: 33%; padding:1%">
+													<span class='image featured'><img src="../images/TNG_protocluster_50.png" alt=""> </span>
+													<span class='image featured' style="position:relative; bottom:5%;width:100%">  <img src="../images/TNG_protocluster_25.png" alt=""> </span>
+													</div>
+													</div>
 
 													<div class="row" style="padding-top: 5%">
 													<div class="column" style="width: 50%; padding:0%">
@@ -98,53 +106,75 @@
 												<li>
 													<h5>Morphological idenfication of merging galaxies powered by CNN</h5>
 													<p> Another application of the dust radiative transfer post-processing pipeline we built is producing high-quality, realistic mock images for high redshift galaxies. Below are examplar images we generated in <a href="https://ui.adsabs.harvard.edu/abs/2020MNRAS.492.5167V/abstract">Paper I</a> of the series mentioned in the first bullet point. On the left is a z=1 galaxy in the JWST NIRCam F070W, F090W, F115W bands, and on the right is a z=2 galaxy in F115W, F150W, F200W bands. We are currently generating similar mock images for merging galaxies selected at z<1, with modeling of background noise and PSF convolution. The images will be used to train a multi-channel convolution neural network (CNN) for merger identification with real JWST images.</p>
-
-													<div class="row" style="padding-top: 5%">
-													<div class="column" style="width: 50%; padding:0%">
-													<span class='image featured'><img src="../images/TNG_images/faceon50_94859_d.png" alt=""> </span>
-														</div>
-													<div class="column" style="width: 50%; padding:0%">
-													<span class='image featured'><img src="../images/TNG_images/faceon33_31832_d3.png" alt=""> </span>
-													</div>
-
-													<div class="row" style="padding-top: 0%">
-													<div class="column" style="width: 50%; padding:0%">
-													<span class='image featured'><img src="../images/TNG_images/edgeon50_94859_d.png" alt=""> </span>
-														</div>
-													<div class="column" style="width: 50%; padding:0%">
-													<span class='image featured'><img src="../images/TNG_images/edgeon33_31832_d3.png" alt=""> </span>
-													</div>
 												</li>
 											</ol>
 										</article>
 
 								</div>
 							</div>
-							<div class="col-4 col-12-narrower">
-								<div id="sidebar">
+							<div class="col-6 col-12-narrower">
+								<div id="content">
 
-									<!-- Sidebar -->
+									<!-- Content -->
 
-										<section>
-											<h3>Relavant Publications</h3>
-											<ul class="links">
-												<li><a href="https://ui.adsabs.harvard.edu/abs/2020MNRAS.492.5167V/abstract">2020MNRAS.492.5167V</a></li>
-												<li><a href="https://ui.adsabs.harvard.edu/abs/2020MNRAS.495.4747S/abstract">2020MNRAS.495.4747S</a></li>
-												<li><a href="https://ui.adsabs.harvard.edu/abs/2022MNRAS.510.5560S/abstract">2022MNRAS.510.5560S</a></li>
-											</ul>
-										</section>
+										<article>
+											<header>
+												<h2>SMBHs and quasars in the early Universe</h2>
+											</header>
 
-										<section>
-											<h3>Collabrators</h3>
-											<ul class="links">
-												<li><a href="http://www.tapir.caltech.edu/~phopkins/Site/">Philip Hopkins @ Caltech</a></li>
-												<li><a href="http://mvogelsb.scripts.mit.edu/index.php">Mark Vogelsberger @ MIT</a></li>
-												<li><a href="https://astronomy.fas.harvard.edu/people/lars-hernquist">Lars Hernquist @ Harvard CfA</a></li>
-												<li><a href="https://www.phy.cam.ac.uk/staff/dr-sandro-tacchella/">Sandro Tacchella @ University of Cambridge </a></li>
-												<li><a href="https://www.ita.uni-heidelberg.de/~dnelson/">Dylan Nelson @ Heidelberg University</a></li>
-											</ul>
-										</section>
+											<p></p>
 
+											<h2>Relavant Projects</h2>
+											<ol>
+												<li>
+													<h5>A model for the bolometric quasar luminosity functions</h5>
+													<p> In this <a href="https://ui.adsabs.harvard.edu/abs/2020MNRAS.495.3252S/abstract">paper</a>, we have compiled a large dataset of quasar luminosity function measurements in far-UV, optical, X-ray, IR bands, and through emission lines in the past four decades. The observational data is paired with an updated quasar SED model (shown below), an updated extinction model based on the hydrogen column density distribution in Ueda et al. 2014 and a new bolometric correction function. We developed a <a href="https://bitbucket.org/ShenXuejian/quasarlf/src/master/">public tool</a> for computing bolometric/observed band luminosity functions of quasars across a wide redshift range.</p>
+
+													<div class="row" style="padding-top: 5%">
+													<div class="column" style="width: 100%; padding:0%">
+													<span class='image featured'><img src="../images/QLF/sed.png" alt=""> </span>
+														</div>
+													</div>
+
+													<p>Combining all the observational and theoretical updates, we construct a new model for the bolometric quasar luminosity function that extends out to redshift 7. As shown below, the model-predicted QLFs are confronted with the observational data (moved to the bolometric plane) at z=2, 4, 6. </p>
+
+													<div class="row" style="padding-top: 5%; padding-left: 5%">
+													<div class="column" style="width: 33%; padding:0%">
+													<span class='image featured'><img src="../images/QLF/bol_2.0.png" alt=""> </span>
+													</div>
+													<div class="column" style="width: 33%; padding:0%">
+													<span class='image featured'><img src="../images/QLF/bol_4.0.png" alt=""> </span>
+													</div>
+													<div class="column" style="width: 33%; padding:0%">
+													<span class='image featured'><img src="../images/QLF/bol_6.0.png" alt=""> </span>
+													</div>
+													</div>
+
+													<p> The evolutionary pattern of the bolometric QLF can be interpreted as an early phase likely dominated by the hierarchical assembly of structures and a late phase likely dominated by the quenching of galaxies. We explore the implications of this model on the ionizing photon production by quasars, the cosmic X-ray background (CXB) spectrum, the SMBH mass density, and mass functions. The predicted hydrogen photoionization rate contributed by quasars is subdominant during the epoch of reionization and only becomes important at z<3.</p>
+
+													<div class="row" style="padding-top: 5%; padding-left: 5%">
+													<div class="column" style="width: 50%; padding:0%">
+													<span class='image featured'><img src="../images/QLF/evolve_early.png" alt=""> </span>
+													</div>
+													<div class="column" style="width: 50%; padding:0%">
+													<span class='image featured'><img src="../images/QLF/evolve_late.png" alt=""> </span>
+													</div>
+													<div class="column" style="width: 50%; padding:0%">
+													<span class='image featured'><img src="../images/QLF/ionizing_photon.png" alt=""> </span>
+													</div>
+													<div class="column" style="width: 50%; padding:0%">
+													<span class='image featured'><img src="../images/QLF/CXB.png" alt=""> </span>
+													</div>
+													</div>
+
+												</li>
+
+												<li>
+													<h5>Seeding massive SMBHs with dissipative SIDM</h5>
+													<p> This is an interesting topic related to alternative dark matter physics. Together with Huangyu Xiao at Fermi Lab, we consider the seeding of supermassive black holes (SMBHs) in the early Universe with dissipative dark matter. <a href="https://ui.adsabs.harvard.edu/abs/2021JCAP...07..039X/abstract">Our study</a> showed that, with approporiate choice of parameters, a hit-and-stick type of dissipative dark matter (e.g. asymmetric dark matter nuggets) can collapse to massive SMBH seeds in rare, massive haloes, which could be the progenitors for the observed billion solar mass quasars at z&gtrsim;7. This exotic seeding scenario will give rise to completely different assemble history of early SMBHs and quasar activities. We are exploring the observational signatures in a follow-up study.</p>
+												</li>
+											</ol>
+										</article>
 								</div>
 							</div>
 						</div>
@@ -180,7 +210,7 @@
 							</section>
 							<section class="col-6 col-12-narrower">
 								<h3>Get In Touch</h3>
-								<p> Email: xshen@caltech.edu <p>
+								<p> Email: xuejian@mit.edu <p>
 								<!--<form>
 									<div class="row gtr-50">
 										<div class="col-6 col-12-mobilep">

@@ -16,24 +16,16 @@
 
 			<!-- Header -->
 				<div id="header">
-					
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
 								<li><a href="../index.html">Home</a></li>
 								<li><a href="about_me.html">About me</a></li>
-								<li class='current'>
-									<a href="research_main.html">Research</a>
+								<li class="current">
+									<a>Research</a>
 									<ul>
-										<li align='left'>
-											<a href="#">Alternative Dark Matter</a>
-											<ul>
-												<li align='left'><a href="research1.html">Self-Interacting Dark Matter</a></li>
-												<li align='left'><a href="research2.html">Axions/Ultra-light Dark Matter</a></li>
-											</ul>
-										</li>
-										<li align='left'><a href="research3.html">High-redshift Galaxies</a></li>
-										<li align='left'><a href="research4.html">SMBHs and early Quasars</a></li>
+										<li align='left'><a href="research1.html">Alternative Dark Matter</a></li>
+										<li align='left'><a href="research3.html">High-Redshift Galaxies & AGNs</a></li>
 									</ul>
 								</li>
 								<li><a href="publications.html">Publications</a></li>
@@ -44,10 +36,13 @@
 				</div>
 
 			<!-- Main -->
-				<section class="wrapper style1">
+				<section class="wrapper style1" style="padding-top: 2%;">
 					<div class="container">
-						<div class="row gtr-200">
-							<div class="col-8 col-12-narrower">
+						<h2 align="middle"> What is the Nature of Dark Matter?</h2>
+						<p align='middle'> Using state-of-the-art cosmological hydrodynamical simulations, I study cosmic structure & galaxy formation in popular dark matter models alternative to CDM.
+						<center><img src="../images/dark_matter_cartoon.jpg" alt="" style="width:80%"></center>
+						<div class="row gtr-200" style="padding-top: 2%;">
+							<div class="col-6 col-12-narrower">
 								<div id="content">
 
 									<!-- Content -->
@@ -62,18 +57,16 @@
 
 											<p> Self-interacting dark matter (SIDM) is an important category of alternative dark matter models (or in general hidden-sector models for beyond-standard-model physics) that has been proposed and discussed in the literature for about three decades. The introduction of SIDM could potentially solve some small-scale problems (see the <a href="https://ui.adsabs.harvard.edu/abs/2018PhR...730....1T/abstract">review by Tulin Sean and Yu Hai-Bo</a>). </p>
 
-											<h2>Relavant projects:</h2>
+											<h2>Relavant Projects</h2>
 											<ol>
 
 												<li>
 													<h5>Dissipative SIDM models </h5>
-													<p> Most of the previous studies on SIDM focused on elastic dark matter self-interactions. However, in many particle physics realizations of SIDM, dark matter have inelastic (or specifically dissipative) self-interactions. The impact of dissipative processes of dark matter has not yet been explored in the context of cosmological structure formation. </p>
-													<p> This motivates us to conduct the first cosmological hydrodynamical simulations in dissipative SIDM, with the inclusion of the state-of-art model for baryonic physics. Below are HST mock images of some of the galaxies in the simulation suite.</p>
-													<img src="../images/dSIDM_star.png" alt="" style="width: 100%">
+													<p> Most of the previous studies on SIDM focused on elastic dark matter self-interactions. However, in many particle physics realizations of SIDM, dark matter have inelastic (or specifically dissipative) self-interactions. The impact of dissipative processes of dark matter has not yet been explored in the context of cosmological structure formation. This motivates us to conduct the first cosmological hydrodynamical simulations in dissipative SIDM, with the inclusion of the state-of-art model for baryonic physics. 
 
 													<p> We find apparently more concentrated dark matter distributions at halo centers, driven by a dark subsonic cooling flow. This is in contrast with the baryonic feedback produced cores in the vanilla CDM model. DSIDM models feature a power-law like density profile with the asymtotic slope -3/2, regardless of the effective interaction cross-section. The neutral gas/stellar disks are promoted in dSIDM models. For more detail, check out <a href="https://ui.adsabs.harvard.edu/abs/2021MNRAS.506.4421S/abstract">Paper I</a> and <a href="https://ui.adsabs.harvard.edu/abs/2022arXiv220605327S/abstract">Paper II</a> of the series.</p>
-													<img src="../images/dSIDM_dark.png" alt="" style="width: 49%">
-													<img src="../images/dSIDM_gas.png" alt="" style="width: 49%">
+													<img src="../images/dSIDM_dark.png" alt="" style="width: 49%; padding-bottom: 5%;">
+													<img src="../images/dSIDM_gas.png" alt="" style="width: 49%; padding-bottom: 5%;">
 												</li>
 
 												<li>
@@ -84,14 +77,14 @@
 												<li>
 													<h5>Early-Universe constraints</h5>
 
-													<p> This follows the <a href="https://ui.adsabs.harvard.edu/abs/2018MNRAS.477.2886L/abstract">ETHOS study</a> of high redshift observables in the SIDM model featuring dark acoustic oscillations, for which I worked on as the summer student at MIT in 2017. Recently, I'm working on a follow-up project using the THESAN simulation of the epoch of reionization Universe to study early structure formation in alternative dark matter models. </p>
+													<p> This follows the <a href="https://ui.adsabs.harvard.edu/abs/2018MNRAS.477.2886L/abstract">ETHOS study</a> of high redshift observables in the SIDM model featuring dark acoustic oscillations, for which I worked on as the summer student at MIT in 2017. In 2023, I worked on a <a href="https://ui.adsabs.harvard.edu/abs/2023arXiv230406742S/abstract">follow-up project</a> using the THESAN simulation of the epoch of reionization Universe to study early structure formation in alternative dark matter models. </p>
 
 													<p> Another interesting topic that I am working on with Huangyu Xiao at Fermi Lab is the seeding of supermassive black holes (SMBHs) in the early Universe with dissipative dark matter. <a href="https://ui.adsabs.harvard.edu/abs/2021JCAP...07..039X/abstract">Our study</a> showed that, with approporiate choice of parameters, a hit-and-stick type of dissipative dark matter (e.g. asymmetric dark matter nuggets) can collapse to massive SMBH seeds in rare, massive haloes, which could be the progenitors for the observed billion solar mass quasars at z&gtrsim;7. </p>
 												</li>
 
 												<li>
 													<h5>Atomic dark matter or generic hidden-sector models</h5>
-													<p> In collaboration with Sandip Roy at Princeton, we are working on atomic dark matter implementation in cosmological simulation codes. </p>
+													<p> Atomic dark matter is a natural category of dissipative SIDM models. It represents a more realistic hidden sector which mimics the E&M sector of the standard model. In <a href="https://ui.adsabs.harvard.edu/abs/2023ApJ...954L..40R/abstract">a recent work</a>, we implement the atomic dark matter in the simulation code GIZMO and perform the first cosmological simulation of galaxy formation in atomic dark matter. </p>
 												</li>
 
 											</ol>
@@ -99,37 +92,39 @@
 
 								</div>
 							</div>
-							<div class="col-4 col-12-narrower">
-								<div id="sidebar">
+							<div class="col-6 col-12-narrower">
+								<div id="content">
 
-									<!-- Sidebar -->
+									<!-- Content -->
 
-										<section>
-											<h3>Relavant Publications</h3>
-											<ul class="links">
-												<li><a href="https://ui.adsabs.harvard.edu/abs/2018MNRAS.477.2886L/abstract">2018MNRAS.477.2886L</a></li>
-												<li><a href="https://ui.adsabs.harvard.edu/abs/2021JCAP...07..039X/abstract">2021JCAP...07..039X</a></li>
-												<li><a href="https://ui.adsabs.harvard.edu/abs/2021MNRAS.506.4421S/abstract">2021MNRAS.506.4421S</a></li>
-												<li><a href="https://ui.adsabs.harvard.edu/abs/2022arXiv220200038S/abstract">2022arXiv220200038S</a></li>
-												<li><a href="https://ui.adsabs.harvard.edu/abs/2022arXiv220605327S/abstract">2022arXiv220605327S</a></li>
-												<li><a href="https://ui.adsabs.harvard.edu/abs/2022arXiv220612425J/abstract">2022arXiv220612425J</a></li>
-											</ul>
-										</section>
+										<article>
+											<header>
+												<h2>Axions/Ultra-light Dark Matter</h2>
+											</header>
 
-										<section>
-											<h3>Collabrators</h3>
-											<ul class="links">
-												<li><a href="http://www.tapir.caltech.edu/~phopkins/Site/">Philip Hopkins @ Caltech</a></li>
-												<li><a href="http://www.kzurek.theory.caltech.edu/">Kathryn Zurek @ Caltech</a></li>
-												<li><a href="https://www.fzjiang.com/">Fangzhou Jiang @ Caltech,Carneige</a></li>
-												<li><a href="https://lnecib.com/">Lina Necib @ MIT</a></li>
-												<li><a href="http://mvogelsb.scripts.mit.edu/index.php">Mark Vogelsberger @ MIT</a></li>
-												<li><a href="#">Huangyu Xiao @ Fermi Lab</a></li>
-												<li><a href="https://notendur.hi.is/~jzavala/">Jesús Zavala @ University of Iceland </a></li>
-											</ul>
-										</section>
+											<p> QCD axion is a hypothetical elementary particle postulated by the Peccei–Quinn theory in 1977 to resolve <a href="https://en.wikipedia.org/wiki/Strong_CP_problem">the strong CP problem</a> in quantum chromodynamics (QCD). It is a  pseudo-Nambu–Goldstone boson left over from spontaneous breaking of the Peccei–Quinn symmetry. Despite its invention for solving particle physics problems, QCD axion appears to be a natural candidate for cold dark matter.</p>
+											<span class="image featured"><img src="../images/darkmatter_axions.jpeg" alt="" /></span>
+
+											<p> Axion is a classical CDM candidate and theoretically will not introduce any difference to the large-scale structure compared to WIMP-like candidates. However, in some formation scenarios of axions, small scale isocurvature fluctuations can be sourced and could leave unique astrophysical fingerprints.</p>
+
+											<h2>Relavant Projects</h2>
+
+											<ol>
+												<li>
+													<h5>Axion miniclusters</h5>
+													<p> In the post-inflationary scenario, the axion field can take different values within patches that are initially out of causal contact, but that today populate the volume enclosed by our Hubble horizon. In this scenario, isocurvature fluctuations in the PQ field sourced in this way will lead to the formation of Earth-mass miniclusters. We aim at building a semi-analytical model to predict the relic abundance of these objects in the Milky Way environment and simulating potential observables. See our <a href="https://ui.adsabs.harvard.edu/abs/2022arXiv220711276S/abstract">recent paper </a>for detail.</p>
+												</li>
+
+												<li>
+													<h5>Ultra-light Axion-like particles, Fuzzy dark matter</h5>
+													<p> A natural extension of axions to lower mass limit is fuzzy dark matter, whose mass can be as low as 10<sup>-22</sup>eV. Quantum mechanical effects start to matter even at galactic scales (the de Broglie wavelength &lambda; &sim; kpc). This could have implications for solving small-scale "crisis" of &Lambda;CDM. In addition, the effective quantum pressure from fuzzy dark matter could wash out small-scale fluctuations in the initial power spectrum and affect early structure formation. For example, <a href="https://ui.adsabs.harvard.edu/abs/2020MNRAS.494.2027M/abstract">a relevant study</a> on galaxy formation in Bose-Einstein Condensed dark matter (BECDM) that I have contributed.
+													</p>
+												</li>
+											</ol>
+										</article>
 
 								</div>
+
 							</div>
 						</div>
 					</div>
@@ -164,7 +159,7 @@
 							</section>
 							<section class="col-6 col-12-narrower">
 								<h3>Get In Touch</h3>
-								<p> Email: xshen@caltech.edu <p>
+								<p> Email: xuejian@mit.edu <p>
 								<!--<form>
 									<div class="row gtr-50">
 										<div class="col-6 col-12-mobilep">

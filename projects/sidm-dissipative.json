@@ -1,0 +1,11 @@
+{
+  "title": "Dissipative SIDM Models",
+  "category": "sidm",
+  "order": 1,
+  "description": "Most of the previous studies on SIDM focused on elastic dark matter self-interactions. However, in many particle physics realizations of SIDM, dark matter has inelastic (or specifically dissipative) self-interactions. The impact of dissipative processes of dark matter has not yet been explored in the context of cosmological structure formation. This motivates us to conduct the first cosmological hydrodynamical simulations in dissipative SIDM, with the inclusion of the state-of-the-art model for baryonic physics. We find apparently more concentrated dark matter distributions at halo centers, driven by a dark subsonic cooling flow. This is in contrast with the baryonic feedback produced cores in the vanilla CDM model. DSIDM models feature a power-law-like density profile with the asymptotic slope &minus;3/2, regardless of the effective interaction cross-section. The neutral gas/stellar disks are promoted in dSIDM models.",
+  "paperLinks": [
+    {"label": "Paper I (Shen+2021)", "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.506.4421S/abstract"},
+    {"label": "Paper II (Shen+2022)", "url": "https://ui.adsabs.harvard.edu/abs/2022arXiv220605327S/abstract"}
+  ],
+  "image": "dSIDM_dark.png"
+}

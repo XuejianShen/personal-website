@@ -1,0 +1,10 @@
+{
+  "title": "Atomic Dark Matter",
+  "category": "sidm",
+  "order": 4,
+  "description": "Atomic dark matter is a natural category of dissipative SIDM models. It represents a more realistic hidden sector which mimics the electromagnetic sector of the standard model. We implemented atomic dark matter in the simulation code GIZMO and performed the first cosmological simulation of galaxy formation in atomic dark matter.",
+  "paperLinks": [
+    {"label": "Roy, Shen+2023", "url": "https://ui.adsabs.harvard.edu/abs/2023ApJ...954L..40R/abstract"}
+  ],
+  "image": ""
+}

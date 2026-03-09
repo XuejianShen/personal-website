@@ -1,0 +1,10 @@
+{
+  "title": "Seeding SMBHs with Dissipative SIDM",
+  "category": "smbh",
+  "order": 2,
+  "description": "Together with Huangyu Xiao at Fermi Lab, we consider the seeding of supermassive black holes (SMBHs) in the early Universe with dissipative dark matter. Our study showed that, with appropriate choice of parameters, a hit-and-stick type of dissipative dark matter (e.g. asymmetric dark matter nuggets) can collapse to massive SMBH seeds in rare, massive haloes, which could be the progenitors for the observed billion solar mass quasars at z&gtrsim;7. This exotic seeding scenario will give rise to completely different assembly history of early SMBHs and quasar activities. We are exploring the observational signatures in a follow-up study.",
+  "paperLinks": [
+    {"label": "Xiao & Shen 2021", "url": "https://ui.adsabs.harvard.edu/abs/2021JCAP...07..039X/abstract"}
+  ],
+  "image": ""
+}

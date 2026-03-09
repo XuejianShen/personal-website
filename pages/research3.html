@@ -6,10 +6,11 @@
 -->
 <html>
 	<head>
-		<title>High-redshift galaxies</title>
+		<title>High-redshift Galaxies & AGN</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/research-tabs.css" />
 	</head>
 	<body class="is-preload">
 		<div id="page-wrapper">
@@ -57,57 +58,8 @@
 
 											<p>High-redshift galaxies will obviously be a hot topic of astrophysical research in the next decade, with the development of key observational instruments (e.g. <a href="https://webb.nasa.gov/index.html">JWST</a>, <a href="https://roman.gsfc.nasa.gov/">Roman</a>). These open up new opportunities in understanding the formation and evolution of first generation of galaxies in the Universe, as well as new channels to study and constrain fundamental physics.</p>
 
-											<h2>Relavant Projects</h2>
-
-											<ol>
-												<li>
-													<h5>UV variability explains the large abundance of bright galaxies at cosmic dwan</h5>
-													<p>During its Early-Science and Cycle-1 observations, the JWST uncovered an unexpectedly high number of UV-bright galaxies at the cosmic dawn. This discovery challenges many established theoretical models of galaxy formation. In <a href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.525.3254S/abstract">this work</a>, we suggested that the overlooked variability in galaxy UV luminosity, due to e.g. episodic star formation, may resolve this tension. Our proposition is compatible with the current galaxy formation framwork and is grounded in plausible physical phenomena. Since its introduction, this theory has garnered significant interest in the scientific community, with numerous groups exploring its validity. Working in tandem with the FIRE simulation group, we have become the first to verify the effectiveness of this concept in <a href="https://ui.adsabs.harvard.edu/abs/2023arXiv230715305S/abstract">the work</a> led by Dr. Guochao Sun. This is also the first simulation that reproduce the abundance of UV bright galaxies found by JWST.
-													</p>
-
-													<div class="row" style="padding-top: 5%">
-													<div class="column" style="width: 100%; padding:0%">
-													<span class='image featured'><img src="../images/parameter_space.jpeg" alt=""> </span>
-														</div>
-													</div>
-												</li>
-
-												<li>
-													<h5>High-redshift JWST predictions from IllustrisTNG</h5>
-													<p> This is a series of papers on high-redshift galaxies, based on the IllustrisTNG simulation, the dust radiative transfer calculation using SKIRT and a dust model calibrated with compiled UV luminosity function data at z=4-10. In <a href="https://ui.adsabs.harvard.edu/abs/2020MNRAS.492.5167V/abstract">Paper I</a>, we presented this framework for mock JWST predictions from simulations, and made predictions on the UV luminosity functions, the JWST NIRCam apparent band luminosity functions. In <a href="https://ui.adsabs.harvard.edu/abs/2020MNRAS.495.4747S/abstract">Paper II</a>, we made predictions on the emission line luminosity functions (H&alpha;, O[III]), spectral indices (D4000) and dust attenuation curves of high-redshift galaxies. In <a href="https://ui.adsabs.harvard.edu/abs/2022MNRAS.510.5560S/abstract">Paper III</a>, we extended the prediction to FIR wavelengths, with a more realistic treatment of dust grain size distribution and non-local thermal effects. We presented the NIR and FIR galaxy luminosity functions, as well as the JWST MIRI band luminosity functions.</p>
-
-													<div class="row" style="padding-top: 10%">
-													<div class="column" style="width: 65%; padding:1%">
-													<span class='image featured'><img src="../images/TNG_protocluster.png" alt="" style="position:relative;width:100%"> </span>
-													</div>
-													<div class="column" style="width: 33%; padding:1%">
-													<span class='image featured'><img src="../images/TNG_protocluster_50.png" alt=""> </span>
-													<span class='image featured' style="position:relative; bottom:5%;width:100%">  <img src="../images/TNG_protocluster_25.png" alt=""> </span>
-													</div>
-													</div>
-
-													<div class="row" style="padding-top: 5%">
-													<div class="column" style="width: 50%; padding:0%">
-													<span class='image featured'><img src="../images/TNG_images/filters.png" alt=""> </span>
-														</div>
-													<div class="column" style="width: 50%; padding:0%">
-													<span class='image featured'><img src="../images/TNG_images/sed_example.png" alt=""> </span>
-													</div>
-													
-													</div>
-												</li>
-
-												<li>
-													<h5>Epoch-of-Reionization galaxies in alternative dark matter models in the THESAN simulations</h5>
-													<p> Early Universe is also an interesting test ground for dark matter physics. Many models for dark matter imply modifications to the small-scale power spectrum of cosmic density fluctuations, which will inevitably affect the assembly of early galaxies. Recently, we have experimented the warm dark matter and the SIDM model with dark acoustic oscillations in a small-volume simulation within the THESAN simulation framework. Notably, the simulations include the recipe for sourcing ionizing photons, on-the-fly radiative transfer calculations and a hydrogen chemical-solver for reionization, which allow us to study the interplay between non-equilibrium reionization process and alternative dark matter physics. 
-													</p>
-												</li>
-
-												<li>
-													<h5>Morphological idenfication of merging galaxies powered by CNN</h5>
-													<p> Another application of the dust radiative transfer post-processing pipeline we built is producing high-quality, realistic mock images for high redshift galaxies. Below are examplar images we generated in <a href="https://ui.adsabs.harvard.edu/abs/2020MNRAS.492.5167V/abstract">Paper I</a> of the series mentioned in the first bullet point. On the left is a z=1 galaxy in the JWST NIRCam F070W, F090W, F115W bands, and on the right is a z=2 galaxy in F115W, F150W, F200W bands. We are currently generating similar mock images for merging galaxies selected at z<1, with modeling of background noise and PSF convolution. The images will be used to train a multi-channel convolution neural network (CNN) for merger identification with real JWST images.</p>
-												</li>
-											</ol>
+											<h2>Projects</h2>
+											<div class="project-tabs" data-category="highz_galaxies"></div>
 										</article>
 
 								</div>
@@ -124,56 +76,8 @@
 
 											<p></p>
 
-											<h2>Relavant Projects</h2>
-											<ol>
-												<li>
-													<h5>A model for the bolometric quasar luminosity functions</h5>
-													<p> In this <a href="https://ui.adsabs.harvard.edu/abs/2020MNRAS.495.3252S/abstract">paper</a>, we have compiled a large dataset of quasar luminosity function measurements in far-UV, optical, X-ray, IR bands, and through emission lines in the past four decades. The observational data is paired with an updated quasar SED model (shown below), an updated extinction model based on the hydrogen column density distribution in Ueda et al. 2014 and a new bolometric correction function. We developed a <a href="https://bitbucket.org/ShenXuejian/quasarlf/src/master/">public tool</a> for computing bolometric/observed band luminosity functions of quasars across a wide redshift range.</p>
-
-													<div class="row" style="padding-top: 5%">
-													<div class="column" style="width: 100%; padding:0%">
-													<span class='image featured'><img src="../images/QLF/sed.png" alt=""> </span>
-														</div>
-													</div>
-
-													<p>Combining all the observational and theoretical updates, we construct a new model for the bolometric quasar luminosity function that extends out to redshift 7. As shown below, the model-predicted QLFs are confronted with the observational data (moved to the bolometric plane) at z=2, 4, 6. </p>
-
-													<div class="row" style="padding-top: 5%; padding-left: 5%">
-													<div class="column" style="width: 33%; padding:0%">
-													<span class='image featured'><img src="../images/QLF/bol_2.0.png" alt=""> </span>
-													</div>
-													<div class="column" style="width: 33%; padding:0%">
-													<span class='image featured'><img src="../images/QLF/bol_4.0.png" alt=""> </span>
-													</div>
-													<div class="column" style="width: 33%; padding:0%">
-													<span class='image featured'><img src="../images/QLF/bol_6.0.png" alt=""> </span>
-													</div>
-													</div>
-
-													<p> The evolutionary pattern of the bolometric QLF can be interpreted as an early phase likely dominated by the hierarchical assembly of structures and a late phase likely dominated by the quenching of galaxies. We explore the implications of this model on the ionizing photon production by quasars, the cosmic X-ray background (CXB) spectrum, the SMBH mass density, and mass functions. The predicted hydrogen photoionization rate contributed by quasars is subdominant during the epoch of reionization and only becomes important at z<3.</p>
-
-													<div class="row" style="padding-top: 5%; padding-left: 5%">
-													<div class="column" style="width: 50%; padding:0%">
-													<span class='image featured'><img src="../images/QLF/evolve_early.png" alt=""> </span>
-													</div>
-													<div class="column" style="width: 50%; padding:0%">
-													<span class='image featured'><img src="../images/QLF/evolve_late.png" alt=""> </span>
-													</div>
-													<div class="column" style="width: 50%; padding:0%">
-													<span class='image featured'><img src="../images/QLF/ionizing_photon.png" alt=""> </span>
-													</div>
-													<div class="column" style="width: 50%; padding:0%">
-													<span class='image featured'><img src="../images/QLF/CXB.png" alt=""> </span>
-													</div>
-													</div>
-
-												</li>
-
-												<li>
-													<h5>Seeding massive SMBHs with dissipative SIDM</h5>
-													<p> This is an interesting topic related to alternative dark matter physics. Together with Huangyu Xiao at Fermi Lab, we consider the seeding of supermassive black holes (SMBHs) in the early Universe with dissipative dark matter. <a href="https://ui.adsabs.harvard.edu/abs/2021JCAP...07..039X/abstract">Our study</a> showed that, with approporiate choice of parameters, a hit-and-stick type of dissipative dark matter (e.g. asymmetric dark matter nuggets) can collapse to massive SMBH seeds in rare, massive haloes, which could be the progenitors for the observed billion solar mass quasars at z&gtrsim;7. This exotic seeding scenario will give rise to completely different assemble history of early SMBHs and quasar activities. We are exploring the observational signatures in a follow-up study.</p>
-												</li>
-											</ol>
+											<h2>Projects</h2>
+											<div class="project-tabs" data-category="smbh"></div>
 										</article>
 								</div>
 							</div>
@@ -234,6 +138,7 @@
 			<script src="../assets/js/breakpoints.min.js"></script>
 			<script src="../assets/js/util.js"></script>
 			<script src="../assets/js/main.js"></script>
+			<script src="../assets/js/research-tabs.js"></script>
 
 	</body>
 </html>

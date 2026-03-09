@@ -1,0 +1,10 @@
+{
+  "title": "Axion Miniclusters",
+  "category": "axions",
+  "order": 1,
+  "description": "In the post-inflationary scenario, the axion field can take different values within patches that are initially out of causal contact, but that today populate the volume enclosed by our Hubble horizon. In this scenario, isocurvature fluctuations in the PQ field sourced in this way will lead to the formation of Earth-mass miniclusters. We aim at building a semi-analytical model to predict the relic abundance of these objects in the Milky Way environment and simulating potential observables.",
+  "paperLinks": [
+    {"label": "Shen+2022", "url": "https://ui.adsabs.harvard.edu/abs/2022arXiv220711276S/abstract"}
+  ],
+  "image": ""
+}

@@ -7,37 +7,37 @@
 .project-tabs-nav {
 	display: flex;
 	flex-wrap: wrap;
-	border-bottom: 2px solid #e0e0e0;
+	border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
 	margin-bottom: 0;
 	gap: 0;
 }
 
 .project-tab-btn {
-	padding: 0.6em 1.1em;
+	padding: 0.8em 1.2em;
 	background: none;
 	border: none;
-	border-bottom: 3px solid transparent;
+	border-bottom: 2px solid transparent;
 	cursor: pointer;
-	font-family: 'Source Sans Pro', Helvetica, sans-serif;
-	font-size: 0.85em;
-	font-weight: 600;
-	color: #888;
-	transition: color 0.25s ease, border-color 0.25s ease, background-color 0.25s ease;
+	font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: #6e6e73;
+	transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 	margin-bottom: -2px;
 }
 
 .project-tab-btn:hover {
-	color: #37c0fb;
-	background-color: rgba(55, 192, 251, 0.05);
+	color: #0071e3;
+	background-color: rgba(0, 113, 227, 0.05);
 }
 
 .project-tab-btn.active {
-	color: #37c0fb;
-	border-bottom-color: #37c0fb;
+	color: #0071e3;
+	border-bottom-color: #0071e3;
 }
 
 .project-tab-btn:focus {
-	outline: 2px solid rgba(55, 192, 251, 0.4);
+	outline: 2px solid rgba(0, 113, 227, 0.4);
 	outline-offset: -2px;
 }
 
@@ -66,69 +66,71 @@
 
 .project-image img {
 	max-width: 100%;
-	border-radius: 4px;
-	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 12px;
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
 }
 
 .project-description {
-	line-height: 1.65;
-	color: #555;
+	line-height: 1.47059;
+	color: #1d1d1f;
 	margin-bottom: 1.2em;
-	font-size: 0.95em;
+	font-size: 17px;
 }
 
 .project-description a {
-	color: #37c0fb;
+	color: #0071e3;
 	text-decoration: none;
-	border-bottom: 1px dotted #37c0fb;
+	border-bottom: none;
 }
 
 .project-description a:hover {
-	border-bottom-style: solid;
+	text-decoration: underline;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 2px;
 }
 
 .project-papers {
 	padding-top: 0.8em;
-	border-top: 1px solid #eee;
+	border-top: 0.5px solid rgba(0, 0, 0, 0.1);
 }
 
 .project-papers-label {
 	font-weight: 600;
-	color: #666;
-	font-size: 0.9em;
-	margin-bottom: 0.4em;
+	color: #1d1d1f;
+	font-size: 14px;
+	margin-bottom: 0.6em;
 }
 
 .project-papers a {
 	display: inline-block;
 	margin: 0.3em 0.5em 0.3em 0;
-	padding: 0.35em 0.85em;
-	background: #f5f5f5;
-	border: 1px solid #ddd;
-	border-radius: 3px;
-	color: #37c0fb;
-	font-size: 0.85em;
-	font-weight: 600;
+	padding: 0.4em 1em;
+	background: #f5f5f7;
+	border: 0.5px solid rgba(0, 0, 0, 0.1);
+	border-radius: 980px;
+	color: #0071e3;
+	font-size: 14px;
+	font-weight: 400;
 	text-decoration: none;
-	transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+	transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-papers a:hover {
-	background: #37c0fb;
+	background: #0071e3;
 	color: #fff;
-	border-color: #37c0fb;
+	border-color: #0071e3;
 }
 
 @media screen and (max-width: 840px) {
 	.project-tabs-nav {
 		flex-direction: column;
 		border-bottom: none;
-		border-left: 2px solid #e0e0e0;
+		border-left: 0.5px solid rgba(0, 0, 0, 0.1);
 	}
 
 	.project-tab-btn {
 		border-bottom: none;
-		border-left: 3px solid transparent;
+		border-left: 2px solid transparent;
 		text-align: left;
 		margin-bottom: 0;
 		margin-left: -2px;
@@ -136,7 +138,7 @@
 
 	.project-tab-btn.active {
 		border-bottom: none;
-		border-left-color: #37c0fb;
-		background-color: rgba(55, 192, 251, 0.05);
+		border-left-color: #0071e3;
+		background-color: rgba(0, 113, 227, 0.05);
 	}
 }

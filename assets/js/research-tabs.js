@@ -1,22 +1,5 @@
 (function () {
-	var PROJECTS_BASE = '../projects/';
 	var IMAGES_BASE = '../images/';
-
-	function loadJSON(url) {
-		return fetch(url).then(function (res) {
-			if (!res.ok) throw new Error('Failed to load ' + url);
-			return res.json();
-		});
-	}
-
-	function loadProjects() {
-		return loadJSON(PROJECTS_BASE + 'manifest.json').then(function (manifest) {
-			var promises = manifest.map(function (filename) {
-				return loadJSON(PROJECTS_BASE + filename);
-			});
-			return Promise.all(promises);
-		});
-	}
 
 	function groupByCategory(projects) {
 		var groups = {};
@@ -109,17 +92,19 @@
 		var containers = document.querySelectorAll('.project-tabs');
 		if (containers.length === 0) return;
 
-		loadProjects()
-			.then(function (projects) {
-				var grouped = groupByCategory(projects);
-				containers.forEach(function (container) {
-					var category = container.getAttribute('data-category');
-					renderTabs(container, grouped[category] || []);
-				});
-			})
-			.catch(function (err) {
-				console.error('Error loading research projects:', err);
+		if (typeof RESEARCH_PROJECTS === 'undefined' || !RESEARCH_PROJECTS) {
+			console.error('RESEARCH_PROJECTS data not found. Make sure projects-data.js is loaded before research-tabs.js.');
+			containers.forEach(function (container) {
+				container.innerHTML = '<p><em>Error: project data could not be loaded.</em></p>';
 			});
+			return;
+		}
+
+		var grouped = groupByCategory(RESEARCH_PROJECTS);
+		containers.forEach(function (container) {
+			var category = container.getAttribute('data-category');
+			renderTabs(container, grouped[category] || []);
+		});
 	}
 
 	if (document.readyState === 'loading') {

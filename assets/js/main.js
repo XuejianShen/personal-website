@@ -36,10 +36,11 @@
 	// Nav.
 
 		// Bar.
+			var logoText = $('#logo').length ? $('#logo').html() : 'Xuejian Shen';
 			$(
 				'<div id="titleBar">' +
 					'<a href="#navPanel" class="toggle"></a>' +
-					'<span class="title">' + $('#logo').html() + '</span>' +
+					'<span class="title">' + logoText + '</span>' +
 				'</div>'
 			)
 				.appendTo($body);

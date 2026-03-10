@@ -3356,24 +3356,30 @@ input, select, textarea {
 		/* Basic */
 
 			body, input, select, textarea {
-				font-size: 11pt;
-				line-height: 1.35em;
+				font-size: 17px;
+				line-height: 1.47059;
 			}
 
 			h2 {
-				font-size: 1.25em;
-				letter-spacing: 0;
-				line-height: 1.35em;
+				font-size: 2em;
+				letter-spacing: -0.011em;
+				line-height: 1.14286;
+				margin-bottom: 1em;
 			}
 
 			h3 {
-				font-size: 1em;
-				letter-spacing: 0;
-				line-height: 1.35em;
+				font-size: 1.3em;
+				letter-spacing: -0.009em;
+				line-height: 1.2;
+				margin-bottom: 0.8em;
+			}
+
+			p, ul, ol, dl, table, blockquote {
+				margin: 0 0 1.5em 0;
 			}
 
 			header p {
-				margin-top: -0.5em;
+				margin-top: 0.5em;
 				font-size: 1em;
 			}
 
@@ -3382,7 +3388,7 @@ input, select, textarea {
 			}
 
 				header.major h2 {
-					font-size: 1.25em;
+					font-size: 1.8em;
 				}
 
 				header.major p {
@@ -3410,7 +3416,60 @@ input, select, textarea {
 		/* Wrapper */
 
 			.wrapper {
-				padding: 2em 0 1px 0;
+				padding: 3em 0;
+			}
+
+		/* Box */
+
+			.box.highlight {
+				padding: 1.5em;
+				margin-bottom: 1.5em;
+			}
+
+			.box.highlight h2 {
+				font-size: 1.5em;
+				margin-bottom: 1em;
+			}
+
+			.box.highlight p {
+				margin-bottom: 1em;
+			}
+
+			.box.highlight li {
+				margin-bottom: 0.8em;
+			}
+
+		/* Gallery */
+
+			.gallery-grid {
+				grid-template-columns: 1fr;
+				gap: 2em;
+			}
+
+			.gallery-content {
+				padding: 1.5em;
+			}
+
+			.gallery-content h3 {
+				font-size: 1.2em;
+				margin-bottom: 0.6em;
+			}
+
+		/* Container */
+
+			.container {
+				padding: 0 1.5em;
+			}
+
+		/* Row spacing */
+
+			.row.gtr-200 {
+				margin-top: -30px;
+				margin-left: -30px;
+			}
+
+			.row.gtr-200 > * {
+				padding: 30px 0 0 30px;
 			}
 
 	}
@@ -3418,6 +3477,17 @@ input, select, textarea {
 /* Mobile (Portrait) */
 
 	@media screen and (max-width: 480px) {
+
+		/* Basic */
+
+			body, input, select, textarea {
+				font-size: 16px;
+				line-height: 1.5;
+			}
+
+			.container {
+				padding: 0 1em;
+			}
 
 		/* Icon */
 
@@ -3446,7 +3516,44 @@ input, select, textarea {
 		/* Box */
 
 			.box.highlight {
-				padding-left: calc(4em + 30px);
+				padding: 1.2em;
+				margin-bottom: 1.5em;
+			}
+
+			.box.highlight h2 {
+				font-size: 1.3em;
+				margin-bottom: 0.8em;
+			}
+
+			.box.highlight p {
+				margin-bottom: 0.8em;
+				line-height: 1.6;
+			}
+
+			.box.highlight li {
+				margin-bottom: 0.6em;
+				line-height: 1.6;
+			}
+
+		/* Gallery */
+
+			.gallery-content {
+				padding: 1.2em;
+			}
+
+			.gallery-content h3 {
+				font-size: 1.1em;
+			}
+
+		/* Row spacing */
+
+			.row.gtr-200 {
+				margin-top: -20px;
+				margin-left: -20px;
+			}
+
+			.row.gtr-200 > * {
+				padding: 20px 0 0 20px;
 			}
 
 			.box.post .inner {

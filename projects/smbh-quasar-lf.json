@@ -1,0 +1,10 @@
+{
+  "title": "Bolometric Quasar Luminosity Functions",
+  "category": "smbh",
+  "order": 1,
+  "description": "We have compiled a large dataset of quasar luminosity function measurements in far-UV, optical, X-ray, IR bands, and through emission lines in the past four decades. The observational data is paired with an updated quasar SED model, an updated extinction model based on the hydrogen column density distribution in Ueda et al. 2014 and a new bolometric correction function. We construct a new model for the bolometric quasar luminosity function that extends out to redshift 7. A <a href=\"https://bitbucket.org/ShenXuejian/quasarlf/src/master/\">public tool</a> is available for computing bolometric/observed band luminosity functions of quasars across a wide redshift range. The evolutionary pattern of the bolometric QLF can be interpreted as an early phase likely dominated by the hierarchical assembly of structures and a late phase likely dominated by the quenching of galaxies.",
+  "paperLinks": [
+    {"label": "Shen+2020", "url": "https://ui.adsabs.harvard.edu/abs/2020MNRAS.495.3252S/abstract"}
+  ],
+  "image": "QLF/sed.png"
+}

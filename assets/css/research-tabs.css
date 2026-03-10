@@ -1,0 +1,142 @@
+/* Research Project Tabs */
+
+.project-tabs {
+	margin-top: 1.5em;
+}
+
+.project-tabs-nav {
+	display: flex;
+	flex-wrap: wrap;
+	border-bottom: 2px solid #e0e0e0;
+	margin-bottom: 0;
+	gap: 0;
+}
+
+.project-tab-btn {
+	padding: 0.6em 1.1em;
+	background: none;
+	border: none;
+	border-bottom: 3px solid transparent;
+	cursor: pointer;
+	font-family: 'Source Sans Pro', Helvetica, sans-serif;
+	font-size: 0.85em;
+	font-weight: 600;
+	color: #888;
+	transition: color 0.25s ease, border-color 0.25s ease, background-color 0.25s ease;
+	margin-bottom: -2px;
+}
+
+.project-tab-btn:hover {
+	color: #37c0fb;
+	background-color: rgba(55, 192, 251, 0.05);
+}
+
+.project-tab-btn.active {
+	color: #37c0fb;
+	border-bottom-color: #37c0fb;
+}
+
+.project-tab-btn:focus {
+	outline: 2px solid rgba(55, 192, 251, 0.4);
+	outline-offset: -2px;
+}
+
+.project-tabs-content {
+	padding: 0;
+}
+
+.project-tab-panel {
+	display: none;
+	padding: 1.5em 0.5em;
+	animation: projectFadeIn 0.3s ease;
+}
+
+.project-tab-panel.active {
+	display: block;
+}
+
+@keyframes projectFadeIn {
+	from { opacity: 0; transform: translateY(4px); }
+	to { opacity: 1; transform: translateY(0); }
+}
+
+.project-image {
+	margin-bottom: 1.2em;
+}
+
+.project-image img {
+	max-width: 100%;
+	border-radius: 4px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-description {
+	line-height: 1.65;
+	color: #555;
+	margin-bottom: 1.2em;
+	font-size: 0.95em;
+}
+
+.project-description a {
+	color: #37c0fb;
+	text-decoration: none;
+	border-bottom: 1px dotted #37c0fb;
+}
+
+.project-description a:hover {
+	border-bottom-style: solid;
+}
+
+.project-papers {
+	padding-top: 0.8em;
+	border-top: 1px solid #eee;
+}
+
+.project-papers-label {
+	font-weight: 600;
+	color: #666;
+	font-size: 0.9em;
+	margin-bottom: 0.4em;
+}
+
+.project-papers a {
+	display: inline-block;
+	margin: 0.3em 0.5em 0.3em 0;
+	padding: 0.35em 0.85em;
+	background: #f5f5f5;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	color: #37c0fb;
+	font-size: 0.85em;
+	font-weight: 600;
+	text-decoration: none;
+	transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.project-papers a:hover {
+	background: #37c0fb;
+	color: #fff;
+	border-color: #37c0fb;
+}
+
+@media screen and (max-width: 840px) {
+	.project-tabs-nav {
+		flex-direction: column;
+		border-bottom: none;
+		border-left: 2px solid #e0e0e0;
+	}
+
+	.project-tab-btn {
+		border-bottom: none;
+		border-left: 3px solid transparent;
+		text-align: left;
+		margin-bottom: 0;
+		margin-left: -2px;
+	}
+
+	.project-tab-btn.active {
+		border-bottom: none;
+		border-left-color: #37c0fb;
+		background-color: rgba(55, 192, 251, 0.05);
+	}
+}

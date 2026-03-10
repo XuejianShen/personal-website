@@ -1,0 +1,10 @@
+{
+  "title": "Fuzzy Dark Matter",
+  "category": "axions",
+  "order": 2,
+  "description": "A natural extension of axions to lower mass limit is fuzzy dark matter, whose mass can be as low as 10<sup>&minus;22</sup>eV. Quantum mechanical effects start to matter even at galactic scales (the de Broglie wavelength &lambda; &sim; kpc). This could have implications for solving small-scale \"crisis\" of &Lambda;CDM. In addition, the effective quantum pressure from fuzzy dark matter could wash out small-scale fluctuations in the initial power spectrum and affect early structure formation.",
+  "paperLinks": [
+    {"label": "Mocz+2020", "url": "https://ui.adsabs.harvard.edu/abs/2020MNRAS.494.2027M/abstract"}
+  ],
+  "image": ""
+}

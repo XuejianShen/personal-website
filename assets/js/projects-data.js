@@ -1,17 +1,38 @@
 var RESEARCH_PROJECTS = [
   {
-    "title": "Dissipative SIDM Models",
+    "title": "Elastic SIDM Models",
     "category": "sidm",
     "order": 1,
+    "description": "The simplest configuration of SIDM is elastic SIDM. Although it has been studied for decades in literature, the late core-collapse phase of SIDM haloes is still challenging to model. We did a series works to study the core-collapse in special flavors of elastic SIDM models, featuring resonances in self-interaction cross-sections. We have also considered the impact of prompt cusps on the core-collapse of SIDM",
+    "paperLinks": [
+      {
+        "label": "Tran+2024",
+        "url": "https://ui.adsabs.harvard.edu/abs/2024PhRvD.110d3048T/abstract"
+      },
+      {
+        "label": "Tran, Shen+2025",
+        "url": "https://ui.adsabs.harvard.edu/abs/2025PhRvD.112h3003T/abstract"
+      },
+      {
+        "label": "Tran+2026",
+        "url": "https://ui.adsabs.harvard.edu/abs/2025arXiv251200145T/abstract"
+      }
+    ],
+    "image": ""
+  },
+  {
+    "title": "Dissipative SIDM Models",
+    "category": "sidm",
+    "order": 2,
     "description": "Most of the previous studies on SIDM focused on elastic dark matter self-interactions. However, in many particle physics realizations of SIDM, dark matter has inelastic (or specifically dissipative) self-interactions. The impact of dissipative processes of dark matter has not yet been explored in the context of cosmological structure formation. This motivates us to conduct the first cosmological hydrodynamical simulations in dissipative SIDM, with the inclusion of the state-of-the-art model for baryonic physics. We find apparently more concentrated dark matter distributions at halo centers, driven by a dark subsonic cooling flow. This is in contrast with the baryonic feedback produced cores in the vanilla CDM model. DSIDM models feature a power-law-like density profile with the asymptotic slope &minus;3/2, regardless of the effective interaction cross-section. The neutral gas/stellar disks are promoted in dSIDM models.",
     "paperLinks": [
       {
-        "label": "Paper I (Shen+2021)",
+        "label": "Shen+2021",
         "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.506.4421S/abstract"
       },
       {
-        "label": "Paper II (Shen+2022)",
-        "url": "https://ui.adsabs.harvard.edu/abs/2022arXiv220605327S/abstract"
+        "label": "Shen+2024",
+        "url": "https://ui.adsabs.harvard.edu/abs/2024ApJ...966..131S/abstract"
       }
     ],
     "image": "dSIDM_dark.png"
@@ -19,12 +40,12 @@ var RESEARCH_PROJECTS = [
   {
     "title": "Cluster-Scale Constraints",
     "category": "sidm",
-    "order": 2,
+    "order": 3,
     "description": "Galaxy clusters with the typical halo mass &gtrsim;10<sup>14</sup>M<sub>&odot;</sub> are ideal environments to study dark matter interactions. The thermal averaged interaction rates of dark matter (either self-interaction or baryon-scattering) linearly scale with the velocity dispersion of dark matter particles, which are an order of magnitude higher than e.g. the Milky Way value. In fact, the observation of \"bullet\"-like merging clusters provided strong constraints on potential dark matter&ndash;baryon or dark matter self-interactions. We compiled a sample of morphologically relaxed clusters in the Chandra and ROSAT archive, and confronted them with hydro simulations.",
     "paperLinks": [
       {
         "label": "Shen+2022",
-        "url": "https://ui.adsabs.harvard.edu/abs/2022arXiv220200038S/abstract"
+        "url": "https://ui.adsabs.harvard.edu/abs/2022MNRAS.516.1302S/abstract"
       }
     ],
     "image": ""
@@ -32,16 +53,20 @@ var RESEARCH_PROJECTS = [
   {
     "title": "Early-Universe Constraints",
     "category": "sidm",
-    "order": 3,
+    "order": 4,
     "description": "This follows the <a href=\"https://ui.adsabs.harvard.edu/abs/2018MNRAS.477.2886L/abstract\">ETHOS study</a> of high-redshift observables in the SIDM model featuring dark acoustic oscillations. In 2023, a <a href=\"https://ui.adsabs.harvard.edu/abs/2023arXiv230406742S/abstract\">follow-up project</a> using the THESAN simulation of the epoch of reionization Universe was carried out to study early structure formation in alternative dark matter models. Another interesting topic is the seeding of supermassive black holes (SMBHs) in the early Universe with dissipative dark matter. <a href=\"https://ui.adsabs.harvard.edu/abs/2021JCAP...07..039X/abstract\">Our study</a> showed that, with appropriate choice of parameters, a hit-and-stick type of dissipative dark matter (e.g. asymmetric dark matter nuggets) can collapse to massive SMBH seeds in rare, massive haloes, which could be the progenitors for the observed billion solar mass quasars at z&gtrsim;7.",
     "paperLinks": [
       {
-        "label": "Shen+2023",
-        "url": "https://ui.adsabs.harvard.edu/abs/2023arXiv230406742S/abstract"
+        "label": "Shen+2024",
+        "url": "https://ui.adsabs.harvard.edu/abs/2024MNRAS.527.2835S/abstract"
       },
       {
         "label": "Xiao & Shen 2021",
         "url": "https://ui.adsabs.harvard.edu/abs/2021JCAP...07..039X/abstract"
+      },
+      {
+        "label": "Shen+2025",
+        "url": "https://ui.adsabs.harvard.edu/abs/2025arXiv250400075S/abstract"
       }
     ],
     "image": ""
@@ -49,12 +74,29 @@ var RESEARCH_PROJECTS = [
   {
     "title": "Atomic Dark Matter",
     "category": "sidm",
-    "order": 4,
+    "order": 5,
     "description": "Atomic dark matter is a natural category of dissipative SIDM models. It represents a more realistic hidden sector which mimics the electromagnetic sector of the standard model. We implemented atomic dark matter in the simulation code GIZMO and performed the first cosmological simulation of galaxy formation in atomic dark matter.",
     "paperLinks": [
       {
         "label": "Roy, Shen+2023",
         "url": "https://ui.adsabs.harvard.edu/abs/2023ApJ...954L..40R/abstract"
+      },
+      {
+        "label": "Roy, Shen+2025",
+        "url": "https://ui.adsabs.harvard.edu/abs/2025ApJ...982..175R/abstract"
+      }
+    ],
+    "image": ""
+  },
+  {
+    "title": "The next generation code for SIDM",
+    "category": "sidm",
+    "order": 6,
+    "description": "We have developed a new module for SIDM simulations in the cosmological multi-physics code AREPO-2. This new module will be flexible in both the numerical algorithms and the SIDM physics inputs. It will also yield orders of magnitudes improvements in performance on HPC systems and higher accuracy in the core-collapse phase of SIDM haloes.",
+    "paperLinks": [
+      {
+        "label": "Zier, Shen+2026",
+        "url": ""
       }
     ],
     "image": ""
@@ -66,8 +108,8 @@ var RESEARCH_PROJECTS = [
     "description": "In the post-inflationary scenario, the axion field can take different values within patches that are initially out of causal contact, but that today populate the volume enclosed by our Hubble horizon. In this scenario, isocurvature fluctuations in the PQ field sourced in this way will lead to the formation of Earth-mass miniclusters. We aim at building a semi-analytical model to predict the relic abundance of these objects in the Milky Way environment and simulating potential observables.",
     "paperLinks": [
       {
-        "label": "Shen+2022",
-        "url": "https://ui.adsabs.harvard.edu/abs/2022arXiv220711276S/abstract"
+        "label": "Shen+2024",
+        "url": "https://ui.adsabs.harvard.edu/abs/2024ApJ...962....9S/abstract"
       }
     ],
     "image": ""
@@ -81,6 +123,23 @@ var RESEARCH_PROJECTS = [
       {
         "label": "Mocz+2020",
         "url": "https://ui.adsabs.harvard.edu/abs/2020MNRAS.494.2027M/abstract"
+      }
+    ],
+    "image": ""
+  },
+  {
+    "title": "Early Dark Energy",
+    "category": "axions",
+    "order": 3,
+    "description": "A special type of axion-like particles can behave as dark energy in the early Universe while quickly diluting at late times. This early dark energy has been proposed as a solution to the Hubble tension. We recently showed that it can also accelerate the formation and evolution of early galaxies and explain many puzzles seen by JWST at cosmic dawn.",
+    "paperLinks": [
+      {
+        "label": "Shen+2024",
+        "url": "https://ui.adsabs.harvard.edu/abs/2024MNRAS.533.3923S/abstract"
+      },
+      {
+        "label": "Shen+2026",
+        "url": "https://ui.adsabs.harvard.edu/abs/2025arXiv250919427S/abstract"
       }
     ],
     "image": ""
@@ -103,7 +162,7 @@ var RESEARCH_PROJECTS = [
     "image": "parameter_space.jpeg"
   },
   {
-    "title": "High-Redshift JWST Predictions from IllustrisTNG",
+    "title": "High-redshift Predictions from IllustrisTNG",
     "category": "highz_galaxies",
     "order": 2,
     "description": "A series of papers on high-redshift galaxies, based on the IllustrisTNG simulation, the dust radiative transfer calculation using SKIRT and a dust model calibrated with compiled UV luminosity function data at z=4&ndash;10. In Paper I, we presented this framework for mock JWST predictions from simulations, and made predictions on the UV luminosity functions and the JWST NIRCam apparent band luminosity functions. In Paper II, we made predictions on the emission line luminosity functions (H&alpha;, O[III]), spectral indices (D4000) and dust attenuation curves of high-redshift galaxies. In Paper III, we extended the prediction to FIR wavelengths, with a more realistic treatment of dust grain size distribution and non-local thermal effects.",
@@ -124,7 +183,7 @@ var RESEARCH_PROJECTS = [
     "image": "TNG_protocluster.png"
   },
   {
-    "title": "Reionization-Era Galaxies in Alternative DM Models",
+    "title": "Alternative Cosmological Models",
     "category": "highz_galaxies",
     "order": 3,
     "description": "Early Universe is also an interesting test ground for dark matter physics. Many models for dark matter imply modifications to the small-scale power spectrum of cosmic density fluctuations, which will inevitably affect the assembly of early galaxies. We have experimented with warm dark matter and the SIDM model with dark acoustic oscillations in a small-volume simulation within the THESAN simulation framework. Notably, the simulations include the recipe for sourcing ionizing photons, on-the-fly radiative transfer calculations and a hydrogen chemical-solver for reionization, which allow us to study the interplay between non-equilibrium reionization process and alternative dark matter physics.",

@@ -1,10 +1,10 @@
 {
   "title": "Cluster-Scale Constraints",
   "category": "sidm",
-  "order": 2,
+  "order": 3,
   "description": "Galaxy clusters with the typical halo mass &gtrsim;10<sup>14</sup>M<sub>&odot;</sub> are ideal environments to study dark matter interactions. The thermal averaged interaction rates of dark matter (either self-interaction or baryon-scattering) linearly scale with the velocity dispersion of dark matter particles, which are an order of magnitude higher than e.g. the Milky Way value. In fact, the observation of \"bullet\"-like merging clusters provided strong constraints on potential dark matter&ndash;baryon or dark matter self-interactions. We compiled a sample of morphologically relaxed clusters in the Chandra and ROSAT archive, and confronted them with hydro simulations.",
   "paperLinks": [
-    {"label": "Shen+2022", "url": "https://ui.adsabs.harvard.edu/abs/2022arXiv220200038S/abstract"}
+    {"label": "Shen+2022", "url": "https://ui.adsabs.harvard.edu/abs/2022MNRAS.516.1302S/abstract"}
   ],
   "image": ""
 }

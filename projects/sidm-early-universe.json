@@ -1,11 +1,12 @@
 {
   "title": "Early-Universe Constraints",
   "category": "sidm",
-  "order": 3,
+  "order": 4,
   "description": "This follows the <a href=\"https://ui.adsabs.harvard.edu/abs/2018MNRAS.477.2886L/abstract\">ETHOS study</a> of high-redshift observables in the SIDM model featuring dark acoustic oscillations. In 2023, a <a href=\"https://ui.adsabs.harvard.edu/abs/2023arXiv230406742S/abstract\">follow-up project</a> using the THESAN simulation of the epoch of reionization Universe was carried out to study early structure formation in alternative dark matter models. Another interesting topic is the seeding of supermassive black holes (SMBHs) in the early Universe with dissipative dark matter. <a href=\"https://ui.adsabs.harvard.edu/abs/2021JCAP...07..039X/abstract\">Our study</a> showed that, with appropriate choice of parameters, a hit-and-stick type of dissipative dark matter (e.g. asymmetric dark matter nuggets) can collapse to massive SMBH seeds in rare, massive haloes, which could be the progenitors for the observed billion solar mass quasars at z&gtrsim;7.",
   "paperLinks": [
-    {"label": "Shen+2023", "url": "https://ui.adsabs.harvard.edu/abs/2023arXiv230406742S/abstract"},
-    {"label": "Xiao & Shen 2021", "url": "https://ui.adsabs.harvard.edu/abs/2021JCAP...07..039X/abstract"}
+    {"label": "Shen+2024", "url": "https://ui.adsabs.harvard.edu/abs/2024MNRAS.527.2835S/abstract"},
+    {"label": "Xiao & Shen 2021", "url": "https://ui.adsabs.harvard.edu/abs/2021JCAP...07..039X/abstract"},
+    {"label": "Shen+2025", "url": "https://ui.adsabs.harvard.edu/abs/2025arXiv250400075S/abstract"}
   ],
   "image": ""
 }

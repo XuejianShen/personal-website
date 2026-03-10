@@ -1,0 +1,11 @@
+{
+  "title": "Early Dark Energy",
+  "category": "axions",
+  "order": 3,
+  "description": "A special type of axion-like particles can behave as dark energy in the early Universe while quickly diluting at late times. This early dark energy has been proposed as a solution to the Hubble tension. We recently showed that it can also accelerate the formation and evolution of early galaxies and explain many puzzles seen by JWST at cosmic dawn.",
+  "paperLinks": [
+    {"label": "Shen+2024", "url": "https://ui.adsabs.harvard.edu/abs/2024MNRAS.533.3923S/abstract"},
+    {"label": "Shen+2026", "url": "https://ui.adsabs.harvard.edu/abs/2025arXiv250919427S/abstract"}
+  ],
+  "image": ""
+}

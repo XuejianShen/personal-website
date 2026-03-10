@@ -1,5 +1,5 @@
 {
-  "title": "Reionization-Era Galaxies in Alternative DM Models",
+  "title": "Alternative Cosmological Models",
   "category": "highz_galaxies",
   "order": 3,
   "description": "Early Universe is also an interesting test ground for dark matter physics. Many models for dark matter imply modifications to the small-scale power spectrum of cosmic density fluctuations, which will inevitably affect the assembly of early galaxies. We have experimented with warm dark matter and the SIDM model with dark acoustic oscillations in a small-volume simulation within the THESAN simulation framework. Notably, the simulations include the recipe for sourcing ionizing photons, on-the-fly radiative transfer calculations and a hydrogen chemical-solver for reionization, which allow us to study the interplay between non-equilibrium reionization process and alternative dark matter physics.",

@@ -1,0 +1,12 @@
+{
+  "title": "Elastic SIDM Models",
+  "category": "sidm",
+  "order": 1,
+  "description": "The simplest configuration of SIDM is elastic SIDM. Although it has been studied for decades in literature, the late core-collapse phase of SIDM haloes is still challenging to model. We did a series works to study the core-collapse in special flavors of elastic SIDM models, featuring resonances in self-interaction cross-sections. We have also considered the impact of prompt cusps on the core-collapse of SIDM",
+  "paperLinks": [
+    {"label": "Tran+2024", "url": "https://ui.adsabs.harvard.edu/abs/2024PhRvD.110d3048T/abstract"},
+    {"label": "Tran, Shen+2025", "url": "https://ui.adsabs.harvard.edu/abs/2025PhRvD.112h3003T/abstract"},
+    {"label": "Tran+2026", "url": "https://ui.adsabs.harvard.edu/abs/2025arXiv251200145T/abstract"}
+  ],
+  "image": ""
+}

@@ -1,10 +1,13 @@
 [
+  "sidm-elastic.json",
   "sidm-dissipative.json",
   "sidm-clusters.json",
   "sidm-early-universe.json",
   "sidm-atomic-dm.json",
+  "sidm-code.json",
   "axions-miniclusters.json",
   "axions-fuzzy-dm.json",
+  "axions-ede.json",
   "highz-uv-variability.json",
   "highz-tng-predictions.json",
   "highz-thesan-adm.json",

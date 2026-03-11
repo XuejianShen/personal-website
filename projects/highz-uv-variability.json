@@ -1,11 +1,12 @@
 {
-  "title": "UV Variability and Bright Galaxies at Cosmic Dawn",
+  "title": "Non-equilibrium view of galaxies at Cosmic Dawn",
   "category": "highz_galaxies",
   "order": 1,
-  "description": "During its Early-Science and Cycle-1 observations, the JWST uncovered an unexpectedly high number of UV-bright galaxies at the cosmic dawn. This discovery challenges many established theoretical models of galaxy formation. We suggested that the overlooked variability in galaxy UV luminosity, due to e.g. episodic star formation, may resolve this tension. Our proposition is compatible with the current galaxy formation framework and is grounded in plausible physical phenomena. Since its introduction, this theory has garnered significant interest in the scientific community, with numerous groups exploring its validity. Working in tandem with the FIRE simulation group, we became the first to verify the effectiveness of this concept. This is also the first simulation that reproduces the abundance of UV bright galaxies found by JWST.",
+  "description": "During its Early-Science and Cycle-1 observations, the JWST uncovered an unexpectedly high number of UV-bright galaxies at the cosmic dawn. This discovery challenges many established theoretical models of galaxy formation. We suggested that the overlooked variability in galaxy UV luminosity, due to e.g. episodic star formation, may resolve this tension. Our proposition is compatible with the current galaxy formation framework and is grounded in plausible physical phenomena. Since its introduction, this theory has garnered significant interest in the scientific community, with numerous groups exploring its validity. Working in tandem with the FIRE simulation group, we became the first to verify the effectiveness of this concept. This is also the first simulation that reproduces the abundance of UV bright galaxies found by JWST. The bursty star-formation in particular has many more implications on the morphological diversity, chemical enrichment patterns, and escape of ionizing photons of early galaxies.",
   "paperLinks": [
     {"label": "Shen+2023", "url": "https://ui.adsabs.harvard.edu/abs/2023MNRAS.525.3254S/abstract"},
-    {"label": "Sun, Shen+2023", "url": "https://ui.adsabs.harvard.edu/abs/2023arXiv230715305S/abstract"}
+    {"label": "Sun, Shen+2023", "url": "https://ui.adsabs.harvard.edu/abs/2023ApJ...955L..35S/abstract"},
+    {"label": "Hopkins, Shen+2023", "url": "https://ui.adsabs.harvard.edu/abs/2023MNRAS.525.2241H/abstract"}
   ],
   "image": "parameter_space.jpeg"
 }

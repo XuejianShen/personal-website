@@ -2,9 +2,10 @@
   "title": "Alternative Cosmological Models",
   "category": "highz_galaxies",
   "order": 3,
-  "description": "Early Universe is also an interesting test ground for dark matter physics. Many models for dark matter imply modifications to the small-scale power spectrum of cosmic density fluctuations, which will inevitably affect the assembly of early galaxies. We have experimented with warm dark matter and the SIDM model with dark acoustic oscillations in a small-volume simulation within the THESAN simulation framework. Notably, the simulations include the recipe for sourcing ionizing photons, on-the-fly radiative transfer calculations and a hydrogen chemical-solver for reionization, which allow us to study the interplay between non-equilibrium reionization process and alternative dark matter physics.",
+  "description": "Early Universe is also an interesting test ground for physics beyond the standard LCDM framework. For example, many models imply modifications to the small-scale power spectrum of cosmic density fluctuations, which will inevitably affect the assembly of early galaxies. We have experimented with warm dark matter and the SIDM model with dark acoustic oscillations in a small-volume simulation within the THESAN simulation framework. Notably, the simulations include the recipe for sourcing ionizing photons, on-the-fly radiative transfer calculations and a hydrogen chemical-solver for reionization, which allow us to study the interplay between non-equilibrium reionization process and alternative dark matter physics. More recently, we have studied a cosmological model with early dark energy. It acts a potential joint solution to the Hubble tension and many puzzles regarding bright and massive galaxies found by JWST.",
   "paperLinks": [
-    {"label": "Shen+2023", "url": "https://ui.adsabs.harvard.edu/abs/2023arXiv230406742S/abstract"}
+    {"label": "Shen+2023", "url": "https://ui.adsabs.harvard.edu/abs/2023arXiv230406742S/abstract"},
+    {"label": "Shen+2026", "url": "https://ui.adsabs.harvard.edu/abs/2025arXiv250919427S/abstract"}
   ],
   "image": ""
 }

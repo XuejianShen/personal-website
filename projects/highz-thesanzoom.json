@@ -1,0 +1,12 @@
+{
+  "title": "The THESAN-ZOOM Campaign",
+  "category": "highz_galaxies",
+  "order": 4,
+  "description": "THESAN-ZOOM is a new suite of cosmological radiation-hydrodynamic zoom-in simulations targeting galaxies at z>3. It includes a wide array of physics build upon the SMUGGLE galaxy formation model that can resolve the explicit star-formation and feedback processes in a multiphase interstellar medium. THESAN-ZOOM further coupled it with on-the-fly radiative transfer and non-equilibrium thermo-chemistry along with, for the first time, fully self-consistent treatment of local ionizing photon background during the epoch of reionization. I have been a core member of the project and led the first wave of analyses on star-formation efficiencies in early galaxies. Universal star-formation laws emerge from these simulations with lots of implications for JWST observations.",
+  "paperLinks": [
+    {"label": "Intro Paper (Kannan+2025)", "url": "https://ui.adsabs.harvard.edu/abs/2025OJAp....8E.153K/abstract"},
+    {"label": "Shen+2025", "url": "https://ui.adsabs.harvard.edu/abs/2026MNRAS.545f2119S/abstract"},
+    {"label": "Wang, Shen+2025)", "url": "https://ui.adsabs.harvard.edu/abs/2025MNRAS.544.2675W/abstract"}
+  ],
+  "image": ""
+}

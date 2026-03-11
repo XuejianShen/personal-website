@@ -145,10 +145,10 @@ var RESEARCH_PROJECTS = [
     "image": ""
   },
   {
-    "title": "UV Variability and Bright Galaxies at Cosmic Dawn",
+    "title": "Non-equilibrium view of galaxies at Cosmic Dawn",
     "category": "highz_galaxies",
     "order": 1,
-    "description": "During its Early-Science and Cycle-1 observations, the JWST uncovered an unexpectedly high number of UV-bright galaxies at the cosmic dawn. This discovery challenges many established theoretical models of galaxy formation. We suggested that the overlooked variability in galaxy UV luminosity, due to e.g. episodic star formation, may resolve this tension. Our proposition is compatible with the current galaxy formation framework and is grounded in plausible physical phenomena. Since its introduction, this theory has garnered significant interest in the scientific community, with numerous groups exploring its validity. Working in tandem with the FIRE simulation group, we became the first to verify the effectiveness of this concept. This is also the first simulation that reproduces the abundance of UV bright galaxies found by JWST.",
+    "description": "During its Early-Science and Cycle-1 observations, the JWST uncovered an unexpectedly high number of UV-bright galaxies at the cosmic dawn. This discovery challenges many established theoretical models of galaxy formation. We suggested that the overlooked variability in galaxy UV luminosity, due to e.g. episodic star formation, may resolve this tension. Our proposition is compatible with the current galaxy formation framework and is grounded in plausible physical phenomena. Since its introduction, this theory has garnered significant interest in the scientific community, with numerous groups exploring its validity. Working in tandem with the FIRE simulation group, we became the first to verify the effectiveness of this concept. This is also the first simulation that reproduces the abundance of UV bright galaxies found by JWST. The bursty star-formation in particular has many more implications on the morphological diversity, chemical enrichment patterns, and escape of ionizing photons of early galaxies.",
     "paperLinks": [
       {
         "label": "Shen+2023",
@@ -156,7 +156,11 @@ var RESEARCH_PROJECTS = [
       },
       {
         "label": "Sun, Shen+2023",
-        "url": "https://ui.adsabs.harvard.edu/abs/2023arXiv230715305S/abstract"
+        "url": "https://ui.adsabs.harvard.edu/abs/2023ApJ...955L..35S/abstract"
+      },
+      {
+        "label": "Hopkins, Shen+2023",
+        "url": "https://ui.adsabs.harvard.edu/abs/2023MNRAS.525.2241H/abstract"
       }
     ],
     "image": "parameter_space.jpeg"
@@ -186,24 +190,36 @@ var RESEARCH_PROJECTS = [
     "title": "Alternative Cosmological Models",
     "category": "highz_galaxies",
     "order": 3,
-    "description": "Early Universe is also an interesting test ground for dark matter physics. Many models for dark matter imply modifications to the small-scale power spectrum of cosmic density fluctuations, which will inevitably affect the assembly of early galaxies. We have experimented with warm dark matter and the SIDM model with dark acoustic oscillations in a small-volume simulation within the THESAN simulation framework. Notably, the simulations include the recipe for sourcing ionizing photons, on-the-fly radiative transfer calculations and a hydrogen chemical-solver for reionization, which allow us to study the interplay between non-equilibrium reionization process and alternative dark matter physics.",
+    "description": "Early Universe is also an interesting test ground for physics beyond the standard LCDM framework. For example, many models imply modifications to the small-scale power spectrum of cosmic density fluctuations, which will inevitably affect the assembly of early galaxies. We have experimented with warm dark matter and the SIDM model with dark acoustic oscillations in a small-volume simulation within the THESAN simulation framework. Notably, the simulations include the recipe for sourcing ionizing photons, on-the-fly radiative transfer calculations and a hydrogen chemical-solver for reionization, which allow us to study the interplay between non-equilibrium reionization process and alternative dark matter physics. More recently, we have studied a cosmological model with early dark energy. It acts a potential joint solution to the Hubble tension and many puzzles regarding bright and massive galaxies found by JWST.",
     "paperLinks": [
       {
         "label": "Shen+2023",
         "url": "https://ui.adsabs.harvard.edu/abs/2023arXiv230406742S/abstract"
+      },
+      {
+        "label": "Shen+2026",
+        "url": "https://ui.adsabs.harvard.edu/abs/2025arXiv250919427S/abstract"
       }
     ],
     "image": ""
   },
   {
-    "title": "Merger Identification with CNN",
+    "title": "The THESAN-ZOOM Campaign",
     "category": "highz_galaxies",
     "order": 4,
-    "description": "Another application of the dust radiative transfer post-processing pipeline we built is producing high-quality, realistic mock images for high-redshift galaxies. We are generating mock images for merging galaxies, with modeling of background noise and PSF convolution. The images will be used to train a multi-channel convolution neural network (CNN) for merger identification with real JWST images.",
+    "description": "THESAN-ZOOM is a new suite of cosmological radiation-hydrodynamic zoom-in simulations targeting galaxies at z>3. It includes a wide array of physics build upon the SMUGGLE galaxy formation model that can resolve the explicit star-formation and feedback processes in a multiphase interstellar medium. THESAN-ZOOM further coupled it with on-the-fly radiative transfer and non-equilibrium thermo-chemistry along with, for the first time, fully self-consistent treatment of local ionizing photon background during the epoch of reionization. I have been a core member of the project and led the first wave of analyses on star-formation efficiencies in early galaxies. Universal star-formation laws emerge from these simulations with lots of implications for JWST observations.",
     "paperLinks": [
       {
-        "label": "Vogelsberger+2020",
-        "url": "https://ui.adsabs.harvard.edu/abs/2020MNRAS.492.5167V/abstract"
+        "label": "Intro Paper (Kannan+2025)",
+        "url": "https://ui.adsabs.harvard.edu/abs/2025OJAp....8E.153K/abstract"
+      },
+      {
+        "label": "Shen+2025",
+        "url": "https://ui.adsabs.harvard.edu/abs/2026MNRAS.545f2119S/abstract"
+      },
+      {
+        "label": "Wang, Shen+2025)",
+        "url": "https://ui.adsabs.harvard.edu/abs/2025MNRAS.544.2675W/abstract"
       }
     ],
     "image": ""

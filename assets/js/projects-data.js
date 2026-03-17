@@ -172,15 +172,15 @@ var RESEARCH_PROJECTS = [
     "description": "A series of papers on high-redshift galaxies, based on the IllustrisTNG simulation, the dust radiative transfer calculation using SKIRT and a dust model calibrated with compiled UV luminosity function data at z=4&ndash;10. In Paper I, we presented this framework for mock JWST predictions from simulations, and made predictions on the UV luminosity functions and the JWST NIRCam apparent band luminosity functions. In Paper II, we made predictions on the emission line luminosity functions (H&alpha;, O[III]), spectral indices (D4000) and dust attenuation curves of high-redshift galaxies. In Paper III, we extended the prediction to FIR wavelengths, with a more realistic treatment of dust grain size distribution and non-local thermal effects.",
     "paperLinks": [
       {
-        "label": "Paper I (Vogelsberger+2020)",
+        "label": "Vogelsberger, Shen+2020)",
         "url": "https://ui.adsabs.harvard.edu/abs/2020MNRAS.492.5167V/abstract"
       },
       {
-        "label": "Paper II (Shen+2020)",
+        "label": "Shen+2020",
         "url": "https://ui.adsabs.harvard.edu/abs/2020MNRAS.495.4747S/abstract"
       },
       {
-        "label": "Paper III (Shen+2022)",
+        "label": "Shen+2022",
         "url": "https://ui.adsabs.harvard.edu/abs/2022MNRAS.510.5560S/abstract"
       }
     ],
@@ -218,7 +218,7 @@ var RESEARCH_PROJECTS = [
         "url": "https://ui.adsabs.harvard.edu/abs/2026MNRAS.545f2119S/abstract"
       },
       {
-        "label": "Wang, Shen+2025)",
+        "label": "Wang, Shen+2025",
         "url": "https://ui.adsabs.harvard.edu/abs/2025MNRAS.544.2675W/abstract"
       }
     ],

@@ -66,3 +66,43 @@
 				});
 
 })(jQuery);
+
+// Lazy-load gallery autoplay videos when scrolled into view.
+(function() {
+	var videos = document.querySelectorAll('.gallery-video-lazy');
+	if (!videos.length) return;
+
+	function loadVideo(video) {
+		if (video.dataset.loaded) return;
+		var source = video.querySelector('source[data-src]');
+		if (!source) return;
+		source.src = source.getAttribute('data-src');
+		video.load();
+		video.dataset.loaded = 'true';
+	}
+
+	function playVideo(video) {
+		loadVideo(video);
+		video.play().catch(function() {});
+	}
+
+	if (!('IntersectionObserver' in window)) {
+		videos.forEach(playVideo);
+		return;
+	}
+
+	var observer = new IntersectionObserver(function(entries) {
+		entries.forEach(function(entry) {
+			var video = entry.target;
+			if (entry.isIntersecting) {
+				playVideo(video);
+			} else {
+				video.pause();
+			}
+		});
+	}, { rootMargin: '100px', threshold: 0.1 });
+
+	videos.forEach(function(video) {
+		observer.observe(video);
+	});
+})();

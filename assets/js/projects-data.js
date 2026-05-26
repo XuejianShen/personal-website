@@ -222,17 +222,38 @@ var RESEARCH_PROJECTS = [
         "url": "https://ui.adsabs.harvard.edu/abs/2025MNRAS.544.2675W/abstract"
       }
     ],
-    "image": ""
+    "image": "thesan-zoom-gas.png"
+  },
+  {
+    "title": "The Lumina Campaign",
+    "category": "highz_galaxies",
+    "order": 5,
+    "description": "Lumina is a large-volume cosmological radiation-hydrodynamic simulation of our universe spanning the epoch of hydrogen and helium reionization with more than half a trillion resolution elements. It is one of the largest hydrodynamic simulation ever achieved and is the first to self-consistently model hundreds of millions of galaxies and supermassive black holes (SMBHs) along with their impact on the intergalactic medium. In one of the first release papers of Lumina, I present an semi-empirical model to explain the demographics of active galactic nuclei (AGN) at z>=3, including the mysterious Little Red Dots uncovered by JWST.",
+    "paperLinks": [
+      {
+        "label": "Intro Paper (Zier+2026)",
+        "url": "https://scixplorer.org/abs/2026arXiv260515310Z/abstract"
+      },
+      {
+        "label": "Shen+2026",
+        "url": "https://scixplorer.org/abs/2026arXiv260524112S/abstract"
+      }
+    ],
+    "image": "whole_with_zoom_callout.png"
   },
   {
     "title": "Bolometric Quasar Luminosity Functions",
     "category": "smbh",
     "order": 1,
-    "description": "We have compiled a large dataset of quasar luminosity function measurements in far-UV, optical, X-ray, IR bands, and through emission lines in the past four decades. The observational data is paired with an updated quasar SED model, an updated extinction model based on the hydrogen column density distribution in Ueda et al. 2014 and a new bolometric correction function. We construct a new model for the bolometric quasar luminosity function that extends out to redshift 7. A <a href=\"https://bitbucket.org/ShenXuejian/quasarlf/src/master/\">public tool</a> is available for computing bolometric/observed band luminosity functions of quasars across a wide redshift range. The evolutionary pattern of the bolometric QLF can be interpreted as an early phase likely dominated by the hierarchical assembly of structures and a late phase likely dominated by the quenching of galaxies.",
+    "description": "We have compiled a large dataset of quasar luminosity function measurements in far-UV, optical, X-ray, IR bands, and through emission lines in the past four decades. The observational data is paired with an updated quasar SED model, an updated extinction model based on the hydrogen column density distribution in Ueda et al. 2014 and a new bolometric correction function. We construct a new model for the bolometric quasar luminosity function that extends out to redshift 7. A <a href=\"https://bitbucket.org/ShenXuejian/quasarlf/src/master/\">public tool</a> is available for computing bolometric/observed band luminosity functions of quasars across a wide redshift range. The evolutionary pattern of the bolometric QLF can be interpreted as an early phase likely dominated by the hierarchical assembly of structures and a late phase likely dominated by the quenching of galaxies. In a recent paper, I present an amendment of this model to include the Little Red Dots uncovered by JWST and fit them into a unified framework for cosmological evolution of AGN.",
     "paperLinks": [
       {
         "label": "Shen+2020",
         "url": "https://ui.adsabs.harvard.edu/abs/2020MNRAS.495.3252S/abstract"
+      },
+      {
+        "label": "Shen+2026",
+        "url": "https://scixplorer.org/abs/2026arXiv260524112S/abstract"
       }
     ],
     "image": "QLF/sed.png"
@@ -246,6 +267,10 @@ var RESEARCH_PROJECTS = [
       {
         "label": "Xiao & Shen 2021",
         "url": "https://ui.adsabs.harvard.edu/abs/2021JCAP...07..039X/abstract"
+      },
+      {
+        "label": "Shen T. & Shen 2025",
+        "url": "https://scixplorer.org/abs/2025arXiv250400075S/abstract"
       }
     ],
     "image": ""

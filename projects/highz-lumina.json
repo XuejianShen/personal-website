@@ -1,12 +1,11 @@
 {
-  "title": "High-redshift Predictions from IllustrisTNG",
+  "title": "The Lumina Campaign",
   "category": "highz_galaxies",
-  "order": 2,
-  "description": "A series of papers on high-redshift galaxies, based on the IllustrisTNG simulation, the dust radiative transfer calculation using SKIRT and a dust model calibrated with compiled UV luminosity function data at z=4&ndash;10. In Paper I, we presented this framework for mock JWST predictions from simulations, and made predictions on the UV luminosity functions and the JWST NIRCam apparent band luminosity functions. In Paper II, we made predictions on the emission line luminosity functions (H&alpha;, O[III]), spectral indices (D4000) and dust attenuation curves of high-redshift galaxies. In Paper III, we extended the prediction to FIR wavelengths, with a more realistic treatment of dust grain size distribution and non-local thermal effects.",
+  "order": 5,
+  "description": "Lumina is a large-volume cosmological radiation-hydrodynamic simulation of our universe spanning the epoch of hydrogen and helium reionization with more than half a trillion resolution elements. It is one of the largest hydrodynamic simulation ever achieved and is the first to self-consistently model hundreds of millions of galaxies and supermassive black holes (SMBHs) along with their impact on the intergalactic medium. In one of the first release papers of Lumina, I present an semi-empirical model to explain the demographics of active galactic nuclei (AGN) at z>=3, including the mysterious Little Red Dots uncovered by JWST.",
   "paperLinks": [
-    {"label": "Paper I (Vogelsberger+2020)", "url": "https://ui.adsabs.harvard.edu/abs/2020MNRAS.492.5167V/abstract"},
-    {"label": "Paper II (Shen+2020)", "url": "https://ui.adsabs.harvard.edu/abs/2020MNRAS.495.4747S/abstract"},
-    {"label": "Paper III (Shen+2022)", "url": "https://ui.adsabs.harvard.edu/abs/2022MNRAS.510.5560S/abstract"}
+    {"label": "Intro Paper (Zier+2026)", "url": "https://scixplorer.org/abs/2026arXiv260515310Z/abstract"},
+    {"label": "Shen+2026", "url": "https://scixplorer.org/abs/2026arXiv260524112S/abstract"}
   ],
-  "image": "TNG_protocluster.png"
+  "image": "whole_with_zoom_callout.png"
 }

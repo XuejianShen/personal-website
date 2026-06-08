@@ -1,6 +1,14 @@
 (function () {
 	var IMAGES_BASE = '../images/';
 
+	function esc(s) {
+		return String(s)
+			.replace(/&/g, '&amp;')
+			.replace(/"/g, '&quot;')
+			.replace(/</g, '&lt;')
+			.replace(/>/g, '&gt;');
+	}
+
 	function groupByCategory(projects) {
 		var groups = {};
 		projects.forEach(function (p) {
@@ -65,7 +73,7 @@
 
 			if (project.image) {
 				html += '<div class="project-image">';
-				html += '<img src="' + IMAGES_BASE + project.image + '" alt="' + project.title + '">';
+				html += '<img src="' + IMAGES_BASE + esc(project.image) + '" alt="' + esc(project.title) + '">';
 				html += '</div>';
 			}
 
@@ -75,7 +83,7 @@
 				html += '<div class="project-papers">';
 				html += '<span class="project-papers-label">Papers: </span>';
 				project.paperLinks.forEach(function (link) {
-					html += '<a href="' + link.url + '" target="_blank" rel="noopener">' + link.label + '</a> ';
+					html += '<a href="' + esc(link.url) + '" target="_blank" rel="noopener">' + link.label + '</a> ';
 				});
 				html += '</div>';
 			}

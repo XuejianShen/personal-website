@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this is
 
-Static personal academic website for Xuejian (Jacob) Shen (astrophysicist, MIT), based on the **Arcana** HTML5 UP template. Plain HTML/CSS/JS — there is **no HTML/CSS/JS build step or package manager**. The only build script is `build_projects.py` (see below).
+Static personal academic website for Xuejian (Jacob) Shen (astrophysicist, Harvard CfA), based on the **Arcana** HTML5 UP template. Plain HTML/CSS/JS — there is **no HTML/CSS/JS build step or package manager**. The only build script is `build_projects.py` (see below).
 
 ## Commands
 

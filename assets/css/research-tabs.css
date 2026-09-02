@@ -142,3 +142,35 @@
 		background-color: rgba(0, 113, 227, 0.05);
 	}
 }
+
+/* Full-width layout (topics stacked): panels with a figure show it beside the text. */
+
+.project-tab-panel.active:has(.project-image) {
+	display: grid;
+	grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+	column-gap: 2.25em;
+	align-items: start;
+}
+
+.project-tab-panel.active:has(.project-image) .project-image {
+	grid-row: 1 / span 2;
+	margin-bottom: 0;
+}
+
+.project-tab-panel.active:has(.project-image) .project-description {
+	grid-column: 2;
+}
+
+.project-tab-panel.active:has(.project-image) .project-papers {
+	grid-column: 2;
+}
+
+@media screen and (max-width: 840px) {
+	.project-tab-panel.active:has(.project-image) {
+		display: block;
+	}
+
+	.project-tab-panel.active:has(.project-image) .project-image {
+		margin-bottom: 1.2em;
+	}
+}

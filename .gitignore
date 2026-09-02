@@ -1,0 +1,6 @@
+# Large source files kept locally only (derived web versions are committed instead)
+videos/lumina_z4_manyfields_scrolling_2160p.mp4
+videos/lumina_z4_zoom_fullbox_synthstar_4k_60fps.mp4
+images/lumina_200cMpc_vpeak3_dmdens_gasvel_heiii.png
+images/AltDM-demo-gas.pdf
+.DS_Store

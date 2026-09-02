@@ -20,13 +20,7 @@
 							<ul>
 								<li class="current"><a href="index.html">Home</a></li>
 								<li><a href="pages/about_me.html">About me</a></li>
-								<li>
-									<a>Research</a>
-									<ul>
-										<li align='left'><a href="pages/research1.html">Alternative Dark Matter</a></li>
-										<li align='left'><a href="pages/research3.html">High-Redshift Galaxies & AGN</a></li>
-									</ul>
-								</li>
+								<li><a href="pages/research1.html">Research</a></li>
 								<li><a href="pages/publications.html">Publications</a></li>
 								<li><a href="pages/press.html">Press</a></li>
 							</ul>
@@ -44,9 +38,9 @@
 			-->
 
 			<!-- Gigantic Heading and Highlights -->
-				<section class="wrapper style2" style="background-image: url('images/filaments.jpg'); background-size: cover; background-position: center; width: 100%">
+				<section class="wrapper style2" style="background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url('images/lumina_200cMpc_hero.jpg'); background-size: cover; background-position: center; width: 100%">
 					<div class="container">
-						<header align='center' style="padding-top: 3%; color: white;"> 
+						<header align='center' style="padding-top: 3%; color: white; text-shadow: 0 1px 14px rgba(0, 0, 0, 0.7);"> 
 							<h2 style="color: white;">Xuejian(Jacob) Shen</h2>
 							<p style="color: white; padding-bottom: 0%; padding-top: 0%">Theoretical and Computational Astrophysicist at Harvard CfA</p>
 						</header>
@@ -77,118 +71,146 @@
 				</section>
 
 			<!-- Gallery -->
-				<section class="wrapper style1">
+				<section class="wrapper style1 gallery-section">
 					<div class="container">
+						<header class="gallery-header">
+							<h2>Gallery</h2>
+							<p>Visualizations from my simulations. Click a tile to enlarge it. Full-resolution files are linked inside the viewer.</p>
+						</header>
 						<div class="gallery-grid">
-							<div class="gallery-item">
-								<div class="gallery-media">
-									<a href="./videos/Lumina_z_3_fly_through.mp4" target="_blank" rel="noopener noreferrer" aria-label="Open media in new tab">
-										<video class="gallery-video-lazy" width="100%" height="100%" autoplay muted loop playsinline preload="none">
-											<source data-src="./videos/Lumina_z_3_fly_through_preview.mp4" type="video/mp4">
-											Your browser does not support the video tag.
-										</video>
-									</a>
-								</div>
-								<div class="gallery-content">
-									<h3>Fly through a massive disky galaxy in the Lumina simulation</h3>
-									<p class="gallery-caption">Copyright @Rongrong Liu & the Lumina collaboration</p>
-								</div>
-							</div>
 
-							<div class="gallery-item">
-								<div class="gallery-media">
-									<a href="./images/whole_with_zoom_callout-highres.png" target="_blank" rel="noopener noreferrer" aria-label="Open media in new tab">
-										<img src="./images/whole_with_zoom_callout.png" alt="A multi-scale view of cosmic structures in the Lumina simulation" loading="lazy">
-									</a>
-								</div>
-								<div class="gallery-content">
-									<h3>A multi-scale view of cosmic structures in the Lumina simulation</h3>
-									<p class="gallery-caption">Copyright @Xuejian Shen</p>
-								</div>
-							</div>
+							<figure class="gallery-item" data-type="video">
+								<a class="gallery-tile" href="./videos/lumina_z4_zoom_fullbox_synthstar_4k_60fps.mp4" data-full-label="4K 60 fps original (542 MB)" target="_blank" rel="noopener noreferrer">
+									<video class="gallery-video-lazy" muted loop playsinline preload="none" poster="./images/posters/lumina_z4_zoom_fullbox_synthstar.jpg">
+										<source data-src="./videos/lumina_z4_zoom_fullbox_synthstar_preview.mp4" type="video/mp4">
+									</video>
+									<span class="gallery-badge" aria-hidden="true">Video</span>
+									<span class="gallery-tile-title">Zooming from the full Lumina box into a single galaxy at z = 4</span>
+								</a>
+								<figcaption class="gallery-meta" hidden>
+									<span class="gallery-meta-title">Zooming from the full Lumina box into a single galaxy at z = 4</span>
+									<span class="gallery-meta-credit">Copyright @the <a href="https://lumina-simulation.com/">Lumina collaboration</a></span>
+								</figcaption>
+							</figure>
 
-							<div class="gallery-item">
-								<div class="gallery-media">
-									<a href="./videos/m12i_m7_cdm_1080p_caption.mp4" target="_blank" rel="noopener noreferrer" aria-label="Open media in new tab">
-										<video class="gallery-video-lazy" width="100%" height="100%" autoplay muted loop playsinline preload="none">
-											<source data-src="./videos/m12i_m7_cdm_1080p_caption.mp4" type="video/mp4">
-											Your browser does not support the video tag.
-										</video>
-									</a>
-								</div>
-								<div class="gallery-content">
-									<h3>The life of a Milky Way-mass galaxy</h3>
-									<p class="gallery-caption">Copyright @Xuejian Shen</p>
-								</div>
-							</div>
-							
-							<div class="gallery-item">
-								<div class="gallery-media">
-									<a href="./videos/m12i_z0_spin1_full_hicontra.mp4" target="_blank" rel="noopener noreferrer" aria-label="Open media in new tab">
-										<video class="gallery-video-lazy" width="100%" height="100%" autoplay muted loop playsinline preload="none">
-											<source data-src="./videos/m12i_z0_spin1_full_hicontra.mp4" type="video/mp4">
-											Your browser does not support the video tag.
-										</video>
-									</a>
-								</div>
-								<div class="gallery-content">
-									<h3>The Milky Way-mass galaxy in the Latte simulation</h3>
-									<p class="gallery-caption">Copyright @<a href="https://fire.northwestern.edu">FIRE collaboration</a></p>
-								</div>
-							</div>
+							<figure class="gallery-item" data-type="video">
+								<a class="gallery-tile" href="./videos/lumina_z4_manyfields_scrolling_2160p.mp4" data-full-label="4K 60 fps original (410 MB)" target="_blank" rel="noopener noreferrer">
+									<video class="gallery-video-lazy" muted loop playsinline preload="none" poster="./images/posters/lumina_z4_manyfields_scrolling.jpg">
+										<source data-src="./videos/lumina_z4_manyfields_scrolling_preview.mp4" type="video/mp4">
+									</video>
+									<span class="gallery-badge" aria-hidden="true">Video</span>
+									<span class="gallery-tile-title">Scrolling through the Lumina box at z = 4 in different physical fields</span>
+								</a>
+								<figcaption class="gallery-meta" hidden>
+									<span class="gallery-meta-title">Scrolling through the Lumina box at z = 4 in different physical fields</span>
+									<span class="gallery-meta-credit">Copyright @the <a href="https://lumina-simulation.com/">Lumina collaboration</a></span>
+								</figcaption>
+							</figure>
 
-							<div class="gallery-item">
-								<div class="gallery-media">
-									<a href="./images/Thesan-ADM.001.png" target="_blank" rel="noopener noreferrer" aria-label="Open media in new tab">
-										<img src="./images/Thesan-ADM.001.png" alt="Cosmic structure in the THESAN EoR simulations">
-									</a>
-								</div>
-								<div class="gallery-content">
-									<h3>Cosmic structure in the THESAN-HR simulations (CDM versus WDM)</h3>
-									<p class="gallery-caption">Copyright @Xuejian Shen</p>
-								</div>
-							</div>
-							
-							<div class="gallery-item">
-								<div class="gallery-media">
-									<a href="./images/TNG_protocluster_50.png" target="_blank" rel="noopener noreferrer" aria-label="Open media in new tab">
-										<img src="./images/TNG_protocluster_50.png" alt="A proto-cluster in the IllustrisTNG simulation">
-									</a>
-								</div>
-								<div class="gallery-content">
-									<h3>A proto-cluster in the IllustrisTNG simulation (post-processed with SKIRT)</h3>
-									<p class="gallery-caption">Copyright @Xuejian Shen</p>
-								</div>
-							</div>
+							<figure class="gallery-item" data-type="video">
+								<a class="gallery-tile" href="./videos/Lumina_z_3_fly_through.mp4" data-full-label="4K original (206 MB)" target="_blank" rel="noopener noreferrer">
+									<video class="gallery-video-lazy" muted loop playsinline preload="none" poster="./images/posters/Lumina_z_3_fly_through.jpg">
+										<source data-src="./videos/Lumina_z_3_fly_through_preview.mp4" type="video/mp4">
+									</video>
+									<span class="gallery-badge" aria-hidden="true">Video</span>
+									<span class="gallery-tile-title">Fly through a massive disky galaxy in the Lumina simulation</span>
+								</a>
+								<figcaption class="gallery-meta" hidden>
+									<span class="gallery-meta-title">Fly through a massive disky galaxy in the Lumina simulation</span>
+									<span class="gallery-meta-credit">Copyright @Rongrong Liu &amp; the <a href="https://lumina-simulation.com/">Lumina collaboration</a></span>
+								</figcaption>
+							</figure>
+
+							<figure class="gallery-item" data-type="image">
+								<a class="gallery-tile" href="./images/whole_with_zoom_callout-highres.png" data-full-label="Full-resolution image (50 MB)" target="_blank" rel="noopener noreferrer">
+									<img src="./images/whole_with_zoom_callout.png" alt="A multi-scale view of cosmic structures in the Lumina simulation" loading="lazy">
+									<span class="gallery-tile-title">A multi-scale view of cosmic structures in the Lumina simulation</span>
+								</a>
+								<figcaption class="gallery-meta" hidden>
+									<span class="gallery-meta-title">A multi-scale view of cosmic structures in the Lumina simulation</span>
+									<span class="gallery-meta-credit">Copyright @Xuejian Shen</span>
+								</figcaption>
+							</figure>
+
+							<figure class="gallery-item" data-type="video">
+								<a class="gallery-tile" href="./videos/m12i_m7_cdm_1080p_caption.mp4" data-full-label="Open video (1080p, 48 MB)" target="_blank" rel="noopener noreferrer">
+									<video class="gallery-video-lazy" muted loop playsinline preload="none" poster="./images/posters/m12i_m7_cdm.jpg">
+										<source data-src="./videos/m12i_m7_cdm_1080p_caption.mp4" type="video/mp4">
+									</video>
+									<span class="gallery-badge" aria-hidden="true">Video</span>
+									<span class="gallery-tile-title">The life of a Milky Way-mass galaxy</span>
+								</a>
+								<figcaption class="gallery-meta" hidden>
+									<span class="gallery-meta-title">The life of a Milky Way-mass galaxy</span>
+									<span class="gallery-meta-credit">Copyright @Xuejian Shen</span>
+								</figcaption>
+							</figure>
+
+							<figure class="gallery-item" data-type="video">
+								<a class="gallery-tile" href="./videos/m12i_z0_spin1_full_hicontra.mp4" data-full-label="Open video (33 MB)" target="_blank" rel="noopener noreferrer">
+									<video class="gallery-video-lazy" muted loop playsinline preload="none" poster="./images/posters/m12i_z0_spin1.jpg">
+										<source data-src="./videos/m12i_z0_spin1_full_hicontra.mp4" type="video/mp4">
+									</video>
+									<span class="gallery-badge" aria-hidden="true">Video</span>
+									<span class="gallery-tile-title">The Milky Way-mass galaxy in the Latte simulation</span>
+								</a>
+								<figcaption class="gallery-meta" hidden>
+									<span class="gallery-meta-title">The Milky Way-mass galaxy in the Latte simulation</span>
+									<span class="gallery-meta-credit">Copyright @<a href="https://fire.northwestern.edu">FIRE collaboration</a></span>
+								</figcaption>
+							</figure>
+
+							<figure class="gallery-item" data-type="image">
+								<a class="gallery-tile" href="./images/AltDM-demo-gas-highres.png" data-full-label="Full-resolution image (9 MB)" target="_blank" rel="noopener noreferrer">
+									<img src="./images/AltDM-demo-gas.jpg" alt="Neutral hydrogen column density and gas temperature in the THESAN-HR simulations for CDM, WDM, FDM and sDAO dark matter" loading="lazy">
+									<span class="gallery-tile-title">Cosmic structure in the THESAN-HR simulations: CDM versus alternative dark matter</span>
+								</a>
+								<figcaption class="gallery-meta" hidden>
+									<span class="gallery-meta-title">Cosmic structure in the THESAN-HR simulations: CDM versus alternative dark matter models (WDM, FDM, sDAO)</span>
+									<span class="gallery-meta-credit">Copyright @Xuejian Shen</span>
+								</figcaption>
+							</figure>
+
+							<figure class="gallery-item" data-type="image">
+								<a class="gallery-tile" href="./images/TNG_protocluster.png" data-full-label="Full-resolution image (2.7 MB)" target="_blank" rel="noopener noreferrer">
+									<img src="./images/TNG_protocluster_50.png" alt="A proto-cluster in the IllustrisTNG simulation" loading="lazy">
+									<span class="gallery-tile-title">A proto-cluster in the IllustrisTNG simulation</span>
+								</a>
+								<figcaption class="gallery-meta" hidden>
+									<span class="gallery-meta-title">A proto-cluster in the IllustrisTNG simulation (post-processed with SKIRT)</span>
+									<span class="gallery-meta-credit">Copyright @Xuejian Shen</span>
+								</figcaption>
+							</figure>
+
 						</div>
 					</div>
 				</section>
 
-			<!-- Posts -->
-				<section class="wrapper style1">
+			<!-- Research Highlights -->
+				<section class="wrapper style3 highlights-section">
 					<div class="container">
-						<h2>Research Highlights</h2>
-						<div class="row" style="padding-top: 4%">
-							<section class="col-6 col-12-narrower">
-								<div class="box post">
-									<a href="pages/publications.html" class="image left"><img src="images/scholar.jpeg" alt="" /></a>
-									<div class="inner">
-										<p></p>
-										<h3>100+ publications</h3>
-										<p> 20+ first/corresponding-author journal papers, see <a href="pages/publications.html">Publication</a> for details.</p>
-									</div>
+						<div class="highlights-row">
+							<div class="highlights-intro">
+								<h2>Research Highlights</h2>
+								<p>Publication and citation metrics from <a href="https://ui.adsabs.harvard.edu/public-libraries/2hvI1lT2Txm315CD1U2fUg">NASA ADS</a>.</p>
+							</div>
+							<div class="highlights-grid">
+								<a class="highlight-stat" href="pages/publications.html">
+									<span class="highlight-number">100<span class="highlight-plus">+</span></span>
+									<span class="highlight-label">Publications</span>
+									<span class="highlight-sub">20+ as first or corresponding author</span>
+								</a>
+								<a class="highlight-stat" href="https://ui.adsabs.harvard.edu/public-libraries/2hvI1lT2Txm315CD1U2fUg">
+									<span class="highlight-number">3100<span class="highlight-plus">+</span></span>
+									<span class="highlight-label">Citations</span>
+									<span class="highlight-sub">1200+ on first- or corresponding-author papers</span>
+								</a>
+								<div class="highlight-stat">
+									<span class="highlight-number">31</span>
+									<span class="highlight-label">h-index</span>
+									<span class="highlight-sub">NASA ADS metrics</span>
 								</div>
-							</section>
-							<section class="col-6 col-12-narrower">
-								<div class="box post">
-									<a href="https://ui.adsabs.harvard.edu/public-libraries/2hvI1lT2Txm315CD1U2fUg" class="image left"><img src="images/bars.png" alt="" /></a>
-									<div class="inner">
-										<p></p>
-										<h3>3100+ citations with h-index 31</h3>
-										<p> First/corresponding-author citations 1200+</p>
-									</div>
-								</div>
-							</section>
+							</div>
 						</div>
 					</div>
 				</section>
@@ -210,19 +232,13 @@
 						<div class="row">
 							<section class="col-2 col-6-narrower col-12-mobilep">
 								<h3>Social Media</h3>
-								<ul class="icons">
-									<li><a href="https://github.com/XuejianShen" class="icon brands fa-github"><span class="label">GitHub</span></a> <br/><br/> </li> 
-								</ul>
-								<ul class="icons">
-									<li><a href="https://bitbucket.org/ShenXuejian/" class="icon brands fa-bitbucket"><span class="label">Bitbucket</span></a> <br/><br/> </li>
-								</ul>
-								<ul class="icons"> 
-									<li><a href="https://www.linkedin.com/in/xuejianshen/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a> <br/><br/> </li> 
-								</ul>
-								<ul class="icons">	
+								<ul class="icons social-icons">
+									<li><a href="https://github.com/XuejianShen" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://bitbucket.org/ShenXuejian/" class="icon brands fa-bitbucket"><span class="label">Bitbucket</span></a></li>
+									<li><a href="https://www.linkedin.com/in/xuejianshen/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 									<li><a href="https://www.facebook.com/profile.php?id=100024860763176" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 								</ul>
-							</section>
+								</section>
 							<section class="col-5 col-6-narrower col-12-mobilep">
 								<h3>Research Pages</h3>
 								<ul class="links">

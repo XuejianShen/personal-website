@@ -54,7 +54,7 @@ Category → page mapping: `sidm` + `axions` render on `pages/research1.html`, a
 
 - `*.mp4` files are tracked via **Git LFS** (`.gitattributes`). Ensure LFS is installed before committing videos.
 - **Quotas that bite:** a published GitHub Pages site must stay under **1 GB**, and every CI deploy (`actions/checkout` with `lfs: true`) re-downloads *all* LFS objects, which counts against the **10 GB/month** LFS bandwidth allowance. Keep only web-sized previews in the repo and host multi-hundred-MB originals elsewhere (or accept that each push burns the LFS total).
-- The two Lumina z=4 originals are hosted at `https://images.lumina-simulation.com/` (`Lumina_zoom_fullbox_4k_60fps.mp4`, `Lumina_manyfields_scrolling_2160p.mp4`) and linked from the gallery tiles. The local 4K files are gitignored.
+- The Lumina originals are hosted at `https://images.lumina-simulation.com/` (`Lumina_zoom_fullbox_4k_60fps.mp4`, `Lumina_manyfields_scrolling_2160p.mp4`, `Lumina_z_3_fly_through.mp4`) and linked from the gallery tiles. The local 4K files are gitignored and not in the repo.
 - **Preview videos:** every big video gets a `*_preview.mp4` (1080p, 30 fps, libx264 CRF 27, `-movflags +faststart`, no audio) that is the in-page/lightbox source. The original is only the "full resolution" link. Recreate with:
   `ffmpeg -i in.mp4 -vf "scale=1920:-2,fps=30" -c:v libx264 -preset slow -crf 27 -pix_fmt yuv420p -movflags +faststart -an out_preview.mp4`
 - **Poster frames** for videos live in `images/posters/` (`ffmpeg -ss <t> -i preview.mp4 -frames:v 1 -vf scale=960:-2 -q:v 4 poster.jpg`).

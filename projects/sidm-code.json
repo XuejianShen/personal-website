@@ -4,7 +4,7 @@
   "order": 6,
   "description": "We have developed a new module for SIDM simulations in the cosmological multi-physics code AREPO-2. This new module will be flexible in both the numerical algorithms and the SIDM physics inputs. It will also yield orders of magnitudes improvements in performance on HPC systems and higher accuracy in the core-collapse phase of SIDM haloes.",
   "paperLinks": [
-    {"label": "Zier, Shen+2026", "url": ""}
+    {"label": "Zier, Shen+2026", "url": "https://scixplorer.org/abs/2026MNRAS.552g1674Z/abstract"}
   ],
-  "image": ""
+  "image": "SIDM-Schematic-communication.png"
 }

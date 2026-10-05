@@ -96,10 +96,10 @@ var RESEARCH_PROJECTS = [
     "paperLinks": [
       {
         "label": "Zier, Shen+2026",
-        "url": ""
+        "url": "https://scixplorer.org/abs/2026MNRAS.552g1674Z/abstract"
       }
     ],
-    "image": ""
+    "image": "SIDM-Schematic-communication.png"
   },
   {
     "title": "Axion Miniclusters",

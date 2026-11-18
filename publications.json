@@ -1,0 +1,2213 @@
+{
+  "schema_version": 1,
+  "selected_library_id": "lRUUPWajQLK3lmzrBoDI2w",
+  "author": "Shen, Xuejian",
+  "updated": "2026-11-18",
+  "classification_policy": "For this user-curated library only, first-authored papers are first_author and other selected papers are advising_supervision, as explicitly approved by the site owner. Existing per-paper assignments persist through metadata changes.",
+  "records": [
+    {
+      "key": "arxiv:2605.15310",
+      "section": "advising_supervision",
+      "aliases": [
+        "arxiv:2605.15310",
+        "bibcode:2026MNRAS.552g1469Z",
+        "bibcode:2026arXiv260515310Z",
+        "doi:10.1093/mnras/stag1469",
+        "doi:10.48550/arxiv.2605.15310"
+      ],
+      "metadata": {
+        "bibcode": "2026MNRAS.552g1469Z",
+        "alternate_bibcode": [
+          "2026arXiv260515310Z"
+        ],
+        "author": [
+          "Zier, Oliver",
+          "Smith, Aaron",
+          "Shen, Xuejian",
+          "Liu, Rongrong",
+          "Kannan, Rahul",
+          "Koehler, Sonja M.",
+          "Springel, Volker",
+          "Pakmor, Rüdiger",
+          "Vogelsberger, Mark",
+          "Bulichi, Teodora-Elena",
+          "Hernquist, Lars"
+        ],
+        "doctype": "article",
+        "doi": [
+          "10.1093/mnras/stag1469",
+          "10.48550/arXiv.2605.15310"
+        ],
+        "eid": "stag1469",
+        "identifier": [
+          "10.1093/mnras/stag1469",
+          "2026MNRAS.552g1469Z",
+          "10.48550/arXiv.2605.15310",
+          "arXiv:2605.15310",
+          "2026arXiv260515310Z"
+        ],
+        "issue": "4",
+        "page": [
+          "stag1469"
+        ],
+        "pub": "Monthly Notices of the Royal Astronomical Society",
+        "pubdate": "2026-11-00",
+        "title": [
+          "Introducing the LUMINA project: large-volume radiation-hydrodynamic simulations of the epochs of hydrogen and helium reionization"
+        ],
+        "volume": "552",
+        "year": "2026",
+        "publisher": "OUP",
+        "property": [
+          "ARTICLE",
+          "DATA",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 17
+      }
+    },
+    {
+      "key": "arxiv:2610.16968",
+      "section": "advising_supervision",
+      "aliases": [
+        "arxiv:2610.16968",
+        "bibcode:2026arXiv261016968R",
+        "doi:10.48550/arxiv.2610.16968"
+      ],
+      "metadata": {
+        "bibcode": "2026arXiv261016968R",
+        "author": [
+          "Rosenlyst, Martin",
+          "Tran, Vinh",
+          "Zier, Oliver",
+          "Shen, Xuejian",
+          "Vogelsberger, Mark",
+          "Brinckmann, Thejs",
+          "Frandsen, Mads T.",
+          "Zavala, Jesús",
+          "Holt Dihver Christensen, Frederik",
+          "Theiss Kristensen, Mikkel"
+        ],
+        "doctype": "eprint",
+        "doi": [
+          "10.48550/arXiv.2610.16968"
+        ],
+        "eid": "arXiv:2610.16968",
+        "identifier": [
+          "arXiv:2610.16968",
+          "10.48550/arXiv.2610.16968",
+          "2026arXiv261016968R"
+        ],
+        "page": [
+          "arXiv:2610.16968"
+        ],
+        "pub": "arXiv e-prints",
+        "pubdate": "2026-10-00",
+        "title": [
+          "Self-Interacting Dark Matter: From Particle Physics Theories to Structure Formation Simulations"
+        ],
+        "year": "2026",
+        "publisher": "CUL",
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "NOT REFEREED",
+          "OPENACCESS"
+        ],
+        "citation_count": 1
+      }
+    },
+    {
+      "key": "arxiv:2607.05504",
+      "section": "advising_supervision",
+      "aliases": [
+        "arxiv:2607.05504",
+        "bibcode:2026MNRAS.552g1674Z",
+        "bibcode:2026MNRAS.tmp.1552Z",
+        "bibcode:2026arXiv260705504Z",
+        "doi:10.1093/mnras/stag1674",
+        "doi:10.48550/arxiv.2607.05504"
+      ],
+      "metadata": {
+        "bibcode": "2026MNRAS.552g1674Z",
+        "alternate_bibcode": [
+          "2026arXiv260705504Z",
+          "2026MNRAS.tmp.1552Z"
+        ],
+        "author": [
+          "Zier, Oliver",
+          "Shen, Xuejian",
+          "Tran, Vinh",
+          "Rosenlyst, Martin",
+          "Vogelsberger, Mark",
+          "Liu, Rongrong"
+        ],
+        "doctype": "article",
+        "doi": [
+          "10.1093/mnras/stag1674",
+          "10.48550/arXiv.2607.05504"
+        ],
+        "eid": "stag1674",
+        "identifier": [
+          "10.1093/mnras/stag1674",
+          "arXiv:2607.05504",
+          "2026arXiv260705504Z",
+          "10.48550/arXiv.2607.05504",
+          "2026MNRAS.tmp.1552Z",
+          "2026MNRAS.552g1674Z"
+        ],
+        "issue": "1",
+        "page": [
+          "stag1674"
+        ],
+        "pub": "Monthly Notices of the Royal Astronomical Society",
+        "pubdate": "2026-10-00",
+        "title": [
+          "A novel implementation of self-interacting dark matter in AREPO"
+        ],
+        "volume": "552",
+        "year": "2026",
+        "publisher": "OUP",
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 4
+      }
+    },
+    {
+      "key": "arxiv:2610.37768",
+      "section": "advising_supervision",
+      "aliases": [
+        "arxiv:2610.37768",
+        "bibcode:2026arXiv261037768Z",
+        "doi:10.48550/arxiv.2610.37768"
+      ],
+      "metadata": {
+        "bibcode": "2026arXiv261037768Z",
+        "author": [
+          "Zier, Oliver",
+          "Pakmor, Ruediger",
+          "Shen, Xuejian",
+          "Liu, Rongrong",
+          "Schleuss, Lucas",
+          "Vogelsberger, Mark",
+          "Hernquist, Lars"
+        ],
+        "doctype": "eprint",
+        "doi": [
+          "10.48550/arXiv.2610.37768"
+        ],
+        "eid": "arXiv:2610.37768",
+        "identifier": [
+          "arXiv:2610.37768",
+          "2026arXiv261037768Z",
+          "10.48550/arXiv.2610.37768"
+        ],
+        "page": [
+          "arXiv:2610.37768"
+        ],
+        "pub": "arXiv e-prints",
+        "pubdate": "2026-10-00",
+        "title": [
+          "NORI: a GPU-accelerated code for simulating self-gravitating and self-interacting dark matter"
+        ],
+        "year": "2026",
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "NOT REFEREED",
+          "OPENACCESS"
+        ],
+        "citation_count": 0
+      }
+    },
+    {
+      "key": "arxiv:2605.24112",
+      "section": "first_author",
+      "aliases": [
+        "arxiv:2605.24112",
+        "bibcode:2026MNRAS.tmp.1921S",
+        "bibcode:2026arXiv260524112S",
+        "doi:10.1093/mnras/stag2082",
+        "doi:10.48550/arxiv.2605.24112"
+      ],
+      "metadata": {
+        "bibcode": "2026MNRAS.tmp.1921S",
+        "alternate_bibcode": [
+          "2026arXiv260524112S"
+        ],
+        "author": [
+          "Shen, Xuejian",
+          "Zier, Oliver",
+          "Smith, Aaron",
+          "Liu, Rongrong",
+          "Kannan, Rahul",
+          "Bulichi, Teodora-Elena",
+          "Koehler, Sonja M.",
+          "Vogelsberger, Volker Springel Mark",
+          "Hernquist, Lars",
+          "Naidu, Rohan P.",
+          "de Graaff, Anna",
+          "Pizzati, Elia",
+          "Alexander, David M.",
+          "Ho, Luis C.",
+          "Kokorev, Vasily",
+          "Leung, Gene",
+          "Eilers, Anna-Christina",
+          "Hickox, Ryan C."
+        ],
+        "doctype": "article",
+        "doi": [
+          "10.1093/mnras/stag2082",
+          "10.48550/arXiv.2605.24112"
+        ],
+        "identifier": [
+          "10.1093/mnras/stag2082",
+          "2026arXiv260524112S",
+          "arXiv:2605.24112",
+          "10.48550/arXiv.2605.24112",
+          "2026MNRAS.tmp.1921S"
+        ],
+        "pub": "Monthly Notices of the Royal Astronomical Society",
+        "pubdate": "2026-10-00",
+        "title": [
+          "The LUMINA Project: The Demographics of Active Galactic Nuclei from Quasars to Little Red Dots at z ≥ 3"
+        ],
+        "year": "2026",
+        "publisher": "OUP",
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 17
+      }
+    },
+    {
+      "key": "arxiv:2509.19427",
+      "section": "first_author",
+      "aliases": [
+        "arxiv:2509.19427",
+        "bibcode:2025arXiv250919427S",
+        "bibcode:2026MNRAS.550g1227S",
+        "bibcode:2026MNRAS.tmp.1145S",
+        "doi:10.1093/mnras/stag1227",
+        "doi:10.48550/arxiv.2509.19427"
+      ],
+      "metadata": {
+        "bibcode": "2026MNRAS.550g1227S",
+        "alternate_bibcode": [
+          "2026MNRAS.tmp.1145S",
+          "2025arXiv250919427S"
+        ],
+        "author": [
+          "Shen, Xuejian",
+          "Zier, Oliver",
+          "Vogelsberger, Mark",
+          "Boylan-Kolchin, Michael",
+          "Hernquist, Lars",
+          "Tacchella, Sandro",
+          "Naidu, Rohan P."
+        ],
+        "doctype": "article",
+        "doi": [
+          "10.1093/mnras/stag1227",
+          "10.48550/arXiv.2509.19427"
+        ],
+        "eid": "stag1227",
+        "identifier": [
+          "10.48550/arXiv.2509.19427",
+          "2026MNRAS.tmp.1145S",
+          "arXiv:2509.19427",
+          "2026MNRAS.550g1227S",
+          "2025arXiv250919427S",
+          "10.1093/mnras/stag1227"
+        ],
+        "issue": "2",
+        "page": [
+          "stag1227"
+        ],
+        "pub": "Monthly Notices of the Royal Astronomical Society",
+        "pubdate": "2026-08-00",
+        "title": [
+          "The Cosmic Rush Hour: Rapid formation of bright, massive, disky, star-forming galaxies as signatures of early-universe physics"
+        ],
+        "volume": "550",
+        "year": "2026",
+        "publisher": "OUP",
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 15
+      }
+    },
+    {
+      "key": "arxiv:2609.00113",
+      "section": "advising_supervision",
+      "aliases": [
+        "arxiv:2609.00113",
+        "bibcode:2026arXiv260900113T",
+        "doi:10.48550/arxiv.2609.00113"
+      ],
+      "metadata": {
+        "bibcode": "2026arXiv260900113T",
+        "author": [
+          "Tran, Vinh",
+          "Shen, Xuejian",
+          "Zier, Oliver",
+          "de Graaff, Anna",
+          "Naidu, Rohan P.",
+          "Vogelsberger, Mark"
+        ],
+        "doctype": "eprint",
+        "doi": [
+          "10.48550/arXiv.2609.00113"
+        ],
+        "eid": "arXiv:2609.00113",
+        "identifier": [
+          "10.48550/arXiv.2609.00113",
+          "arXiv:2609.00113",
+          "2026arXiv260900113T"
+        ],
+        "page": [
+          "arXiv:2609.00113"
+        ],
+        "pub": "arXiv e-prints",
+        "pubdate": "2026-08-00",
+        "title": [
+          "Weighing Little Red Dots with Transient Events"
+        ],
+        "year": "2026",
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "NOT REFEREED",
+          "OPENACCESS"
+        ],
+        "citation_count": 0
+      }
+    },
+    {
+      "key": "arxiv:2608.19308",
+      "section": "advising_supervision",
+      "aliases": [
+        "arxiv:2608.19308",
+        "bibcode:2026arXiv260819308W",
+        "doi:10.48550/arxiv.2608.19308"
+      ],
+      "metadata": {
+        "bibcode": "2026arXiv260819308W",
+        "author": [
+          "Wang, Zihao",
+          "Shen, Xuejian",
+          "Kannan, Rahul",
+          "Puchwein, Ewald",
+          "Smith, Aaron",
+          "Borrow, Josh",
+          "Garaldi, Enrico",
+          "Keating, Laura",
+          "Vogelsberger, Mark",
+          "Zier, Oliver",
+          "McClymont, William",
+          "Tacchella, Sandro",
+          "Jiang, Fangzhou",
+          "Li, Hui",
+          "Hernquist, Lars"
+        ],
+        "doctype": "eprint",
+        "doi": [
+          "10.48550/arXiv.2608.19308"
+        ],
+        "eid": "arXiv:2608.19308",
+        "identifier": [
+          "10.48550/arXiv.2608.19308",
+          "arXiv:2608.19308",
+          "2026arXiv260819308W"
+        ],
+        "page": [
+          "arXiv:2608.19308"
+        ],
+        "pub": "arXiv e-prints",
+        "pubdate": "2026-08-00",
+        "title": [
+          "The THESAN-ZOOM project: clumpiness of high-redshift galaxies and its connection to bursty star formation"
+        ],
+        "year": "2026",
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "NOT REFEREED",
+          "OPENACCESS"
+        ],
+        "citation_count": 2
+      }
+    },
+    {
+      "key": "arxiv:2510.12173",
+      "section": "advising_supervision",
+      "aliases": [
+        "arxiv:2510.12173",
+        "bibcode:2025arXiv251012173S",
+        "bibcode:2026ApJ..1006..107S",
+        "doi:10.3847/1538-4357/ae7a43",
+        "doi:10.48550/arxiv.2510.12173"
+      ],
+      "metadata": {
+        "bibcode": "2026ApJ..1006..107S",
+        "alternate_bibcode": [
+          "2025arXiv251012173S"
+        ],
+        "author": [
+          "Schechter, Aimee L.",
+          "Ćiprijanović, Aleksandra",
+          "Shen, Xuejian",
+          "Nevin, Rebecca",
+          "Comerford, Julia M.",
+          "Stemo, Aaron",
+          "Blecha, Laura",
+          "Fraley, Austin"
+        ],
+        "doctype": "article",
+        "doi": [
+          "10.3847/1538-4357/ae7a43",
+          "10.48550/arXiv.2510.12173"
+        ],
+        "eid": "107",
+        "identifier": [
+          "10.48550/arXiv.2510.12173",
+          "10.3847/1538-4357/ae7a43",
+          "arXiv:2510.12173",
+          "2026ApJ..1006..107S",
+          "2025arXiv251012173S"
+        ],
+        "issue": "1",
+        "page": [
+          "107"
+        ],
+        "pub": "The Astrophysical Journal",
+        "pubdate": "2026-07-00",
+        "title": [
+          "Beyond the Brightest: A Deep Learning Approach to Identifying Major and Minor Galaxy Mergers in CANDELS at z ∼ 1"
+        ],
+        "volume": "1006",
+        "year": "2026",
+        "publisher": "IOP",
+        "property": [
+          "ARTICLE",
+          "DATA",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 1
+      }
+    },
+    {
+      "key": "arxiv:2504.00075",
+      "section": "advising_supervision",
+      "aliases": [
+        "arxiv:2504.00075",
+        "bibcode:2025arXiv250400075S",
+        "bibcode:2026PhRvD.114b3048S",
+        "doi:10.1103/1m1z-7lhm",
+        "doi:10.48550/arxiv.2504.00075"
+      ],
+      "metadata": {
+        "bibcode": "2026PhRvD.114b3048S",
+        "alternate_bibcode": [
+          "2025arXiv250400075S"
+        ],
+        "author": [
+          "Shen, Tingwei",
+          "Shen, Xuejian",
+          "Xiao, Huangyu",
+          "Vogelsberger, Mark",
+          "Jiang, Fangzhou"
+        ],
+        "doctype": "article",
+        "doi": [
+          "10.1103/1m1z-7lhm",
+          "10.48550/arXiv.2504.00075"
+        ],
+        "eid": "023048",
+        "identifier": [
+          "arXiv:2504.00075",
+          "10.48550/arXiv.2504.00075",
+          "2025arXiv250400075S",
+          "10.1103/1m1z-7lhm",
+          "2026PhRvD.114b3048S"
+        ],
+        "issue": "2",
+        "page": [
+          "023048"
+        ],
+        "pub": "Physical Review D",
+        "pubdate": "2026-07-00",
+        "title": [
+          "Massive black holes seeded by dark matter: Implications for little red dots and gravitational wave signatures"
+        ],
+        "volume": "114",
+        "year": "2026",
+        "publisher": "APS",
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 31
+      }
+    },
+    {
+      "key": "arxiv:2404.16247",
+      "section": "advising_supervision",
+      "aliases": [
+        "arxiv:2404.16247",
+        "bibcode:2024arXiv240416247S",
+        "bibcode:2026ApJ..1000..127S",
+        "doi:10.3847/1538-4357/adfc5a",
+        "doi:10.48550/arxiv.2404.16247"
+      ],
+      "metadata": {
+        "bibcode": "2026ApJ..1000..127S",
+        "alternate_bibcode": [
+          "2024arXiv240416247S"
+        ],
+        "author": [
+          "Sands, Isabel S.",
+          "Hopkins, Philip F.",
+          "Shen, Xuejian",
+          "Boylan-Kolchin, Michael",
+          "Bullock, James",
+          "Faucher-Giguère, Claude-André",
+          "Mercado, Francisco J.",
+          "Moreno, Jorge",
+          "Necib, Lina",
+          "Ou, Xiaowei",
+          "Wellons, Sarah",
+          "Wetzel, Andrew"
+        ],
+        "doctype": "article",
+        "doi": [
+          "10.3847/1538-4357/adfc5a",
+          "10.48550/arXiv.2404.16247"
+        ],
+        "eid": "127",
+        "identifier": [
+          "arXiv:2404.16247",
+          "2024arXiv240416247S",
+          "10.3847/1538-4357/adfc5a",
+          "2026ApJ..1000..127S",
+          "10.48550/arXiv.2404.16247"
+        ],
+        "issue": "1",
+        "page": [
+          "127"
+        ],
+        "pub": "The Astrophysical Journal",
+        "pubdate": "2026-03-00",
+        "title": [
+          "Confronting the Diversity Problem: The Limits of Galaxy Rotation Curves as a Tool to Understand Dark Matter Profiles"
+        ],
+        "volume": "1000",
+        "year": "2026",
+        "publisher": "IOP",
+        "property": [
+          "ARTICLE",
+          "DATA",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 25
+      }
+    },
+    {
+      "key": "arxiv:2411.11945",
+      "section": "advising_supervision",
+      "aliases": [
+        "arxiv:2411.11945",
+        "bibcode:2024arXiv241111945T",
+        "bibcode:2026PhRvD.113f3024T",
+        "doi:10.1103/t8pl-mdhc",
+        "doi:10.48550/arxiv.2411.11945"
+      ],
+      "metadata": {
+        "bibcode": "2026PhRvD.113f3024T",
+        "alternate_bibcode": [
+          "2024arXiv241111945T"
+        ],
+        "author": [
+          "Tran, Vinh",
+          "Shen, Xuejian",
+          "Vogelsberger, Mark",
+          "Gilman, Daniel",
+          "O'Neil, Stephanie",
+          "Roche, Cian",
+          "Zier, Oliver",
+          "Gao, Jiarun"
+        ],
+        "doctype": "article",
+        "doi": [
+          "10.1103/t8pl-mdhc",
+          "10.48550/arXiv.2411.11945"
+        ],
+        "eid": "063024",
+        "identifier": [
+          "10.48550/arXiv.2411.11945",
+          "arXiv:2411.11945",
+          "2026PhRvD.113f3024T",
+          "2024arXiv241111945T",
+          "10.1103/t8pl-mdhc"
+        ],
+        "issue": "6",
+        "page": [
+          "063024"
+        ],
+        "pub": "Physical Review D",
+        "pubdate": "2026-03-00",
+        "title": [
+          "Novel density profile for isothermal cores of dark matter halos"
+        ],
+        "volume": "113",
+        "year": "2026",
+        "publisher": "APS",
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 14
+      }
+    },
+    {
+      "key": "arxiv:2503.01949",
+      "section": "first_author",
+      "aliases": [
+        "arxiv:2503.01949",
+        "bibcode:2025MNRAS.tmp.2012S",
+        "bibcode:2025arXiv250301949S",
+        "bibcode:2026MNRAS.545S2119S",
+        "bibcode:2026MNRAS.545f2119S",
+        "doi:10.1093/mnras/staf2119",
+        "doi:10.48550/arxiv.2503.01949"
+      ],
+      "metadata": {
+        "bibcode": "2026MNRAS.545f2119S",
+        "alternate_bibcode": [
+          "2025arXiv250301949S",
+          "2025MNRAS.tmp.2012S",
+          "2026MNRAS.545S2119S"
+        ],
+        "author": [
+          "Shen, Xuejian",
+          "Kannan, Rahul",
+          "Puchwein, Ewald",
+          "Smith, Aaron",
+          "Vogelsberger, Mark",
+          "Borrow, Josh",
+          "Garaldi, Enrico",
+          "Keating, Laura",
+          "Zier, Oliver",
+          "McClymont, William",
+          "Tacchella, Sandro",
+          "Wang, Zihao",
+          "Hernquist, Lars"
+        ],
+        "doctype": "article",
+        "doi": [
+          "10.1093/mnras/staf2119",
+          "10.48550/arXiv.2503.01949"
+        ],
+        "eid": "staf2119",
+        "identifier": [
+          "10.1093/mnras/staf2119",
+          "2026MNRAS.545S2119S",
+          "2026MNRAS.545f2119S",
+          "2025arXiv250301949S",
+          "2025MNRAS.tmp.2012S",
+          "10.48550/arXiv.2503.01949",
+          "arXiv:2503.01949"
+        ],
+        "issue": "4",
+        "page": [
+          "staf2119"
+        ],
+        "pub": "Monthly Notices of the Royal Astronomical Society",
+        "pubdate": "2026-02-00",
+        "title": [
+          "The THESAN-ZOOM project: star formation efficiencies in high-redshift galaxies"
+        ],
+        "volume": "545",
+        "year": "2026",
+        "publisher": "OUP",
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 45
+      }
+    },
+    {
+      "key": "arxiv:2505.05554",
+      "section": "advising_supervision",
+      "aliases": [
+        "arxiv:2505.05554",
+        "bibcode:2025MNRAS.544.2675W",
+        "bibcode:2025arXiv250505554W",
+        "doi:10.1093/mnras/staf1677",
+        "doi:10.48550/arxiv.2505.05554"
+      ],
+      "metadata": {
+        "bibcode": "2025MNRAS.544.2675W",
+        "alternate_bibcode": [
+          "2025arXiv250505554W"
+        ],
+        "author": [
+          "Wang, Zihao",
+          "Shen, Xuejian",
+          "Vogelsberger, Mark",
+          "Li, Hui",
+          "Kannan, Rahul",
+          "Puchwein, Ewald",
+          "Smith, Aaron",
+          "Borrow, Josh",
+          "Garaldi, Enrico",
+          "Keating, Laura",
+          "Zier, Oliver",
+          "McClymont, William",
+          "Tacchella, Sandro",
+          "Ni, Yang",
+          "Hernquist, Lars"
+        ],
+        "doctype": "article",
+        "doi": [
+          "10.1093/mnras/staf1677",
+          "10.48550/arXiv.2505.05554"
+        ],
+        "identifier": [
+          "arXiv:2505.05554",
+          "2025arXiv250505554W",
+          "10.48550/arXiv.2505.05554",
+          "10.1093/mnras/staf1677",
+          "2025MNRAS.544.2675W"
+        ],
+        "issue": "3",
+        "page": [
+          "2675"
+        ],
+        "pub": "Monthly Notices of the Royal Astronomical Society",
+        "pubdate": "2025-12-00",
+        "title": [
+          "The THESAN-ZOOM project: star formation efficiency from giant molecular clouds to galactic scale in high-redshift starbursts"
+        ],
+        "volume": "544",
+        "year": "2025",
+        "publisher": "OUP",
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 26
+      }
+    },
+    {
+      "key": "arxiv:2507.22102",
+      "section": "advising_supervision",
+      "aliases": [
+        "arxiv:2507.22102",
+        "bibcode:2025OJAp....846824Y",
+        "bibcode:2025OJAp....8E.164Y",
+        "bibcode:2025arXiv250722102Y",
+        "doi:10.33232/001c.146824",
+        "doi:10.48550/arxiv.2507.22102"
+      ],
+      "metadata": {
+        "bibcode": "2025OJAp....8E.164Y",
+        "alternate_bibcode": [
+          "2025OJAp....846824Y",
+          "2025arXiv250722102Y"
+        ],
+        "author": [
+          "Yu, Qiaorong S.",
+          "O'Neil, Stephanie",
+          "Shen, Xuejian",
+          "Vogelsberger, Mark",
+          "Bose, Sownak",
+          "Hadzhyska, Boryana",
+          "Hernquist, Lars",
+          "Kannan, Rahul",
+          "Wu, Monica",
+          "Wu, Ziang"
+        ],
+        "doctype": "article",
+        "doi": [
+          "10.33232/001c.146824",
+          "10.48550/arXiv.2507.22102"
+        ],
+        "identifier": [
+          "2025OJAp....846824Y",
+          "10.33232/001c.146824",
+          "2025OJAp....8E.164Y",
+          "2025arXiv250722102Y",
+          "arXiv:2507.22102",
+          "10.48550/arXiv.2507.22102"
+        ],
+        "page": [
+          "E164"
+        ],
+        "pub": "The Open Journal of Astrophysics",
+        "pubdate": "2025-11-00",
+        "title": [
+          "Measuring the splashback feature: Dependence on halo properties and history"
+        ],
+        "volume": "8",
+        "year": "2025",
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 1
+      }
+    },
+    {
+      "key": "arxiv:2504.02928",
+      "section": "advising_supervision",
+      "aliases": [
+        "arxiv:2504.02928",
+        "bibcode:2025PhRvD.112h3003T",
+        "bibcode:2025arXiv250402928T",
+        "doi:10.1103/2p8b-qcys",
+        "doi:10.48550/arxiv.2504.02928"
+      ],
+      "metadata": {
+        "bibcode": "2025PhRvD.112h3003T",
+        "alternate_bibcode": [
+          "2025arXiv250402928T"
+        ],
+        "author": [
+          "Tran, Vinh",
+          "Shen, Xuejian",
+          "Gilman, Daniel",
+          "Vogelsberger, Mark",
+          "O'Neil, Stephanie",
+          "Xiong, Donghua",
+          "Hu, Jiayi",
+          "Wu, Ziang"
+        ],
+        "doctype": "article",
+        "doi": [
+          "10.1103/2p8b-qcys",
+          "10.48550/arXiv.2504.02928"
+        ],
+        "eid": "083003",
+        "identifier": [
+          "2025PhRvD.112h3003T",
+          "2025arXiv250402928T",
+          "10.1103/2p8b-qcys",
+          "arXiv:2504.02928",
+          "10.48550/arXiv.2504.02928"
+        ],
+        "issue": "8",
+        "page": [
+          "083003"
+        ],
+        "pub": "Physical Review D",
+        "pubdate": "2025-10-00",
+        "title": [
+          "Core collapse in resonant self-interacting dark matter across two decades in halo mass"
+        ],
+        "volume": "112",
+        "year": "2025",
+        "publisher": "APS",
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 16
+      }
+    },
+    {
+      "key": "arxiv:2503.04882",
+      "section": "advising_supervision",
+      "aliases": [
+        "arxiv:2503.04882",
+        "bibcode:2025OJAp....8E.100S",
+        "bibcode:2025arXiv250304882S",
+        "doi:10.33232/001c.142495",
+        "doi:10.48550/arxiv.2503.04882"
+      ],
+      "metadata": {
+        "bibcode": "2025OJAp....8E.100S",
+        "alternate_bibcode": [
+          "2025arXiv250304882S"
+        ],
+        "author": [
+          "Sun, Xiaoqing",
+          "O'Neil, Stephanie",
+          "Shen, Xuejian",
+          "Vogelsberger, Mark"
+        ],
+        "doctype": "article",
+        "doi": [
+          "10.33232/001c.142495",
+          "10.48550/arXiv.2503.04882"
+        ],
+        "eid": "100",
+        "identifier": [
+          "2025OJAp....8E.100S",
+          "10.33232/001c.142495",
+          "10.48550/arXiv.2503.04882",
+          "arXiv:2503.04882",
+          "2025arXiv250304882S"
+        ],
+        "page": [
+          "100"
+        ],
+        "pub": "The Open Journal of Astrophysics",
+        "pubdate": "2025-07-00",
+        "title": [
+          "The effects of projection on measuring the splashback feature"
+        ],
+        "volume": "8",
+        "year": "2025",
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 3
+      }
+    },
+    {
+      "key": "arxiv:2408.15317",
+      "section": "advising_supervision",
+      "aliases": [
+        "arxiv:2408.15317",
+        "bibcode:2024arXiv240815317R",
+        "bibcode:2025ApJ...982..175R",
+        "doi:10.3847/1538-4357/adb02b",
+        "doi:10.48550/arxiv.2408.15317"
+      ],
+      "metadata": {
+        "bibcode": "2025ApJ...982..175R",
+        "alternate_bibcode": [
+          "2024arXiv240815317R"
+        ],
+        "author": [
+          "Roy, Sandip",
+          "Shen, Xuejian",
+          "Barron, Jared",
+          "Lisanti, Mariangela",
+          "Curtin, David",
+          "Murray, Norman",
+          "Hopkins, Philip F."
+        ],
+        "doctype": "article",
+        "doi": [
+          "10.3847/1538-4357/adb02b",
+          "10.48550/arXiv.2408.15317"
+        ],
+        "eid": "175",
+        "identifier": [
+          "10.3847/1538-4357/adb02b",
+          "arXiv:2408.15317",
+          "2024arXiv240815317R",
+          "2025ApJ...982..175R",
+          "10.48550/arXiv.2408.15317"
+        ],
+        "issue": "2",
+        "page": [
+          "175"
+        ],
+        "pub": "The Astrophysical Journal",
+        "pubdate": "2025-04-00",
+        "title": [
+          "Aggressively Dissipative Dark Dwarfs: The Effects of Atomic Dark Matter on the Inner Densities of Isolated Dwarf Galaxies"
+        ],
+        "volume": "982",
+        "year": "2025",
+        "publisher": "IOP",
+        "property": [
+          "ARTICLE",
+          "DATA",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 24
+      }
+    },
+    {
+      "key": "bibcode:2025AAS...24542104R",
+      "section": "advising_supervision",
+      "aliases": [
+        "bibcode:2025AAS...24542104R"
+      ],
+      "metadata": {
+        "bibcode": "2025AAS...24542104R",
+        "author": [
+          "Roy, Sandip",
+          "Shen, Xuejian",
+          "Barron, Jared",
+          "Lisanti, Mariangela",
+          "Curtin, David",
+          "Murray, Norman",
+          "Hopkins, Philip"
+        ],
+        "doctype": "abstract",
+        "eid": "421.04",
+        "identifier": [
+          "2025AAS...24542104R"
+        ],
+        "page": [
+          "421.04"
+        ],
+        "pub": "American Astronomical Society Meeting Abstracts #245",
+        "pubdate": "2025-01-00",
+        "title": [
+          "Aggressively Dissipative Dark Sectors: Simulating and Modeling the Effects of Atomic Dark Matter on the Inner Densities of Dwarf Galaxies"
+        ],
+        "volume": "245",
+        "year": "2025",
+        "property": [
+          "ESOURCE",
+          "NONARTICLE",
+          "NOT REFEREED"
+        ],
+        "citation_count": 0
+      }
+    },
+    {
+      "key": "arxiv:2406.15548",
+      "section": "first_author",
+      "aliases": [
+        "arxiv:2406.15548",
+        "bibcode:2024MNRAS.533.3923S",
+        "bibcode:2024arXiv240615548S",
+        "doi:10.1093/mnras/stae1932",
+        "doi:10.48550/arxiv.2406.15548"
+      ],
+      "metadata": {
+        "bibcode": "2024MNRAS.533.3923S",
+        "alternate_bibcode": [
+          "2024arXiv240615548S"
+        ],
+        "author": [
+          "Shen, Xuejian",
+          "Vogelsberger, Mark",
+          "Boylan-Kolchin, Michael",
+          "Tacchella, Sandro",
+          "Naidu, Rohan P."
+        ],
+        "doctype": "article",
+        "doi": [
+          "10.1093/mnras/stae1932",
+          "10.48550/arXiv.2406.15548"
+        ],
+        "identifier": [
+          "2024arXiv240615548S",
+          "2024MNRAS.533.3923S",
+          "10.48550/arXiv.2406.15548",
+          "10.1093/mnras/stae1932",
+          "arXiv:2406.15548"
+        ],
+        "issue": "4",
+        "page": [
+          "3923"
+        ],
+        "pub": "Monthly Notices of the Royal Astronomical Society",
+        "pubdate": "2024-10-00",
+        "title": [
+          "Early galaxies and early dark energy: a unified solution to the hubble tension and puzzles of massive bright galaxies revealed by JWST"
+        ],
+        "volume": "533",
+        "year": "2024",
+        "publisher": "OUP",
+        "property": [
+          "ARTICLE",
+          "ASSOCIATED",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 84
+      }
+    },
+    {
+      "key": "arxiv:2402.08717",
+      "section": "first_author",
+      "aliases": [
+        "arxiv:2402.08717",
+        "bibcode:2024MNRAS.534.1433S",
+        "bibcode:2024MNRAS.tmp.2115S",
+        "bibcode:2024arXiv240208717S",
+        "doi:10.1093/mnras/stae2156",
+        "doi:10.48550/arxiv.2402.08717"
+      ],
+      "metadata": {
+        "bibcode": "2024MNRAS.534.1433S",
+        "alternate_bibcode": [
+          "2024arXiv240208717S",
+          "2024MNRAS.tmp.2115S"
+        ],
+        "author": [
+          "Shen, Xuejian",
+          "Vogelsberger, Mark",
+          "Borrow, Josh",
+          "Hu, Yongao",
+          "Erickson, Evan",
+          "Kannan, Rahul",
+          "Smith, Aaron",
+          "Garaldi, Enrico",
+          "Hernquist, Lars",
+          "Morishita, Takahiro",
+          "Tacchella, Sandro",
+          "Zier, Oliver",
+          "Sun, Guochao",
+          "Eilers, Anna-Christina",
+          "Wang, Hui"
+        ],
+        "doctype": "article",
+        "doi": [
+          "10.1093/mnras/stae2156",
+          "10.48550/arXiv.2402.08717"
+        ],
+        "identifier": [
+          "2024MNRAS.tmp.2115S",
+          "2024MNRAS.534.1433S",
+          "arXiv:2402.08717",
+          "10.48550/arXiv.2402.08717",
+          "2024arXiv240208717S",
+          "10.1093/mnras/stae2156"
+        ],
+        "issue": "2",
+        "page": [
+          "1433"
+        ],
+        "pub": "Monthly Notices of the Royal Astronomical Society",
+        "pubdate": "2024-10-00",
+        "title": [
+          "The THESAN project: galaxy sizes during the epoch of reionization"
+        ],
+        "volume": "534",
+        "year": "2024",
+        "publisher": "OUP",
+        "property": [
+          "ARTICLE",
+          "DATA",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 49
+      }
+    },
+    {
+      "key": "arxiv:2401.13727",
+      "section": "advising_supervision",
+      "aliases": [
+        "arxiv:2401.13727",
+        "bibcode:2024MNRAS.531.1440L",
+        "bibcode:2024MNRAS.tmp.1295L",
+        "bibcode:2024arXiv240113727L",
+        "doi:10.1093/mnras/stae1270",
+        "doi:10.48550/arxiv.2401.13727"
+      ],
+      "metadata": {
+        "bibcode": "2024MNRAS.531.1440L",
+        "alternate_bibcode": [
+          "2024arXiv240113727L",
+          "2024MNRAS.tmp.1295L"
+        ],
+        "author": [
+          "Leonard, Aidan",
+          "O'Neil, Stephanie",
+          "Shen, Xuejian",
+          "Vogelsberger, Mark",
+          "Rosenstein, Olivia",
+          "Shangguan, Haotian",
+          "Teng, Yuanhong",
+          "Hu, Jiayi"
+        ],
+        "doctype": "article",
+        "doi": [
+          "10.1093/mnras/stae1270",
+          "10.48550/arXiv.2401.13727"
+        ],
+        "identifier": [
+          "2024MNRAS.531.1440L",
+          "arXiv:2401.13727",
+          "2024MNRAS.tmp.1295L",
+          "10.48550/arXiv.2401.13727",
+          "10.1093/mnras/stae1270",
+          "2024arXiv240113727L"
+        ],
+        "issue": "1",
+        "page": [
+          "1440"
+        ],
+        "pub": "Monthly Notices of the Royal Astronomical Society",
+        "pubdate": "2024-06-00",
+        "title": [
+          "Varying primordial state fractions in exo- and endothermic SIDM simulations of Milky Way-mass haloes"
+        ],
+        "volume": "531",
+        "year": "2024",
+        "publisher": "OUP",
+        "property": [
+          "ARTICLE",
+          "DATA",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 10
+      }
+    },
+    {
+      "key": "arxiv:2206.05327",
+      "section": "first_author",
+      "aliases": [
+        "arxiv:2206.05327",
+        "bibcode:2022arXiv220605327S",
+        "bibcode:2024ApJ...966..131S",
+        "doi:10.3847/1538-4357/ad2fb1",
+        "doi:10.48550/arxiv.2206.05327"
+      ],
+      "metadata": {
+        "bibcode": "2024ApJ...966..131S",
+        "alternate_bibcode": [
+          "2022arXiv220605327S"
+        ],
+        "author": [
+          "Shen, Xuejian",
+          "Hopkins, Philip F.",
+          "Necib, Lina",
+          "Jiang, Fangzhou",
+          "Boylan-Kolchin, Michael",
+          "Wetzel, Andrew"
+        ],
+        "doctype": "article",
+        "doi": [
+          "10.3847/1538-4357/ad2fb1",
+          "10.48550/arXiv.2206.05327"
+        ],
+        "eid": "131",
+        "identifier": [
+          "2022arXiv220605327S",
+          "2024ApJ...966..131S",
+          "arXiv:2206.05327",
+          "10.3847/1538-4357/ad2fb1",
+          "10.48550/arXiv.2206.05327"
+        ],
+        "issue": "1",
+        "page": [
+          "131"
+        ],
+        "pub": "The Astrophysical Journal",
+        "pubdate": "2024-05-00",
+        "title": [
+          "Dissipative Dark Matter on FIRE. II. Observational Signatures and Constraints from Local Dwarf Galaxies"
+        ],
+        "volume": "966",
+        "year": "2024",
+        "publisher": "IOP",
+        "property": [
+          "ARTICLE",
+          "ASSOCIATED",
+          "DATA",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 37
+      }
+    },
+    {
+      "key": "arxiv:2311.02148",
+      "section": "advising_supervision",
+      "aliases": [
+        "arxiv:2311.02148",
+        "bibcode:2023arXiv231102148G",
+        "bibcode:2024ApJ...967...21G",
+        "doi:10.3847/1538-4357/ad3823",
+        "doi:10.48550/arxiv.2311.02148"
+      ],
+      "metadata": {
+        "bibcode": "2024ApJ...967...21G",
+        "alternate_bibcode": [
+          "2023arXiv231102148G"
+        ],
+        "author": [
+          "Gemmell, Caleb",
+          "Roy, Sandip",
+          "Shen, Xuejian",
+          "Curtin, David",
+          "Lisanti, Mariangela",
+          "Murray, Norman",
+          "Hopkins, Philip F."
+        ],
+        "doctype": "article",
+        "doi": [
+          "10.3847/1538-4357/ad3823",
+          "10.48550/arXiv.2311.02148"
+        ],
+        "eid": "21",
+        "identifier": [
+          "10.48550/arXiv.2311.02148",
+          "2024ApJ...967...21G",
+          "2023arXiv231102148G",
+          "arXiv:2311.02148",
+          "10.3847/1538-4357/ad3823"
+        ],
+        "issue": "1",
+        "page": [
+          "21"
+        ],
+        "pub": "The Astrophysical Journal",
+        "pubdate": "2024-05-00",
+        "title": [
+          "Dissipative Dark Substructure: The Consequences of Atomic Dark Matter on Milky Way Analog Subhalos"
+        ],
+        "volume": "967",
+        "year": "2024",
+        "publisher": "IOP",
+        "property": [
+          "ARTICLE",
+          "ASSOCIATED",
+          "DATA",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 34
+      }
+    },
+    {
+      "key": "arxiv:2207.11276",
+      "section": "first_author",
+      "aliases": [
+        "arxiv:2207.11276",
+        "bibcode:2022arXiv220711276S",
+        "bibcode:2024ApJ...962....9S",
+        "doi:10.3847/1538-4357/ad12c6",
+        "doi:10.48550/arxiv.2207.11276"
+      ],
+      "metadata": {
+        "bibcode": "2024ApJ...962....9S",
+        "alternate_bibcode": [
+          "2022arXiv220711276S"
+        ],
+        "author": [
+          "Shen, Xuejian",
+          "Xiao, Huangyu",
+          "Hopkins, Philip F.",
+          "Zurek, Kathryn M."
+        ],
+        "doctype": "article",
+        "doi": [
+          "10.3847/1538-4357/ad12c6",
+          "10.48550/arXiv.2207.11276"
+        ],
+        "eid": "9",
+        "identifier": [
+          "10.3847/1538-4357/ad12c6",
+          "10.48550/arXiv.2207.11276",
+          "2022arXiv220711276S",
+          "2024ApJ...962....9S",
+          "arXiv:2207.11276"
+        ],
+        "issue": "1",
+        "page": [
+          "9"
+        ],
+        "pub": "The Astrophysical Journal",
+        "pubdate": "2024-02-00",
+        "title": [
+          "Disruption of Dark Matter Minihalos in the Milky Way Environment: Implications for Axion Miniclusters and Early Matter Domination"
+        ],
+        "volume": "962",
+        "year": "2024",
+        "publisher": "IOP",
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 35
+      }
+    },
+    {
+      "key": "arxiv:2304.06742",
+      "section": "first_author",
+      "aliases": [
+        "arxiv:2304.06742",
+        "bibcode:2023MNRAS.tmp.3284S",
+        "bibcode:2023arXiv230406742S",
+        "bibcode:2024MNRAS.527.2835S",
+        "doi:10.1093/mnras/stad3397",
+        "doi:10.48550/arxiv.2304.06742"
+      ],
+      "metadata": {
+        "bibcode": "2024MNRAS.527.2835S",
+        "alternate_bibcode": [
+          "2023MNRAS.tmp.3284S",
+          "2023arXiv230406742S"
+        ],
+        "author": [
+          "Shen, Xuejian",
+          "Borrow, Josh",
+          "Vogelsberger, Mark",
+          "Garaldi, Enrico",
+          "Smith, Aaron",
+          "Kannan, Rahul",
+          "Tacchella, Sandro",
+          "Zavala, Jesús",
+          "Hernquist, Lars",
+          "Yeh, Jessica Y.-C.",
+          "Zheng, Chunyuan"
+        ],
+        "doctype": "article",
+        "doi": [
+          "10.1093/mnras/stad3397",
+          "10.48550/arXiv.2304.06742"
+        ],
+        "identifier": [
+          "arXiv:2304.06742",
+          "2023arXiv230406742S",
+          "2023MNRAS.tmp.3284S",
+          "10.48550/arXiv.2304.06742",
+          "10.1093/mnras/stad3397",
+          "2024MNRAS.527.2835S"
+        ],
+        "issue": "2",
+        "page": [
+          "2835"
+        ],
+        "pub": "Monthly Notices of the Royal Astronomical Society",
+        "pubdate": "2024-01-00",
+        "title": [
+          "THESAN-HR: galaxies in the Epoch of Reionization in warm dark matter, fuzzy dark matter, and interacting dark matter"
+        ],
+        "volume": "527",
+        "year": "2024",
+        "publisher": "OUP",
+        "property": [
+          "ARTICLE",
+          "ASSOCIATED",
+          "DATA",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 38
+      }
+    },
+    {
+      "key": "arxiv:2305.05679",
+      "section": "first_author",
+      "aliases": [
+        "arxiv:2305.05679",
+        "bibcode:2023MNRAS.525.3254S",
+        "bibcode:2023MNRAS.tmp.2399S",
+        "bibcode:2023arXiv230505679S",
+        "doi:10.1093/mnras/stad2508",
+        "doi:10.48550/arxiv.2305.05679"
+      ],
+      "metadata": {
+        "bibcode": "2023MNRAS.525.3254S",
+        "alternate_bibcode": [
+          "2023arXiv230505679S",
+          "2023MNRAS.tmp.2399S"
+        ],
+        "author": [
+          "Shen, Xuejian",
+          "Vogelsberger, Mark",
+          "Boylan-Kolchin, Michael",
+          "Tacchella, Sandro",
+          "Kannan, Rahul"
+        ],
+        "doctype": "article",
+        "doi": [
+          "10.1093/mnras/stad2508",
+          "10.48550/arXiv.2305.05679"
+        ],
+        "identifier": [
+          "2023arXiv230505679S",
+          "2023MNRAS.525.3254S",
+          "arXiv:2305.05679",
+          "10.1093/mnras/stad2508",
+          "10.48550/arXiv.2305.05679",
+          "2023MNRAS.tmp.2399S"
+        ],
+        "issue": "3",
+        "page": [
+          "3254"
+        ],
+        "pub": "Monthly Notices of the Royal Astronomical Society",
+        "pubdate": "2023-11-00",
+        "title": [
+          "The impact of UV variability on the abundance of bright galaxies at z ≥ 9"
+        ],
+        "volume": "525",
+        "year": "2023",
+        "publisher": "OUP",
+        "property": [
+          "ARTICLE",
+          "ASSOCIATED",
+          "DATA",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 221
+      }
+    },
+    {
+      "key": "arxiv:2301.08263",
+      "section": "advising_supervision",
+      "aliases": [
+        "arxiv:2301.08263",
+        "bibcode:2023MNRAS.525.2241H",
+        "bibcode:2023MNRAS.tmp.1847H",
+        "bibcode:2023arXiv230108263H",
+        "doi:10.1093/mnras/stad1902",
+        "doi:10.48550/arxiv.2301.08263"
+      ],
+      "metadata": {
+        "bibcode": "2023MNRAS.525.2241H",
+        "alternate_bibcode": [
+          "2023MNRAS.tmp.1847H",
+          "2023arXiv230108263H"
+        ],
+        "author": [
+          "Hopkins, Philip F.",
+          "Gurvich, Alexander B.",
+          "Shen, Xuejian",
+          "Hafen, Zachary",
+          "Grudić, Michael Y.",
+          "Kurinchi-Vendhan, Shalini",
+          "Hayward, Christopher C.",
+          "Jiang, Fangzhou",
+          "Orr, Matthew E.",
+          "Wetzel, Andrew",
+          "Kereš, Dušan",
+          "Stern, Jonathan",
+          "Faucher-Giguère, Claude-André",
+          "Bullock, James",
+          "Wheeler, Coral",
+          "El-Badry, Kareem",
+          "Loebman, Sarah R.",
+          "Moreno, Jorge",
+          "Boylan-Kolchin, Michael",
+          "Quataert, Eliot"
+        ],
+        "doctype": "article",
+        "doi": [
+          "10.1093/mnras/stad1902",
+          "10.48550/arXiv.2301.08263"
+        ],
+        "identifier": [
+          "2023MNRAS.tmp.1847H",
+          "10.48550/arXiv.2301.08263",
+          "2023arXiv230108263H",
+          "2023MNRAS.525.2241H",
+          "10.1093/mnras/stad1902",
+          "arXiv:2301.08263"
+        ],
+        "issue": "2",
+        "page": [
+          "2241"
+        ],
+        "pub": "Monthly Notices of the Royal Astronomical Society",
+        "pubdate": "2023-10-00",
+        "title": [
+          "What causes the formation of discs and end of bursty star formation?"
+        ],
+        "volume": "525",
+        "year": "2023",
+        "publisher": "OUP",
+        "property": [
+          "ARTICLE",
+          "ASSOCIATED",
+          "DATA",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 134
+      }
+    },
+    {
+      "key": "arxiv:2304.09878",
+      "section": "advising_supervision",
+      "aliases": [
+        "arxiv:2304.09878",
+        "bibcode:2023ApJ...954L..40R",
+        "bibcode:2023arXiv230409878R",
+        "doi:10.3847/2041-8213/ace2c8",
+        "doi:10.48550/arxiv.2304.09878"
+      ],
+      "metadata": {
+        "bibcode": "2023ApJ...954L..40R",
+        "alternate_bibcode": [
+          "2023arXiv230409878R"
+        ],
+        "author": [
+          "Roy, Sandip",
+          "Shen, Xuejian",
+          "Lisanti, Mariangela",
+          "Curtin, David",
+          "Murray, Norman",
+          "Hopkins, Philip F."
+        ],
+        "doctype": "article",
+        "doi": [
+          "10.3847/2041-8213/ace2c8",
+          "10.48550/arXiv.2304.09878"
+        ],
+        "eid": "L40",
+        "identifier": [
+          "10.3847/2041-8213/ace2c8",
+          "arXiv:2304.09878",
+          "2023arXiv230409878R",
+          "10.48550/arXiv.2304.09878",
+          "2023ApJ...954L..40R"
+        ],
+        "issue": "2",
+        "page": [
+          "L40"
+        ],
+        "pub": "The Astrophysical Journal Letters",
+        "pubdate": "2023-09-00",
+        "title": [
+          "Simulating Atomic Dark Matter in Milky Way Analogs"
+        ],
+        "volume": "954",
+        "year": "2023",
+        "publisher": "IOP",
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 50
+      }
+    },
+    {
+      "key": "arxiv:2202.00038",
+      "section": "first_author",
+      "aliases": [
+        "arxiv:2202.00038",
+        "bibcode:2022MNRAS.516.1302S",
+        "bibcode:2022arXiv220200038S",
+        "doi:10.1093/mnras/stac2376",
+        "doi:10.48550/arxiv.2202.00038"
+      ],
+      "metadata": {
+        "bibcode": "2022MNRAS.516.1302S",
+        "alternate_bibcode": [
+          "2022arXiv220200038S"
+        ],
+        "author": [
+          "Shen, Xuejian",
+          "Brinckmann, Thejs",
+          "Rapetti, David",
+          "Vogelsberger, Mark",
+          "Mantz, Adam",
+          "Zavala, Jesús",
+          "Allen, Steven W."
+        ],
+        "doctype": "article",
+        "doi": [
+          "10.1093/mnras/stac2376",
+          "10.48550/arXiv.2202.00038"
+        ],
+        "identifier": [
+          "2022MNRAS.516.1302S",
+          "10.1093/mnras/stac2376",
+          "arXiv:2202.00038",
+          "10.48550/arXiv.2202.00038",
+          "2022arXiv220200038S"
+        ],
+        "issue": "1",
+        "page": [
+          "1302"
+        ],
+        "pub": "Monthly Notices of the Royal Astronomical Society",
+        "pubdate": "2022-10-00",
+        "title": [
+          "X-ray morphology of cluster-mass haloes in self-interacting dark matter"
+        ],
+        "volume": "516",
+        "year": "2022",
+        "publisher": "OUP",
+        "property": [
+          "ARTICLE",
+          "ASSOCIATED",
+          "DATA",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 21
+      }
+    },
+    {
+      "key": "arxiv:2104.12788",
+      "section": "first_author",
+      "aliases": [
+        "arxiv:2104.12788",
+        "bibcode:2021arXiv210412788S",
+        "bibcode:2022MNRAS.510.5560S",
+        "bibcode:2022MNRAS.tmp...24S",
+        "doi:10.1093/mnras/stab3794",
+        "doi:10.48550/arxiv.2104.12788"
+      ],
+      "metadata": {
+        "bibcode": "2022MNRAS.510.5560S",
+        "alternate_bibcode": [
+          "2021arXiv210412788S",
+          "2022MNRAS.tmp...24S"
+        ],
+        "author": [
+          "Shen, Xuejian",
+          "Vogelsberger, Mark",
+          "Nelson, Dylan",
+          "Tacchella, Sandro",
+          "Hernquist, Lars",
+          "Springel, Volker",
+          "Marinacci, Federico",
+          "Torrey, Paul"
+        ],
+        "doctype": "article",
+        "doi": [
+          "10.1093/mnras/stab3794",
+          "10.48550/arXiv.2104.12788"
+        ],
+        "identifier": [
+          "2022MNRAS.510.5560S",
+          "2022MNRAS.tmp...24S",
+          "10.1093/mnras/stab3794",
+          "2021arXiv210412788S",
+          "arXiv:2104.12788",
+          "10.48550/arXiv.2104.12788"
+        ],
+        "issue": "4",
+        "page": [
+          "5560"
+        ],
+        "pub": "Monthly Notices of the Royal Astronomical Society",
+        "pubdate": "2022-03-00",
+        "title": [
+          "High-redshift predictions from IllustrisTNG - III. Infrared luminosity functions, obscured star formation, and dust temperature of high-redshift galaxies"
+        ],
+        "volume": "510",
+        "year": "2022",
+        "publisher": "OUP",
+        "property": [
+          "ARTICLE",
+          "ASSOCIATED",
+          "DATA",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 50
+      }
+    },
+    {
+      "key": "arxiv:2102.09580",
+      "section": "first_author",
+      "aliases": [
+        "arxiv:2102.09580",
+        "bibcode:2021MNRAS.506.4421S",
+        "bibcode:2021MNRAS.tmp.1831S",
+        "bibcode:2021arXiv210209580S",
+        "doi:10.1093/mnras/stab2042",
+        "doi:10.48550/arxiv.2102.09580"
+      ],
+      "metadata": {
+        "bibcode": "2021MNRAS.506.4421S",
+        "alternate_bibcode": [
+          "2021arXiv210209580S",
+          "2021MNRAS.tmp.1831S"
+        ],
+        "author": [
+          "Shen, Xuejian",
+          "Hopkins, Philip F.",
+          "Necib, Lina",
+          "Jiang, Fangzhou",
+          "Boylan-Kolchin, Michael",
+          "Wetzel, Andrew"
+        ],
+        "doctype": "article",
+        "doi": [
+          "10.1093/mnras/stab2042",
+          "10.48550/arXiv.2102.09580"
+        ],
+        "identifier": [
+          "2021arXiv210209580S",
+          "2021MNRAS.tmp.1831S",
+          "arXiv:2102.09580",
+          "10.1093/mnras/stab2042",
+          "10.48550/arXiv.2102.09580",
+          "2021MNRAS.506.4421S"
+        ],
+        "issue": "3",
+        "page": [
+          "4421"
+        ],
+        "pub": "Monthly Notices of the Royal Astronomical Society",
+        "pubdate": "2021-09-00",
+        "title": [
+          "Dissipative dark matter on FIRE - I. Structural and kinematic properties of dwarf galaxies"
+        ],
+        "volume": "506",
+        "year": "2021",
+        "publisher": "OUP",
+        "property": [
+          "ARTICLE",
+          "ASSOCIATED",
+          "DATA",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 55
+      }
+    },
+    {
+      "key": "arxiv:2103.13407",
+      "section": "advising_supervision",
+      "aliases": [
+        "arxiv:2103.13407",
+        "bibcode:2021JCAP...07..039X",
+        "bibcode:2021JCAP...08..039X",
+        "bibcode:2021arXiv210313407X",
+        "doi:10.1088/1475-7516/2021/07/039",
+        "doi:10.48550/arxiv.2103.13407"
+      ],
+      "metadata": {
+        "bibcode": "2021JCAP...07..039X",
+        "alternate_bibcode": [
+          "2021JCAP...08..039X",
+          "2021arXiv210313407X"
+        ],
+        "author": [
+          "Xiao, Huangyu",
+          "Shen, Xuejian",
+          "Hopkins, Philip F.",
+          "Zurek, Kathryn M."
+        ],
+        "doctype": "article",
+        "doi": [
+          "10.1088/1475-7516/2021/07/039",
+          "10.48550/arXiv.2103.13407"
+        ],
+        "eid": "039",
+        "identifier": [
+          "2021JCAP...08..039X",
+          "arXiv:2103.13407",
+          "10.48550/arXiv.2103.13407",
+          "10.1088/1475-7516/2021/07/039",
+          "2021JCAP...07..039X",
+          "2021arXiv210313407X"
+        ],
+        "issue": "7",
+        "page": [
+          "039"
+        ],
+        "pub": "Journal of Cosmology and Astroparticle Physics",
+        "pubdate": "2021-07-00",
+        "title": [
+          "SMBH seeds from dissipative dark matter"
+        ],
+        "volume": "2021",
+        "year": "2021",
+        "publisher": "IOP",
+        "property": [
+          "ARTICLE",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 46
+      }
+    },
+    {
+      "key": "arxiv:2002.10474",
+      "section": "first_author",
+      "aliases": [
+        "arxiv:2002.10474",
+        "bibcode:2020MNRAS.495.4747S",
+        "bibcode:2020MNRAS.tmp.1557S",
+        "bibcode:2020arXiv200210474S",
+        "doi:10.1093/mnras/staa1423",
+        "doi:10.48550/arxiv.2002.10474"
+      ],
+      "metadata": {
+        "bibcode": "2020MNRAS.495.4747S",
+        "alternate_bibcode": [
+          "2020arXiv200210474S",
+          "2020MNRAS.tmp.1557S"
+        ],
+        "author": [
+          "Shen, Xuejian",
+          "Vogelsberger, Mark",
+          "Nelson, Dylan",
+          "Pillepich, Annalisa",
+          "Tacchella, Sandro",
+          "Marinacci, Federico",
+          "Torrey, Paul",
+          "Hernquist, Lars",
+          "Springel, Volker"
+        ],
+        "doctype": "article",
+        "doi": [
+          "10.1093/mnras/staa1423",
+          "10.48550/arXiv.2002.10474"
+        ],
+        "identifier": [
+          "2020MNRAS.tmp.1557S",
+          "10.48550/arXiv.2002.10474",
+          "arXiv:2002.10474",
+          "2020arXiv200210474S",
+          "10.1093/mnras/staa1423",
+          "2020MNRAS.495.4747S"
+        ],
+        "issue": "4",
+        "page": [
+          "4747"
+        ],
+        "pub": "Monthly Notices of the Royal Astronomical Society",
+        "pubdate": "2020-07-00",
+        "title": [
+          "High-redshift JWST predictions from IllustrisTNG: II. Galaxy line and continuum spectral indices and dust attenuation curves"
+        ],
+        "volume": "495",
+        "year": "2020",
+        "publisher": "OUP",
+        "property": [
+          "ARTICLE",
+          "ASSOCIATED",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 60
+      }
+    },
+    {
+      "key": "arxiv:1904.07238",
+      "section": "advising_supervision",
+      "aliases": [
+        "arxiv:1904.07238",
+        "bibcode:2019arXiv190407238V",
+        "bibcode:2020MNRAS.492.5167V",
+        "bibcode:2020MNRAS.tmp..125V",
+        "doi:10.1093/mnras/staa137",
+        "doi:10.48550/arxiv.1904.07238"
+      ],
+      "metadata": {
+        "bibcode": "2020MNRAS.492.5167V",
+        "alternate_bibcode": [
+          "2020MNRAS.tmp..125V",
+          "2019arXiv190407238V"
+        ],
+        "author": [
+          "Vogelsberger, Mark",
+          "Nelson, Dylan",
+          "Pillepich, Annalisa",
+          "Shen, Xuejian",
+          "Marinacci, Federico",
+          "Springel, Volker",
+          "Pakmor, Rüdiger",
+          "Tacchella, Sandro",
+          "Weinberger, Rainer",
+          "Torrey, Paul",
+          "Hernquist, Lars"
+        ],
+        "doctype": "article",
+        "doi": [
+          "10.1093/mnras/staa137",
+          "10.48550/arXiv.1904.07238"
+        ],
+        "identifier": [
+          "2019arXiv190407238V",
+          "10.48550/arXiv.1904.07238",
+          "arXiv:1904.07238",
+          "10.1093/mnras/staa137",
+          "2020MNRAS.492.5167V",
+          "2020MNRAS.tmp..125V"
+        ],
+        "issue": "4",
+        "page": [
+          "5167"
+        ],
+        "pub": "Monthly Notices of the Royal Astronomical Society",
+        "pubdate": "2020-03-00",
+        "title": [
+          "High-redshift JWST predictions from IllustrisTNG: dust modelling and galaxy luminosity functions"
+        ],
+        "volume": "492",
+        "year": "2020",
+        "publisher": "OUP",
+        "property": [
+          "ARTICLE",
+          "ASSOCIATED",
+          "DATA",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 186
+      }
+    },
+    {
+      "key": "arxiv:2001.02696",
+      "section": "first_author",
+      "aliases": [
+        "arxiv:2001.02696",
+        "bibcode:2020MNRAS.495.3252S",
+        "bibcode:2020MNRAS.tmp.1522S",
+        "bibcode:2020arXiv200102696S",
+        "doi:10.1093/mnras/staa1381",
+        "doi:10.48550/arxiv.2001.02696"
+      ],
+      "metadata": {
+        "bibcode": "2020MNRAS.495.3252S",
+        "alternate_bibcode": [
+          "2020MNRAS.tmp.1522S",
+          "2020arXiv200102696S"
+        ],
+        "author": [
+          "Shen, Xuejian",
+          "Hopkins, Philip F.",
+          "Faucher-Giguère, Claude-André",
+          "Alexander, D. M.",
+          "Richards, Gordon T.",
+          "Ross, Nicholas P.",
+          "Hickox, R. C."
+        ],
+        "doctype": "article",
+        "doi": [
+          "10.1093/mnras/staa1381",
+          "10.48550/arXiv.2001.02696"
+        ],
+        "identifier": [
+          "10.1093/mnras/staa1381",
+          "arXiv:2001.02696",
+          "2020MNRAS.495.3252S",
+          "2020MNRAS.tmp.1522S",
+          "2020arXiv200102696S",
+          "10.48550/arXiv.2001.02696"
+        ],
+        "issue": "3",
+        "page": [
+          "3252"
+        ],
+        "pub": "Monthly Notices of the Royal Astronomical Society",
+        "pubdate": "2020-01-00",
+        "title": [
+          "The bolometric quasar luminosity function at z = 0-7"
+        ],
+        "volume": "495",
+        "year": "2020",
+        "publisher": "OUP",
+        "property": [
+          "ARTICLE",
+          "ASSOCIATED",
+          "EPRINT_OPENACCESS",
+          "ESOURCE",
+          "OPENACCESS",
+          "PUB_OPENACCESS",
+          "REFEREED"
+        ],
+        "citation_count": 409
+      }
+    }
+  ]
+}

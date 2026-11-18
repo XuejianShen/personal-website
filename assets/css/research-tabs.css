@@ -174,3 +174,14 @@
 		margin-bottom: 1.2em;
 	}
 }
+
+.project-tab-panel[hidden] {
+	display: none !important;
+}
+.project-permalink {
+	white-space: nowrap;
+}
+@media (prefers-reduced-motion: reduce) {
+	.project-tab-panel { animation: none; }
+	.project-tab-btn { transition: none; }
+}

@@ -5,3 +5,7 @@ images/lumina_200cMpc_vpeak3_dmdens_gasvel_heiii.png
 images/AltDM-demo-gas.pdf
 .DS_Store
 videos/Lumina_z_3_fly_through.mp4
+
+# Python bytecode from publication refresh checks
+__pycache__/
+*.py[cod]

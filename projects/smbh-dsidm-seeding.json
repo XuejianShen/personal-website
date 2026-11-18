@@ -1,4 +1,5 @@
 {
+  "id": "dsidm-seeding",
   "title": "Seeding SMBHs with Dissipative SIDM",
   "category": "smbh",
   "order": 2,

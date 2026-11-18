@@ -8,6 +8,9 @@
 
 	var	$window = $(window),
 		$body = $('body');
+	var chinese = (document.documentElement.lang || '').toLowerCase().indexOf('zh') === 0;
+	var menuOpenLabel = chinese ? '打开导航菜单' : 'Open navigation menu';
+	var menuCloseLabel = chinese ? '关闭导航菜单' : 'Close navigation menu';
 
 	// Breakpoints.
 		breakpoints({
@@ -36,10 +39,10 @@
 	// Nav.
 
 		// Bar.
-			var logoText = $('#logo').length ? $('#logo').html() : 'Xuejian Shen';
+			var logoText = chinese ? '沈学简 · AI 译文' : ($('#logo').length ? $('#logo').html() : 'Xuejian Shen');
 			$(
 				'<div id="titleBar">' +
-					'<a href="#navPanel" class="toggle"></a>' +
+					'<a href="#navPanel" class="toggle" aria-label="' + menuOpenLabel + '" aria-controls="navPanel" aria-expanded="false"></a>' +
 					'<span class="title">' + logoText + '</span>' +
 				'</div>'
 			)
@@ -48,7 +51,7 @@
 		// Panel.
 			$(
 				'<div id="navPanel">' +
-					'<nav>' +
+					'<nav aria-label="' + (chinese ? '移动端导航' : 'Mobile navigation') + '">' +
 						$('#nav').navList() +
 					'</nav>' +
 				'</div>'
@@ -57,6 +60,7 @@
 				.panel({
 					delay: 500,
 					hideOnClick: true,
+					hideOnEscape: true,
 					hideOnSwipe: true,
 					resetScroll: true,
 					resetForms: true,
@@ -64,6 +68,52 @@
 					target: $body,
 					visibleClass: 'navPanel-visible'
 				});
+
+
+
+	// Keep the language switch visible in the mobile title bar as well as the menu.
+	var languageSource = document.querySelector('#nav [data-language-switch]');
+	if (languageSource) {
+		var mobileLanguage = languageSource.cloneNode(true);
+		mobileLanguage.classList.add('mobile-language-switch');
+		document.getElementById('titleBar').appendChild(mobileLanguage);
+		document.querySelectorAll('#navPanel a').forEach(function(link) {
+			if (link.getAttribute('href') === languageSource.getAttribute('href')) {
+				['data-language-switch', 'hreflang', 'lang', 'aria-label'].forEach(function(name) {
+					link.setAttribute(name, languageSource.getAttribute(name) || '');
+				});
+			}
+		});
+	}
+	function syncLanguageLinks() {
+		document.querySelectorAll('[data-language-switch]').forEach(function(link) {
+			link.setAttribute('href', link.getAttribute('href').split('#')[0] + window.location.hash);
+		});
+	}
+	syncLanguageLinks();
+	window.addEventListener('hashchange', syncLanguageLinks);
+	window.addEventListener('popstate', syncLanguageLinks);
+	document.addEventListener('click', syncLanguageLinks);
+
+	// Keep the mobile menu's accessible state in step with the panel plugin.
+	var menuToggle = document.querySelector('#titleBar .toggle');
+	var menuPanel = document.getElementById('navPanel');
+	function syncMenuState() {
+		var expanded = document.body.classList.contains('navPanel-visible');
+		menuToggle.setAttribute('aria-expanded', String(expanded));
+		menuToggle.setAttribute('aria-label', expanded ? menuCloseLabel : menuOpenLabel);
+		menuPanel.inert = !expanded;
+		menuPanel.setAttribute('aria-hidden', String(!expanded));
+	}
+	if (menuToggle && menuPanel) {
+		syncMenuState();
+		new MutationObserver(syncMenuState).observe(document.body, { attributes: true, attributeFilter: ['class'] });
+		document.addEventListener('keydown', function(event) {
+			if (event.key === 'Escape' && document.body.classList.contains('navPanel-visible')) {
+				menuToggle.focus();
+			}
+		});
+	}
 
 })(jQuery);
 
@@ -82,6 +132,9 @@
 	}
 
 	function playVideo(video) {
+		// Keep gallery tiles still for reduced-motion and data-saving preferences.
+		if ((window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches)
+			|| (navigator.connection && navigator.connection.saveData)) return;
 		loadVideo(video);
 		video.play().catch(function() {});
 	}
@@ -112,6 +165,7 @@
 // data-full-label="..."> wrapping the in-page media, and a hidden <figcaption class="gallery-meta">
 // with the title/credit HTML. Without JS the tile link simply opens the full-res file in a new tab.
 (function() {
+	var chinese = (document.documentElement.lang || '').toLowerCase().indexOf('zh') === 0;
 	var items = Array.prototype.slice.call(document.querySelectorAll('.gallery-item'));
 	if (!items.length) return;
 
@@ -119,12 +173,12 @@
 	lightbox.className = 'gallery-lightbox';
 	lightbox.setAttribute('role', 'dialog');
 	lightbox.setAttribute('aria-modal', 'true');
-	lightbox.setAttribute('aria-label', 'Media viewer');
+	lightbox.setAttribute('aria-label', chinese ? '图像与视频浏览器' : 'Media viewer');
 	lightbox.innerHTML =
 		'<div class="gallery-lightbox-backdrop" data-action="close"></div>' +
-		'<button type="button" class="gallery-lightbox-close" data-action="close" aria-label="Close (Esc)">&#x2715;</button>' +
-		'<button type="button" class="gallery-lightbox-nav gallery-lightbox-prev" data-action="prev" aria-label="Previous">&#x2039;</button>' +
-		'<button type="button" class="gallery-lightbox-nav gallery-lightbox-next" data-action="next" aria-label="Next">&#x203A;</button>' +
+		'<button type="button" class="gallery-lightbox-close" data-action="close" aria-label="' + (chinese ? '关闭（Esc）' : 'Close (Esc)') + '">&#x2715;</button>' +
+		'<button type="button" class="gallery-lightbox-nav gallery-lightbox-prev" data-action="prev" aria-label="' + (chinese ? '上一项' : 'Previous') + '">&#x2039;</button>' +
+		'<button type="button" class="gallery-lightbox-nav gallery-lightbox-next" data-action="next" aria-label="' + (chinese ? '下一项' : 'Next') + '">&#x203A;</button>' +
 		'<figure class="gallery-lightbox-figure">' +
 			'<div class="gallery-lightbox-media"></div>' +
 			'<figcaption class="gallery-lightbox-caption">' +
@@ -200,7 +254,7 @@
 		titleEl.innerHTML = title;
 		creditEl.innerHTML = textOf(item, '.gallery-meta-credit');
 		fullLink.href = tile.getAttribute('href');
-		fullLink.textContent = tile.getAttribute('data-full-label') || 'Open full resolution';
+		fullLink.textContent = tile.getAttribute('data-full-label') || (chinese ? '打开全分辨率文件' : 'Open full resolution');
 		counterEl.textContent = (index + 1) + ' / ' + items.length;
 		prevBtn.disabled = index === 0;
 		nextBtn.disabled = index === items.length - 1;

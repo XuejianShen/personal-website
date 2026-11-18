@@ -1,5 +1,6 @@
 var RESEARCH_PROJECTS = [
   {
+    "id": "sidm-elastic",
     "title": "Elastic SIDM Models",
     "category": "sidm",
     "order": 1,
@@ -21,6 +22,7 @@ var RESEARCH_PROJECTS = [
     "image": ""
   },
   {
+    "id": "sidm-dissipative",
     "title": "Dissipative SIDM Models",
     "category": "sidm",
     "order": 2,
@@ -38,6 +40,7 @@ var RESEARCH_PROJECTS = [
     "image": "dSIDM_dark.png"
   },
   {
+    "id": "sidm-clusters",
     "title": "Cluster-Scale Constraints",
     "category": "sidm",
     "order": 3,
@@ -51,6 +54,7 @@ var RESEARCH_PROJECTS = [
     "image": ""
   },
   {
+    "id": "sidm-early-universe",
     "title": "Early-Universe Constraints",
     "category": "sidm",
     "order": 4,
@@ -72,6 +76,7 @@ var RESEARCH_PROJECTS = [
     "image": ""
   },
   {
+    "id": "sidm-atomic-dm",
     "title": "Atomic Dark Matter",
     "category": "sidm",
     "order": 5,
@@ -89,6 +94,7 @@ var RESEARCH_PROJECTS = [
     "image": ""
   },
   {
+    "id": "sidm-code",
     "title": "The next generation code for SIDM",
     "category": "sidm",
     "order": 6,
@@ -102,6 +108,7 @@ var RESEARCH_PROJECTS = [
     "image": "SIDM-Schematic-communication.png"
   },
   {
+    "id": "axion-miniclusters",
     "title": "Axion Miniclusters",
     "category": "axions",
     "order": 1,
@@ -115,6 +122,7 @@ var RESEARCH_PROJECTS = [
     "image": ""
   },
   {
+    "id": "fuzzy-dark-matter",
     "title": "Fuzzy Dark Matter",
     "category": "axions",
     "order": 2,
@@ -128,6 +136,7 @@ var RESEARCH_PROJECTS = [
     "image": ""
   },
   {
+    "id": "early-dark-energy",
     "title": "Early Dark Energy",
     "category": "axions",
     "order": 3,
@@ -145,6 +154,7 @@ var RESEARCH_PROJECTS = [
     "image": ""
   },
   {
+    "id": "uv-variability",
     "title": "Non-equilibrium view of galaxies at Cosmic Dawn",
     "category": "highz_galaxies",
     "order": 1,
@@ -166,6 +176,7 @@ var RESEARCH_PROJECTS = [
     "image": "parameter_space.jpeg"
   },
   {
+    "id": "tng-predictions",
     "title": "High-redshift Predictions from IllustrisTNG",
     "category": "highz_galaxies",
     "order": 2,
@@ -187,6 +198,7 @@ var RESEARCH_PROJECTS = [
     "image": "TNG_protocluster.png"
   },
   {
+    "id": "thesan-hr",
     "title": "Alternative Cosmological Models",
     "category": "highz_galaxies",
     "order": 3,
@@ -204,6 +216,7 @@ var RESEARCH_PROJECTS = [
     "image": ""
   },
   {
+    "id": "thesan-zoom",
     "title": "The THESAN-ZOOM Campaign",
     "category": "highz_galaxies",
     "order": 4,
@@ -225,6 +238,7 @@ var RESEARCH_PROJECTS = [
     "image": "thesan-zoom-gas.png"
   },
   {
+    "id": "lumina",
     "title": "The Lumina Campaign",
     "category": "highz_galaxies",
     "order": 5,
@@ -242,6 +256,7 @@ var RESEARCH_PROJECTS = [
     "image": "whole_with_zoom_callout.png"
   },
   {
+    "id": "quasar-luminosity-function",
     "title": "Bolometric Quasar Luminosity Functions",
     "category": "smbh",
     "order": 1,
@@ -259,6 +274,7 @@ var RESEARCH_PROJECTS = [
     "image": "QLF/sed.png"
   },
   {
+    "id": "dsidm-seeding",
     "title": "Seeding SMBHs with Dissipative SIDM",
     "category": "smbh",
     "order": 2,

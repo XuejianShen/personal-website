@@ -17,7 +17,7 @@ ROOT = Path(__file__).resolve().parent
 BASE = 'https://xuejianshen.github.io/personal-website/'
 PAGE_PAIRS = {'index.html': 'zh/index.html', **{
     'pages/' + name + '.html': 'zh/' + name + '.html'
-    for name in ('about_me', 'research1', 'research3', 'publications', 'press', 'credits')
+    for name in ('about_me', 'research1', 'research3', 'group', 'publications', 'press', 'credits')
 }}
 NOTICE = '本中文版本由 AI 翻译，可能存在错误或表述不准确之处。科研内容与个人信息请以英文版为准。'
 LANG_START = '<!-- LANGUAGES:START -->'

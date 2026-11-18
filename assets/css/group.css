@@ -1,0 +1,254 @@
+/* Students and supervision: names, institutions, and periods from the CV. */
+.page-hero.group-hero {
+	padding-top: 3em;
+	padding-bottom: 2.5em;
+	background-position: center 40%;
+}
+.group-hero .group-eyebrow {
+	margin-bottom: 0.8em;
+	color: #b9d9fc;
+	font-size: 0.8em;
+	font-weight: 500;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+.group-hero .page-hero-text h1 {
+	font-size: 2.8em;
+	margin-bottom: 0.3em;
+}
+.group-hero .page-hero-text > p:last-child {
+	max-width: 36em;
+}
+.group-shortcuts {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.35em 1.5em;
+	margin-top: 1.5em;
+}
+.group-shortcuts a {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.35em;
+	min-height: 44px;
+	color: #ffffff;
+	font-size: 0.9em;
+	text-decoration: none;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.45);
+}
+.group-shortcuts a:hover {
+	border-color: #ffffff;
+}
+.wrapper.group-body {
+	padding: 3em 0 3.5em;
+}
+.group-section + .group-section {
+	margin-top: 3em;
+}
+.group-section-header {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 0.25em 1em;
+	margin-bottom: 0.5em;
+}
+.group-section-header h2 {
+	display: flex;
+	align-items: center;
+	gap: 0.6em;
+	margin: 0;
+	font-size: 1.7em;
+	line-height: 1.35;
+	letter-spacing: -0.025em;
+}
+.student-count {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 2em;
+	padding: 0.25em 0.5em;
+	border-radius: 2em;
+	background: #eef5fc;
+	color: #0057b8;
+	font-size: 0.47em;
+	font-weight: 500;
+	line-height: 1.3;
+	letter-spacing: 0;
+}
+.group-section-header > p {
+	margin: 0;
+	color: #626268;
+	font-size: 0.8em;
+}
+ul.student-list {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	column-gap: 3em;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+ul.student-list > li.student {
+	min-width: 0;
+	padding: 1.3em 0;
+	border-bottom: 1px solid #e5e5e8;
+}
+.student h3 {
+	margin: 0 0 0.3em;
+	font-size: 1.25em;
+	font-weight: 500;
+	line-height: 1.3;
+	letter-spacing: -0.02em;
+	overflow-wrap: anywhere;
+}
+.student .student-level {
+	margin: 0 0 0.4em;
+	color: #626268;
+	font-size: 0.72em;
+	font-weight: 500;
+}
+.student .student-detail {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 0.2em 0.8em;
+	margin: 0;
+	font-size: 0.9em;
+	line-height: 1.5;
+}
+.student-years {
+	color: #626268;
+	font-variant-numeric: tabular-nums;
+}
+.student .student-previous {
+	margin: 0.5em 0 0;
+	color: #626268;
+	font-size: 0.75em;
+	line-height: 1.5;
+}
+.student .student-research {
+	max-width: 38em;
+	margin: 0.8em 0 0;
+	color: #414147;
+	font-size: 0.85em;
+	line-height: 1.6;
+}
+.student a.student-website {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.35em;
+	min-height: 44px;
+	margin-top: 0.25em;
+	font-size: 0.75em;
+	text-decoration: underline;
+	text-underline-offset: 0.2em;
+}
+ul.alumni-list {
+	list-style: none;
+	margin: 0.7em 0 0;
+	padding: 0;
+}
+ul.alumni-list > li.alumnus {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr) auto;
+	align-items: baseline;
+	gap: 0.25em 1.5em;
+	padding: 0.65em 0;
+	border-bottom: 1px solid #e5e5e8;
+	font-size: 0.85em;
+	line-height: 1.5;
+}
+.alumnus h3 {
+	margin: 0;
+	font-size: 1.05em;
+	font-weight: 500;
+	line-height: 1.5;
+	overflow-wrap: anywhere;
+}
+.alumni-detail {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0 0.6em;
+	margin: 0;
+	color: #626268;
+}
+.alumni-detail span + span:before {
+	content: "·";
+	margin-right: 0.6em;
+}
+.group-mentorship {
+	display: flex;
+	align-items: center;
+	gap: 1em;
+	margin-top: 3em;
+	padding: 1.25em 1.5em;
+	border-left: 3px solid #0071e3;
+	background: #f5f7fa;
+}
+.group-mentorship > .icon {
+	color: #0057b8;
+	font-size: 1.6em;
+}
+.group-mentorship h2 {
+	margin: 0 0 0.25em;
+	font-size: 1em;
+	font-weight: 500;
+	line-height: 1.4;
+}
+.group-mentorship p {
+	margin: 0;
+	color: #626268;
+	font-size: 0.8em;
+	line-height: 1.5;
+}
+.group-body .group-source {
+	max-width: 48em;
+	margin: 1.5em 0 0;
+	color: #626268;
+	font-size: 0.8em;
+	line-height: 1.6;
+}
+.group-section h2[id] {
+	scroll-margin-top: 4em;
+}
+@media screen and (max-width: 736px) {
+	.page-hero.group-hero {
+		padding: 2.25em 20px 2em;
+	}
+	.group-hero .page-hero-text h1 {
+		font-size: 2.1em;
+	}
+	.wrapper.group-body {
+		padding: 2.25em 20px 3em;
+	}
+	.group-section-header {
+		display: block;
+	}
+	.group-section-header h2 {
+		font-size: 1.5em;
+	}
+	.group-section-header > p {
+		margin-top: 0.5em;
+	}
+	ul.student-list {
+		grid-template-columns: minmax(0, 1fr);
+	}
+	ul.alumni-list > li.alumnus {
+		grid-template-columns: minmax(0, 1fr) auto;
+		gap: 0.15em 1em;
+		padding: 0.7em 0;
+	}
+	.alumnus h3 {
+		grid-column: 1;
+	}
+	.alumnus > .student-years {
+		grid-column: 2;
+		grid-row: 1;
+	}
+	.alumni-detail {
+		grid-column: 1 / -1;
+	}
+	.group-mentorship {
+		padding: 1em;
+	}
+}

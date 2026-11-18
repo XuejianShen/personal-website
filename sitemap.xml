@@ -75,4 +75,14 @@
     <lastmod>2026-11-18</lastmod>
     <priority>0.60</priority>
   </url>
+  <url>
+    <loc>https://xuejianshen.github.io/personal-website/pages/group.html</loc>
+    <lastmod>2026-11-18</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://xuejianshen.github.io/personal-website/zh/group.html</loc>
+    <lastmod>2026-11-18</lastmod>
+    <priority>0.60</priority>
+  </url>
 </urlset>

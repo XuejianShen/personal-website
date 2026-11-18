@@ -4931,36 +4931,71 @@ a:focus-visible, button:focus-visible, [tabindex="0"]:focus-visible {
 	margin-left: 1.25em;
 	vertical-align: middle;
 }
-#nav > ul > li .language-switch {
-	padding: 0.35em 0.85em;
-	border: 1px solid #d2d2d7;
-	border-radius: 980px;
-	font-size: 0.85em;
-	line-height: 1.4;
-}
-#nav > ul > li .language-switch:hover {
-	border-color: #0071e3;
-}
-#titleBar .mobile-language-switch {
-	position: absolute;
-	right: 12px;
-	top: 6px;
+.language-choices {
 	display: inline-flex;
 	align-items: center;
-	min-height: 30px;
-	padding: 0 0.75em;
-	border: 1px solid rgba(255, 255, 255, 0.5);
+	gap: 2px;
+	padding: 2px;
+	border: 1px solid #d2d2d7;
 	border-radius: 980px;
-	color: #ffffff;
-	font-size: 13px;
+	background: #f5f5f7;
+	line-height: 1;
+}
+#nav .language-choices .language-option,
+#titleBar .language-choices .language-option {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 44px;
+	min-height: 30px;
+	padding: 0.3em 0.75em;
+	border: 0;
+	border-radius: 980px;
+	color: #515156;
+	font-size: 14px;
+	font-weight: 500;
 	line-height: 1.2;
+	text-decoration: none;
+}
+#nav .language-choices .language-option:hover {
+	background: #ffffff;
+	color: #0057b8;
+}
+#nav .language-choices .language-option.is-active {
+	background: #0071e3;
+	color: #ffffff;
+}
+#titleBar .mobile-language-choices {
+	position: absolute;
+	z-index: 3;
+	right: 10px;
+	top: 3px;
+	border-color: rgba(255, 255, 255, 0.5);
+	background: rgba(255, 255, 255, 0.08);
+}
+#titleBar .language-choices .language-option {
+	min-height: 32px;
+	padding: 0.3em 0.65em;
+	color: #ffffff;
+	font-size: 12px;
+}
+#titleBar .language-choices .language-option.is-active {
+	background: #ffffff;
+	color: #1d1d1f;
 }
 #titleBar .title {
-	padding-left: 75px;
-	padding-right: 75px;
+	pointer-events: none;
+	padding-left: 54px;
+	padding-right: 148px;
 	overflow: hidden;
+	font-size: 14px;
+	text-align: left;
 	text-overflow: ellipsis;
 	white-space: nowrap;
+}
+#navPanel .language-option.is-active {
+	background: rgba(255, 255, 255, 0.1);
+	color: #8ec2ff;
 }
 .translation-notice {
 	padding: 0.75em 20px;

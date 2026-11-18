@@ -6,8 +6,9 @@ errors may remain, and links to the matching English source. Paper titles,
 authors, and journal citations retain their original English for identification.
 CV and external press articles remain in their original languages.
 
-The language switch is available in the desktop navigation and mobile title bar.
-It retains the current project or publication-section anchor. Switching is
+The desktop navigation and mobile title bar both show English / 中文, with the
+current language highlighted. Language names are protected from browser translation.
+The selector retains the current project or publication-section anchor. Switching is
 explicit; the site does not automatically redirect visitors by browser language.
 
 ## Editing and rebuilding

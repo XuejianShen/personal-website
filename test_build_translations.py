@@ -39,10 +39,17 @@ class TranslationTests(unittest.TestCase):
                 self.assertIn(('html',{'lang':expected_lang}),parser.tags)
                 alternates={a['hreflang']:a['href'] for tag,a in parser.tags if tag=='link' and a.get('rel')=='alternate'}
                 self.assertEqual(alternates,{'en':translations.public_url(english),'zh-CN':translations.public_url(chinese),'x-default':translations.public_url(english)})
-                switches=[a for tag,a in parser.tags if 'language-switch' in a.get('class','').split()]
-                self.assertEqual(len(switches),1)
-                destination=(Path(relative).parent/switches[0]['href']).resolve()
-                self.assertEqual(destination,(translations.ROOT/(english if chinese_version else chinese)).resolve())
+                switches=[a for tag,a in parser.tags if 'language-option' in a.get('class','').split()]
+                self.assertEqual(len(switches),2)
+                self.assertEqual([a['lang'] for a in switches],['en','zh-CN'])
+                for choice,destination_path in zip(switches,[english,chinese]):
+                    destination=(Path(relative).parent/choice['href']).resolve()
+                    self.assertEqual(destination,(translations.ROOT/destination_path).resolve())
+                    self.assertEqual(choice['translate'],'no')
+                active=[a for a in switches if a.get('aria-current')=='true']
+                self.assertEqual(len(active),1)
+                self.assertEqual(active[0]['lang'],expected_lang)
+                self.assertIn('is-active',active[0]['class'].split())
                 notices=[a for tag,a in parser.tags if 'translation-notice' in a.get('class','').split()]
                 self.assertEqual(len(notices),int(chinese_version))
                 if chinese_version:self.assertIn(translations.NOTICE,text)

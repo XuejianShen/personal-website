@@ -71,29 +71,47 @@
 
 
 
-	// Keep the language switch visible in the mobile title bar as well as the menu.
-	var languageSource = document.querySelector('#nav [data-language-switch]');
-	if (languageSource) {
-		var mobileLanguage = languageSource.cloneNode(true);
-		mobileLanguage.classList.add('mobile-language-switch');
-		document.getElementById('titleBar').appendChild(mobileLanguage);
+	// Keep both language choices and the current-language state in mobile navigation.
+	var languageChoices = document.querySelector('#nav .language-choices');
+	if (languageChoices) {
+		var mobileLanguageChoices = languageChoices.cloneNode(true);
+		mobileLanguageChoices.classList.add('mobile-language-choices');
+		document.getElementById('titleBar').appendChild(mobileLanguageChoices);
+		var languageSources = languageChoices.querySelectorAll('[data-language-option]');
 		document.querySelectorAll('#navPanel a').forEach(function(link) {
-			if (link.getAttribute('href') === languageSource.getAttribute('href')) {
-				['data-language-switch', 'hreflang', 'lang', 'aria-label'].forEach(function(name) {
-					link.setAttribute(name, languageSource.getAttribute(name) || '');
+			languageSources.forEach(function(source) {
+				// The current-page menu link can share its URL with the active language.
+				if (link.getAttribute('href') !== source.getAttribute('href')
+					|| link.textContent.trim() !== source.textContent.trim()) return;
+				['data-language-switch', 'data-language-option', 'hreflang', 'lang', 'aria-label', 'aria-current', 'translate'].forEach(function(name) {
+					if (source.hasAttribute(name)) link.setAttribute(name, source.getAttribute(name));
+					else link.removeAttribute(name);
 				});
-			}
+				link.classList.add('language-option');
+				link.classList.toggle('is-active', source.classList.contains('is-active'));
+			});
 		});
 	}
 	function syncLanguageLinks() {
 		document.querySelectorAll('[data-language-switch]').forEach(function(link) {
-			link.setAttribute('href', link.getAttribute('href').split('#')[0] + window.location.hash);
+			var href = link.getAttribute('href');
+			if (href) link.setAttribute('href', href.split('#')[0] + window.location.hash);
 		});
 	}
 	syncLanguageLinks();
 	window.addEventListener('hashchange', syncLanguageLinks);
 	window.addEventListener('popstate', syncLanguageLinks);
 	document.addEventListener('click', syncLanguageLinks);
+	document.addEventListener('click', function(event) {
+		var link = event.target.closest ? event.target.closest('[data-language-option]') : null;
+		if (!link || link.getAttribute('aria-current') !== 'true'
+			|| event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+		syncLanguageLinks();
+		// Also stop the panel plugin from scheduling navigation to the active language.
+		event.preventDefault();
+		event.stopPropagation();
+		document.body.classList.remove('navPanel-visible');
+	}, true);
 
 	// Keep the mobile menu's accessible state in step with the panel plugin.
 	var menuToggle = document.querySelector('#titleBar .toggle');

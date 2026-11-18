@@ -38,11 +38,19 @@ def public_url(path):
     return BASE + path
 
 
-def language_link(source, destination, chinese):
-    href = posixpath.relpath(destination, posixpath.dirname(source) or '.')
-    language, label, aria = ('en', 'English', 'Read this page in English') if chinese else ('zh-CN', '中文', '切换到中文版（AI 翻译）')
+def language_controls(source, english, chinese_page, chinese):
     badge = '<span class="translation-badge">AI 译文</span>' if chinese else ''
-    return '<li class="language-item">' + badge + '<a class="language-switch" data-language-switch href="' + href + '" hreflang="' + language + '" lang="' + language + '" aria-label="' + aria + '">' + label + '</a></li>'
+    label = '语言' if chinese else 'Language'
+    options = []
+    for language, destination, text, active, aria in (
+        ('en', english, 'English', not chinese, 'English'),
+        ('zh-CN', chinese_page, '中文', chinese, '中文（AI 翻译）'),
+    ):
+        href = posixpath.relpath(destination, posixpath.dirname(source) or '.')
+        classes = 'language-option' + (' is-active' if active else '')
+        current = ' aria-current="true"' if active else ''
+        options.append('<a class="' + classes + '" data-language-option data-language-switch translate="no" href="' + href + '" hreflang="' + language + '" lang="' + language + '" aria-label="' + aria + '"' + current + '>' + text + '</a>')
+    return '<li class="language-item">' + badge + '<span class="language-choices" role="group" aria-label="' + label + '" translate="no">' + ''.join(options) + '</span></li>'
 
 
 def configure_language(text, source, english, chinese_page, chinese=False):
@@ -66,8 +74,7 @@ def configure_language(text, source, english, chinese_page, chinese=False):
         if not marker:
             raise ValueError('Missing canonical URL in ' + source)
         text = text[:marker.end()] + '\n\t\t' + metadata + text[marker.end():]
-    destination = english if chinese else chinese_page
-    link = language_link(source, destination, chinese)
+    link = language_controls(source, english, chinese_page, chinese)
     nav = re.search(r'(<nav id="nav"[^>]*>)(.*?)(</nav>)', text, re.S)
     if not nav:
         raise ValueError('Missing main navigation in ' + source)

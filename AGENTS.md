@@ -48,7 +48,7 @@ Category → page mapping: `sidm` + `axions` render on `pages/research1.html`; `
 
 - `assets/css/main.css` is the served stylesheet. Although `assets/sass/` contains the template's SASS sources, **custom site styles (e.g. the home `.gallery-grid` and lazy-video rules) were added directly to `main.css` and do not exist in the SASS**. Recompiling SASS over `main.css` would destroy those additions — edit `main.css` directly.
 - `assets/css/research-tabs.css` holds the project-tab styles and is linked only on the research pages.
-- `assets/css/data-sharing.css` styles `pages/data.html`. Its Chinese counterpart is generated with `build_translations.py`. Repository and THESAN data links are public; THESAN-ZOOM and Lumina access is through private communication.
+- `assets/css/data-sharing.css` styles `pages/data.html`. Its Chinese counterpart is generated with `build_translations.py`. Repository and THESAN data links are public; THESAN-ZOOM, Lumina, the AREPO-2 SIDM model, and NORI access is through private communication.
 - `assets/css/group.css` is linked only on the Group page. The student list and supervision periods start from the Teaching & Advising section of the CV, with current roles and affiliations incorporating the user's corrections. Vinh Tran has a single entry covering both undergraduate and graduate supervision. Current-student research summaries are included when confirmed; visible student links point only to verified personal websites. Alumni use a compact list, and Charline Shen is listed as a master's student. Edit `pages/group.html` and the Chinese translation dictionary, then run `python3 build_translations.py`.
 
 ## Media & Git LFS

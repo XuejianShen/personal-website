@@ -28,6 +28,7 @@ ul.data-resources {
 }
 ul.data-resources > li.data-resource {
 	display: grid;
+	scroll-margin-top: 4em;
 	grid-template-columns: minmax(0, 1fr) auto;
 	align-items: center;
 	gap: 1em 2em;

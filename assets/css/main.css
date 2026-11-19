@@ -4891,7 +4891,7 @@ a:focus-visible, button:focus-visible, [tabindex="0"]:focus-visible {
 	line-height: 1.2;
 	text-decoration: none;
 }
-.pub-links a::after {
+.pub-links a[target="_blank"]::after {
 	content: "\2197";
 	font-size: 0.9em;
 }
@@ -4899,6 +4899,11 @@ a:focus-visible, button:focus-visible, [tabindex="0"]:focus-visible {
 	border-color: #e5cecb;
 	background: #fcf3f1;
 	color: #8c3430;
+}
+.pub-links .pub-data {
+	border-color: #d2d2d7;
+	background: #f5f5f7;
+	color: #424245;
 }
 .pub-links a:hover {
 	border-color: currentColor;

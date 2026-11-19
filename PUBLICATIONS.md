@@ -68,6 +68,11 @@ when a preprint receives a journal DOI or a new ADS bibcode. Change a record's
 `section` in `publications.json` only when the site owner requests a different
 classification, then render offline.
 
+For papers that introduce or use a listed resource, `DATA_RESOURCE_BY_PAPER`
+in `update_publications.py` maps a DOI, arXiv, or bibcode alias to the matching
+resource ID in `pages/data.html`. Both languages use this mapping for the
+**Code & data** link.
+
 The site owner explicitly approved non-first-author papers in the selected
 library `lRUUPWajQLK3lmzrBoDI2w` as advising/supervision papers. Accordingly, a
 new entry in **that curated library only** defaults to `first_author` when its

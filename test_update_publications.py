@@ -191,6 +191,20 @@ class RenderTests(unittest.TestCase):
         self.assertNotIn('class="pub-journal"', output)
         self.assertNotIn('class="pub-arxiv"', output)
 
+    def test_data_links_follow_paper_aliases_in_both_languages(self):
+        # A paper can gain an arXiv alias after SciX first identifies it by DOI.
+        qlf = paper("2020MNRAS.495.3252S")
+        qlf.update(identifier=[], doi=["10.1093/mnras/staa1381"])
+        data = snapshot([qlf, paper()])
+        qlf = dict(qlf, identifier=["arXiv:2001.02696v2"])
+        data["records"] = refresh.reconcile([qlf, paper()], data)
+        for locale, caption in (("en", "Code &amp; data"), ("zh-CN", "代码与数据")):
+            with self.subTest(locale=locale):
+                markup = refresh.render_publications(data, locale)
+                self.assertEqual(markup.count('class="pub-data"'), 1)
+                self.assertIn('class="pub-data" href="data.html#bolometric-qlf"', markup)
+                self.assertIn('>' + caption + '</a>', markup)
+
     def test_article_without_journal_doi_uses_scix_journal_fallback(self):
         record = paper()
         record.update(doctype="article", doi=["10.48550/arXiv.2501.00001"],

@@ -27,6 +27,25 @@ METRICS_START = "<!-- PUBLICATION_METRICS:START -->"
 METRICS_END = "<!-- PUBLICATION_METRICS:END -->"
 FIELDS = "bibcode,alternate_bibcode,title,author,year,pubdate,pub,volume,issue,page,eid,doi,identifier,doctype,property,citation_count"
 
+# Paper identifiers map to resource anchors on the Data Sharing page.
+DATA_RESOURCE_BY_PAPER = {
+    "arxiv:2001.02696": "bolometric-qlf",
+    "arxiv:2305.05679": "uv-variability",
+    "arxiv:2406.15548": "uv-variability",
+    "arxiv:2309.06475": "thesan",
+    "arxiv:2402.08717": "thesan",
+    "arxiv:2304.06742": "thesan",
+    "arxiv:2502.20437": "thesan-zoom",
+    "arxiv:2503.01949": "thesan-zoom",
+    "arxiv:2505.05554": "thesan-zoom",
+    "arxiv:2608.19308": "thesan-zoom",
+    "arxiv:2605.15310": "lumina",
+    "arxiv:2605.24112": "lumina",
+    "arxiv:2607.05504": "arepo2-sidm",
+    "arxiv:2610.16968": "arepo2-sidm",
+    "arxiv:2610.37768": "nori",
+}
+
 
 class RefreshError(Exception):
     """An incomplete or ambiguous refresh must not change committed files."""
@@ -233,6 +252,12 @@ def render_publications(snapshot, locale="en"):
             if arxiv_id(record):
                 label = "阅读《" + title_label + "》的 arXiv 版本" if chinese else "Read " + title_label + " on arXiv"
                 actions.append('<a class="pub-arxiv" href="https://arxiv.org/abs/' + html.escape(arxiv_id(record), quote=True) + '" target="_blank" rel="noopener" aria-label="' + label + '">arXiv</a>')
+            resource = next((DATA_RESOURCE_BY_PAPER[alias] for alias in item["aliases"]
+                             if alias in DATA_RESOURCE_BY_PAPER), None)
+            if resource:
+                label = "查看《" + title_label + "》相关的代码与数据" if chinese else "Code and data for " + title_label
+                link_text = "代码与数据" if chinese else "Code &amp; data"
+                actions.append(f'<a class="pub-data" href="data.html#{resource}" aria-label="{label}">{link_text}</a>')
             if actions:
                 lines.append('\t\t\t<span class="pub-links">' + ' '.join(actions) + '</span>')
             lines.append('\t\t</li>')

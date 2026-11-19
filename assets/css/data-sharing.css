@@ -87,7 +87,7 @@ ul.data-resources > li.data-resource {
 	text-align: center;
 	white-space: normal;
 }
-.data-actions a.data-project-link {
+.data-actions a:not(.button) {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;

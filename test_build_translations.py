@@ -1,5 +1,6 @@
 """Checks for corresponding language pages, shared scientific data, and path safety."""
 
+from html import escape
 from html.parser import HTMLParser
 import json
 import datetime as dt
@@ -7,8 +8,10 @@ from pathlib import Path
 import re
 import unittest
 from urllib.parse import urlsplit, unquote
+from urllib.robotparser import RobotFileParser
 import xml.etree.ElementTree as ET
 
+import build_projects
 import build_translations as translations
 
 
@@ -39,6 +42,9 @@ class TranslationTests(unittest.TestCase):
                 self.assertIn(('html',{'lang':expected_lang}),parser.tags)
                 alternates={a['hreflang']:a['href'] for tag,a in parser.tags if tag=='link' and a.get('rel')=='alternate'}
                 self.assertEqual(alternates,{'en':translations.public_url(english),'zh-CN':translations.public_url(chinese),'x-default':translations.public_url(english)})
+                expected_url = translations.public_url(relative)
+                self.assertEqual([a['href'] for tag,a in parser.tags if tag=='link' and a.get('rel')=='canonical'], [expected_url])
+                self.assertEqual([a['content'] for tag,a in parser.tags if tag=='meta' and a.get('property')=='og:url'], [expected_url])
                 switches=[a for tag,a in parser.tags if 'language-option' in a.get('class','').split()]
                 self.assertEqual(len(switches),2)
                 self.assertEqual([a['lang'] for a in switches],['en','zh-CN'])
@@ -85,6 +91,22 @@ class TranslationTests(unittest.TestCase):
         self.assertIn('参与指导的论文',chinese)
         self.assertIn('lang="en"',chinese)
 
+    def test_project_text_and_papers_are_in_the_static_pages(self):
+        english, chinese = build_projects.load_projects()
+        for folder, projects in [('pages', english), ('zh', chinese)]:
+            found = []
+            for filename in build_projects.RESEARCH_PAGES:
+                page = self.outputs[translations.ROOT / folder / filename].decode()
+                found.extend(re.findall(r'<section class="project-summary" id="([^"]+)">(.*?)</section>', page, re.S))
+            self.assertCountEqual([project_id for project_id, _ in found], [p['id'] for p in projects])
+            blocks = dict(found)
+            for project in projects:
+                block = blocks[project['id']]
+                self.assertIn('<h4>' + escape(project['title']) + '</h4>', block)
+                self.assertIn(project['description'], block)
+                for link in project['paperLinks']:
+                    self.assertIn(f'<a href="{escape(link["url"])}">{escape(link["label"])}</a>', block)
+
     def test_dynamic_counts_follow_prospective_data(self):
         path=translations.ROOT/'publication_metrics.json'
         metrics=json.loads(path.read_text());metrics['citation_count']=12345
@@ -101,6 +123,12 @@ class TranslationTests(unittest.TestCase):
         ns={'s':'http://www.sitemaps.org/schemas/sitemap/0.9'}
         locations=[node.text for node in root.findall('s:url/s:loc',ns)]
         self.assertEqual(len(locations),len(set(locations)))
+        self.assertTrue(all(url.startswith(translations.BASE) for url in locations))
+        robots = RobotFileParser()
+        robots.parse((translations.ROOT / 'robots.txt').read_text().splitlines())
+        self.assertEqual(robots.site_maps(), [translations.BASE + 'sitemap.xml'])
+        for agent in ('Googlebot', 'bingbot', 'OAI-SearchBot'):
+            self.assertTrue(all(robots.can_fetch(agent, url) for url in locations))
         for english,chinese in translations.PAGE_PAIRS.items():
             self.assertIn(translations.public_url(english),locations)
             self.assertIn(translations.public_url(chinese),locations)

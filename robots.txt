@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://xuejianshen.github.io/personal-website/sitemap.xml
+Sitemap: https://shenxuejian.com/sitemap.xml

@@ -1,19 +1,20 @@
 #!/usr/bin/env python3
 """
-Generate the English and Simplified Chinese research-project bundles.
+Generate the English and Simplified Chinese research-project bundles and HTML.
 
 Usage:
     python3 build_projects.py
 
 Edit projects/*.json for English content and translations/projects.zh-CN.json
-for Chinese content, then commit both generated JavaScript bundles. Chinese
-translations overlay only display strings; project IDs and links stay identical.
+for Chinese content, then commit the generated bundles and research pages.
 """
 
 import copy
+from html import escape
 from html.parser import HTMLParser
 import json
 import os
+from pathlib import Path
 import re
 import sys
 
@@ -22,6 +23,9 @@ PROJECTS_DIR = os.path.join(ROOT_DIR, 'projects')
 OUTPUT_FILE = os.path.join(ROOT_DIR, 'assets', 'js', 'projects-data.js')
 ZH_OUTPUT_FILE = os.path.join(ROOT_DIR, 'assets', 'js', 'projects-data.zh-CN.js')
 ZH_TRANSLATION_FILE = os.path.join(ROOT_DIR, 'translations', 'projects.zh-CN.json')
+RESEARCH_PAGES = ('research1.html', 'research3.html')
+PROJECT_SUMMARIES = re.compile(r'\s*<!-- PROJECTS:START -->.*?<!-- PROJECTS:END -->\s*', re.S)
+PROJECT_CONTAINER = re.compile(r'^([ \t]*)<div class="project-tabs" data-category="([^"]+)"></div>', re.M)
 
 
 def load_json(path, description):
@@ -29,9 +33,9 @@ def load_json(path, description):
         with open(path, encoding='utf-8') as source:
             return json.load(source)
     except FileNotFoundError:
-        sys.exit(f'Error: {description} not found at {path}')
+        raise ValueError(f'{description} not found at {path}') from None
     except json.JSONDecodeError as error:
-        sys.exit(f'Error: {description} at {path} is not valid JSON: {error}')
+        raise ValueError(f'{description} at {path} is not valid JSON: {error}') from None
 
 
 class MarkupSignature(HTMLParser):
@@ -89,7 +93,7 @@ def translate_projects(projects, translations):
     return result
 
 
-def main():
+def load_projects():
     manifest_path = os.path.join(PROJECTS_DIR, 'manifest.json')
     manifest = load_json(manifest_path, 'manifest.json')
     projects = []
@@ -99,23 +103,60 @@ def main():
         project = load_json(filepath, f'project file "{filename}" (listed in manifest.json)')
         project_id = project.get('id', '')
         if not isinstance(project_id, str) or not re.fullmatch(r'[a-z][a-z0-9]*(?:-[a-z0-9]+)*', project_id):
-            sys.exit(f'Error: {filename} needs a stable lowercase "id" using letters, numbers, and hyphens.')
+            raise ValueError(f'{filename} needs a stable lowercase "id" using letters, numbers, and hyphens.')
         if project_id in project_ids:
-            sys.exit(f'Error: duplicate project id "{project_id}" in {filename}.')
+            raise ValueError(f'duplicate project id "{project_id}" in {filename}.')
         project_ids.add(project_id)
         projects.append(project)
     translations = load_json(ZH_TRANSLATION_FILE, 'Chinese project translations')
+    return projects, translate_projects(projects, translations)
+
+
+def render_project_summaries(page, projects):
+    """Make the project text and paper links available before the tabs run."""
+    def render_slot(match):
+        indent, category = match.groups()
+        ordered = sorted((p for p in projects if p['category'] == category),
+                         key=lambda p: p.get('order', 0))
+        lines = [f'<div class="project-tabs" data-category="{escape(category)}">',
+                 '\t<!-- PROJECTS:START -->']
+        for project in ordered:
+            lines.extend([
+                f'\t<section class="project-summary" id="{escape(project["id"])}">',
+                f'\t\t<h4>{escape(project["title"])}</h4>',
+                f'\t\t<div class="project-description">{project["description"]}</div>',
+            ])
+            links = [f'<a href="{escape(link["url"])}">{escape(link["label"])}</a>'
+                     for link in project.get('paperLinks', [])]
+            if links:
+                lines.append('\t\t<p class="project-papers">' + ' '.join(links) + '</p>')
+            lines.append('\t</section>')
+        lines.extend(['\t<!-- PROJECTS:END -->', '</div>'])
+        return '\n'.join(indent + line for line in lines)
+
+    return PROJECT_CONTAINER.sub(render_slot, PROJECT_SUMMARIES.sub('', page))
+
+
+def main():
+    from update_publications import atomic_write
+
     try:
-        chinese_projects = translate_projects(projects, translations)
+        projects, chinese_projects = load_projects()
     except ValueError as error:
         sys.exit(f'Error: {error}')
 
-    # Validate both languages before touching either committed output file.
-    for output_file, records in [(OUTPUT_FILE, projects), (ZH_OUTPUT_FILE, chinese_projects)]:
+    outputs = {}
+    for output_file, folder, records in [(OUTPUT_FILE, 'pages', projects), (ZH_OUTPUT_FILE, 'zh', chinese_projects)]:
         js_content = 'var RESEARCH_PROJECTS = ' + json.dumps(records, indent=2, ensure_ascii=False) + ';\n'
-        with open(output_file, 'w', encoding='utf-8', newline='\n') as output:
-            output.write(js_content)
-        print(f'Generated {output_file} with {len(records)} projects.')
+        outputs[Path(output_file)] = js_content.encode()
+        for filename in RESEARCH_PAGES:
+            page = Path(ROOT_DIR, folder, filename)
+            rendered = render_project_summaries(page.read_text(encoding='utf-8'), records)
+            outputs[page] = rendered.replace('\n', '\r\n').encode()
+    for path, data in outputs.items():
+        if not path.exists() or path.read_bytes() != data:
+            atomic_write(path, data)
+    print(f'Built research bundles and static project summaries for {len(projects)} projects in both languages.')
 
 
 if __name__ == '__main__':

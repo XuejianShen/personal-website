@@ -15,7 +15,7 @@ const chineseBundle = {};
 vm.runInNewContext(fs.readFileSync(path.join(root, 'assets/js/projects-data.zh-CN.js'), 'utf8'), chineseBundle);
 const chineseProjects = JSON.parse(JSON.stringify(chineseBundle.RESEARCH_PROJECTS));
 
-function fixture({ hash = '', vertical = false, data = projects, lang = 'en', missingData = false } = {}) {
+function fixture({ hash = '', vertical = false, data = projects, lang = 'en', missingData = false, withSummaries = false } = {}) {
 	let document;
 	class Element {
 		constructor(tag) {
@@ -39,6 +39,7 @@ function fixture({ hash = '', vertical = false, data = projects, lang = 'en', mi
 		getAttribute(name) { return this.attributes[name] ?? null; }
 		removeAttribute(name) { delete this.attributes[name]; }
 		appendChild(child) { this.children.push(child); return child; }
+		replaceChildren(...children) { this.children = children; }
 		addEventListener(type, fn) { (this.listeners[type] ||= []).push(fn); }
 		fire(type, fields = {}) {
 			const event = { prevented: false, preventDefault() { this.prevented = true; }, ...fields };
@@ -74,6 +75,11 @@ function fixture({ hash = '', vertical = false, data = projects, lang = 'en', mi
 		const element = new Element('div');
 		element.className = 'project-tabs';
 		element.setAttribute('data-category', category);
+		if (withSummaries) {
+			const summary = new Element('section');
+			summary.className = 'project-summary';
+			element.appendChild(summary);
+		}
 		return element;
 	});
 	document = {
@@ -257,6 +263,15 @@ test('Chinese empty and unavailable-data states are localized', () => {
 	const unavailable = fixture({ lang: 'zh-CN', missingData: true });
 	assert.match(unavailable.containers[0].innerHTML, /无法加载研究项目数据/);
 	assert.deepEqual(unavailable.errors, ['未找到研究项目数据，请检查项目数据文件的加载顺序。']);
+});
+
+test('static project summaries survive missing data and are replaced when tabs are ready', () => {
+	for (const page of [fixture({ missingData: true, withSummaries: true }), fixture({ data: [], withSummaries: true })]) {
+		assert.ok(page.containers[0].querySelector('.project-summary'));
+	}
+	const enhanced = fixture({ withSummaries: true, hash: '#lumina' });
+	assert.equal(enhanced.containers[0].querySelector('.project-summary'), null);
+	assert.equal(enhanced.panel('lumina').hidden, false);
 });
 
 test('the builder rejects incomplete overlays, altered links, and missing paper labels', () => {

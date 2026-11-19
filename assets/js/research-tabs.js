@@ -97,7 +97,9 @@
 
 	function renderTabs(container, projects) {
 		if (!projects || projects.length === 0) {
-			container.innerHTML = '<p><em>' + esc(strings.noProjects) + '</em></p>';
+			if (!container.querySelector('.project-summary')) {
+				container.innerHTML = '<p><em>' + esc(strings.noProjects) + '</em></p>';
+			}
 			return;
 		}
 
@@ -213,8 +215,7 @@
 			targets[category + '-tab-' + index] = target;
 		});
 
-		container.appendChild(nav);
-		container.appendChild(content);
+		container.replaceChildren(nav, content);
 		// Resolve the initial URL before assigning any image sources in this group.
 		var initialTarget = targets[readHash()];
 		controller.activate(initialTarget && initialTarget.controller === controller ? initialTarget.index : 0);
@@ -226,7 +227,9 @@
 		if (typeof RESEARCH_PROJECTS === 'undefined' || !RESEARCH_PROJECTS) {
 			console.error(strings.consoleError);
 			containers.forEach(function (container) {
-				container.innerHTML = '<p><em>' + esc(strings.loadError) + '</em></p>';
+				if (!container.querySelector('.project-summary')) {
+					container.innerHTML = '<p><em>' + esc(strings.loadError) + '</em></p>';
+				}
 			});
 			return;
 		}

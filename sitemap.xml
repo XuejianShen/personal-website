@@ -1,97 +1,97 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
-    <loc>https://xuejianshen.github.io/personal-website/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <loc>https://shenxuejian.com/</loc>
+    <lastmod>2026-11-19</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://xuejianshen.github.io/personal-website/pages/about_me.html</loc>
-    <lastmod>2026-11-18</lastmod>
+    <loc>https://shenxuejian.com/pages/about_me.html</loc>
+    <lastmod>2026-11-19</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://xuejianshen.github.io/personal-website/pages/research1.html</loc>
-    <lastmod>2026-11-18</lastmod>
+    <loc>https://shenxuejian.com/pages/research1.html</loc>
+    <lastmod>2026-11-19</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://xuejianshen.github.io/personal-website/pages/research3.html</loc>
-    <lastmod>2026-11-18</lastmod>
+    <loc>https://shenxuejian.com/pages/research3.html</loc>
+    <lastmod>2026-11-19</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://xuejianshen.github.io/personal-website/pages/publications.html</loc>
-    <lastmod>2026-11-18</lastmod>
+    <loc>https://shenxuejian.com/pages/publications.html</loc>
+    <lastmod>2026-11-19</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://xuejianshen.github.io/personal-website/pages/press.html</loc>
-    <lastmod>2026-11-18</lastmod>
+    <loc>https://shenxuejian.com/pages/press.html</loc>
+    <lastmod>2026-11-19</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://xuejianshen.github.io/personal-website/documents/CV_of_Xuejian_Shen__astro_.pdf</loc>
-    <lastmod>2026-07-29T00:00:00+00:00</lastmod>
+    <loc>https://shenxuejian.com/documents/CV_of_Xuejian_Shen__astro_.pdf</loc>
+    <lastmod>2026-11-16</lastmod>
     <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://xuejianshen.github.io/personal-website/pages/credits.html</loc>
-    <lastmod>2026-11-18</lastmod>
+    <loc>https://shenxuejian.com/pages/credits.html</loc>
+    <lastmod>2026-11-19</lastmod>
     <priority>0.20</priority>
   </url>
   <url>
-    <loc>https://xuejianshen.github.io/personal-website/zh/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <loc>https://shenxuejian.com/zh/</loc>
+    <lastmod>2026-11-19</lastmod>
     <priority>0.60</priority>
   </url>
   <url>
-    <loc>https://xuejianshen.github.io/personal-website/zh/about_me.html</loc>
-    <lastmod>2026-11-18</lastmod>
+    <loc>https://shenxuejian.com/zh/about_me.html</loc>
+    <lastmod>2026-11-19</lastmod>
     <priority>0.60</priority>
   </url>
   <url>
-    <loc>https://xuejianshen.github.io/personal-website/zh/research1.html</loc>
-    <lastmod>2026-11-18</lastmod>
+    <loc>https://shenxuejian.com/zh/research1.html</loc>
+    <lastmod>2026-11-19</lastmod>
     <priority>0.60</priority>
   </url>
   <url>
-    <loc>https://xuejianshen.github.io/personal-website/zh/research3.html</loc>
-    <lastmod>2026-11-18</lastmod>
+    <loc>https://shenxuejian.com/zh/research3.html</loc>
+    <lastmod>2026-11-19</lastmod>
     <priority>0.60</priority>
   </url>
   <url>
-    <loc>https://xuejianshen.github.io/personal-website/zh/publications.html</loc>
-    <lastmod>2026-11-18</lastmod>
+    <loc>https://shenxuejian.com/zh/publications.html</loc>
+    <lastmod>2026-11-19</lastmod>
     <priority>0.60</priority>
   </url>
   <url>
-    <loc>https://xuejianshen.github.io/personal-website/zh/press.html</loc>
-    <lastmod>2026-11-18</lastmod>
+    <loc>https://shenxuejian.com/zh/press.html</loc>
+    <lastmod>2026-11-19</lastmod>
     <priority>0.60</priority>
   </url>
   <url>
-    <loc>https://xuejianshen.github.io/personal-website/zh/credits.html</loc>
-    <lastmod>2026-11-18</lastmod>
+    <loc>https://shenxuejian.com/zh/credits.html</loc>
+    <lastmod>2026-11-19</lastmod>
     <priority>0.60</priority>
   </url>
   <url>
-    <loc>https://xuejianshen.github.io/personal-website/pages/group.html</loc>
-    <lastmod>2026-11-18</lastmod>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://xuejianshen.github.io/personal-website/zh/group.html</loc>
-    <lastmod>2026-11-18</lastmod>
-    <priority>0.60</priority>
-  </url>
-  <url>
-    <loc>https://xuejianshen.github.io/personal-website/pages/data.html</loc>
+    <loc>https://shenxuejian.com/pages/group.html</loc>
     <lastmod>2026-11-19</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://xuejianshen.github.io/personal-website/zh/data.html</loc>
+    <loc>https://shenxuejian.com/zh/group.html</loc>
+    <lastmod>2026-11-19</lastmod>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://shenxuejian.com/pages/data.html</loc>
+    <lastmod>2026-11-19</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://shenxuejian.com/zh/data.html</loc>
     <lastmod>2026-11-19</lastmod>
     <priority>0.60</priority>
   </url>

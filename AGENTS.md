@@ -19,7 +19,7 @@ python3 build_projects.py
 
 ## Deployment
 
-`.github/workflows/pages.yml` deploys the **entire repo as-is** to GitHub Pages on every push to `master` (live at `https://xuejianshen.github.io/personal-website/`). There is no compile/transform step in CI — what you commit is what ships. The checkout uses `lfs: true` because videos are stored in Git LFS (see Media below).
+`.github/workflows/pages.yml` deploys the **entire repo as-is** to GitHub Pages on every push to `master` (live at `https://shenxuejian.com/`). There is no compile/transform step in CI — what you commit is what ships. The checkout uses `lfs: true` because videos are stored in Git LFS (see Media below).
 
 ## Research projects data pipeline (the main non-obvious architecture)
 
@@ -31,7 +31,7 @@ Research project cards are data-driven and span four files — understand all fo
 3. **`build_projects.py`** — reads the manifest + each JSON and writes `assets/js/projects-data.js` (a single `var RESEARCH_PROJECTS = [...]` global). **This generated file is committed**; the site loads it directly.
 4. **`assets/js/research-tabs.js`** — at page load, finds every `<div class="project-tabs" data-category="X">`, groups `RESEARCH_PROJECTS` by `category`, sorts by `order`, and renders a tabbed UI. Styled by `assets/css/research-tabs.css` (linked only on research pages).
 
-**Workflow gotcha:** editing a project JSON has no effect until you run `python3 build_projects.py` and commit the regenerated `projects-data.js`. To add a new project, create the JSON **and** add its filename to `manifest.json`, then rebuild.
+**Workflow gotcha:** editing a project JSON has no effect until you run `python3 build_projects.py` and commit the regenerated language bundles and research pages. The project titles, descriptions, and paper links are also built into the HTML so readers and crawlers can access them with JavaScript disabled. To add a new project, create the JSON **and** add its filename to `manifest.json`, then rebuild.
 
 Category → page mapping: `sidm` + `axions` render on `pages/research1.html`; `highz_galaxies` + `smbh` render on `pages/research3.html`.
 

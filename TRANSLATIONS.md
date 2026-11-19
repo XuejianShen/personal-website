@@ -1,6 +1,6 @@
 # Chinese version
 
-The eight current pages have committed Simplified Chinese counterparts in `zh/`.
+The nine current pages have committed Simplified Chinese counterparts in `zh/`.
 Every Chinese page prominently identifies the text as AI translated, warns that
 errors may remain, and links to the matching English source. Paper titles,
 authors, and journal citations retain their original English for identification.

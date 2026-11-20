@@ -68,6 +68,6 @@ The gallery is a compact 4/3/2-column grid of square tiles with an in-page light
 2. **Styles** in `assets/css/main.css` under `/* Gallery (home page) ... */` and `/* Gallery lightbox */`.
 3. **Behavior** at the bottom of `assets/js/main.js`: (a) the IntersectionObserver block lazy-loads/pauses tile videos (`data-src`, not `src`, so nothing downloads until scrolled into view); (b) the lightbox block builds the viewer DOM on load, and handles click/Esc/arrow keys/swipe, focus trapping, and pausing tile videos while open.
 
-The **Research Highlights** band below the gallery (`.highlights-section`, dark `.wrapper.style3`) is a three-stat grid styled under `/* Research highlights */` in `main.css`; numbers live directly in `index.html`. Section paddings use `.wrapper.gallery-section` / `.wrapper.highlights-section` selectors on purpose: the template's mobile `.wrapper` rules come later in the file and would otherwise override them.
+The **Research Highlights** band above the gallery (`.highlights-section`, dark `.wrapper.style3`) is a three-stat grid styled under `/* Research highlights */` in `main.css`; numbers live directly in `index.html`. Section paddings use `.wrapper.gallery-section` / `.wrapper.highlights-section` selectors on purpose: the template's mobile `.wrapper` rules come later in the file and would otherwise override them.
 
 To add a tile: copy an existing `<figure>`, point `href` at the full-res file (with a size in `data-full-label`), `data-src` at the preview, and `poster` at a frame in `images/posters/`.

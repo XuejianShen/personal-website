@@ -91,6 +91,23 @@ class TranslationTests(unittest.TestCase):
         self.assertIn('参与指导的论文',chinese)
         self.assertIn('lang="en"',chinese)
 
+    def test_chinese_press_cards_translate_headlines_and_outlet_labels(self):
+        page = self.outputs[translations.ROOT / 'zh/press.html'].decode()
+        section = re.search(r'(<ul class="press-stories">.*?</ul>)\s*</article>', page, re.S)
+        self.assertIsNotNone(section)
+        stories = ET.fromstring(section[1]).findall('li')
+        self.assertTrue(stories)
+        han = r'[\u3400-\u9fff]'
+        for story in stories:
+            self.assertRegex(story.findtext('h3[@class="press-story-title"]', ''), han)
+            links = story.findall('ul[@class="press-outlets"]/li/a')
+            self.assertTrue(links)
+            for link in links:
+                with self.subTest(url=link.get('href')):
+                    self.assertRegex(''.join(link.itertext()), han)
+                    headline = link.get('title', '').partition('：')[2]
+                    self.assertRegex(headline, han)
+
     def test_project_text_and_papers_are_in_the_static_pages(self):
         english, chinese = build_projects.load_projects()
         for folder, projects in [('pages', english), ('zh', chinese)]:
